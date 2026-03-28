@@ -93,8 +93,8 @@
       </div>
 
       <div class="intro-pull-quote">
-        "The Odyssey is not about getting home. It is about whether home is still there when you arrive."
-        <div class="intro-pull-attribution">— readingtheodyssey.com</div>
+        "Cyclops, if any mortal man ever asks you who it was that inflicted upon your eye this shameful blinding, tell him that you were blinded by Odysseus, sacker of cities. Laertes is his father, and he makes his home in Ithaca."
+        <div class="intro-pull-attribution">— Homer, <em>The Odyssey</em>, Book 9 (trans. Richmond Lattimore)</div>
       </div>
 
       <div class="intro-section-grid">
@@ -867,10 +867,23 @@
     }
   });
 
-  // On load, check if URL path matches a known section slug
-  const initialSlug = window.location.pathname.replace(/^\//, '').replace(/\.html$/, '');
-  const initialSection = slugToSection[initialSlug] || '0';
-  showSection(initialSection, false);
+  // On load, check for redirect from 404.html or direct URL path
+  function getInitialSection() {
+    // Check for ?redirect= parameter set by 404.html
+    const params = new URLSearchParams(window.location.search);
+    const redirectPath = params.get('redirect');
+    if (redirectPath) {
+      // Clean up the URL — remove the ?redirect= query string
+      const cleanSlug = redirectPath.replace(/^\//, '').replace(/\.html$/, '');
+      history.replaceState({ section: slugToSection[cleanSlug] || '0' }, '', redirectPath);
+      return slugToSection[cleanSlug] || '0';
+    }
+    // Direct URL path (History API navigation)
+    const slug = window.location.pathname.replace(/^\//, '').replace(/\.html$/, '');
+    return slugToSection[slug] || '0';
+  }
+
+  showSection(getInitialSection(), false);
 </script>
 
 </body>
