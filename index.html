@@ -790,6 +790,34 @@
   const sections = document.querySelectorAll('.section');
   const contentScroll = document.getElementById('content-scroll');
 
+  // Section ID to clean URL slug mapping
+  const sectionSlugs = {
+    '0':              '',
+    '6':              'translations',
+    '1':              'world',
+    '3':              'mythology',
+    '2a':             'ancient-historians',
+    '2b':             'modern-scholars',
+    '5a':             'after-the-odyssey',
+    '5b':             'retellings',
+    '8':              'podcasts',
+    '9':              'how-to-read',
+    'ref-char':       'characters',
+    'ref-journey':    'journey',
+    'ref-synopsis':   'synopsis',
+    'ref-gods':       'gods',
+    'ref-glossary':   'glossary',
+    'ref-themes':     'themes',
+    'ref-protagonists': 'protagonists',
+    'ref-episodes':   'episodes',
+  };
+
+  // Reverse map: slug -> section ID
+  const slugToSection = {};
+  Object.entries(sectionSlugs).forEach(([id, slug]) => {
+    slugToSection[slug] = id;
+  });
+
   function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('sidebar-overlay');
@@ -797,7 +825,7 @@
     overlay.classList.toggle('active');
   }
 
-  function showSection(i) {
+  function showSection(i, pushState = true) {
     navItems.forEach(b => b.classList.remove('active'));
     sections.forEach(s => s.classList.remove('active'));
 
@@ -810,6 +838,13 @@
     contentScroll.scrollTop = 0;
     window.scrollTo(0, 0);
 
+    // Update URL without page reload
+    if (pushState) {
+      const slug = sectionSlugs[i] || '';
+      const url = slug ? '/' + slug : '/';
+      history.pushState({ section: i }, '', url);
+    }
+
     const sidebar = document.getElementById('sidebar');
     const overlay = document.getElementById('sidebar-overlay');
     if (window.innerWidth <= 768) {
@@ -817,6 +852,12 @@
       overlay.classList.remove('active');
     }
   }
+
+  // Handle browser back/forward buttons
+  window.addEventListener('popstate', (e) => {
+    const id = e.state?.section || '0';
+    showSection(id, false);
+  });
 
   navItems.forEach(btn => {
     if (btn.tagName === 'BUTTON') {
@@ -826,7 +867,10 @@
     }
   });
 
-  showSection(0);
+  // On load, check if URL path matches a known section slug
+  const initialSlug = window.location.pathname.replace(/^\//, '').replace(/\.html$/, '');
+  const initialSection = slugToSection[initialSlug] || '0';
+  showSection(initialSection, false);
 </script>
 
 </body>
