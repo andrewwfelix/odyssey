@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Complete Guide to Reading the Odyssey — Translations, Characters & Context</title>
-  <meta name="description" content="A free reading guide for Homer's Odyssey. Compare the best translations, explore the world of Odysseus, find character references, book-by-book summaries, and everything you need to approach one of literature's greatest poems." />
+  <!-- Dynamic Title and Description updated by JS on navigation -->
+  <title id="page-title">The Complete Guide to Reading the Odyssey — Translations, Characters & Context</title>
+  <meta id="meta-description" name="description" content="A free reading guide for Homer's Odyssey. Compare the best translations, explore the world of Odysseus, find character references, book-by-book summaries, and everything you need to approach one of literature's greatest poems." />
   <meta name="keywords" content="Odyssey reading guide, best Odyssey translation, Homer Odyssey, Odyssey characters, Odyssey summary, Odysseus, how to read the Odyssey, Emily Wilson Fagles Lattimore, Greek mythology, nostos homecoming" />
   <meta name="author" content="readingtheodyssey.com" />
 
-  <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="The Complete Guide to Reading the Odyssey" />
-  <meta property="og:description" content="Everything you need before you open the book — translations, characters, the journey map, mythology, and practical reading advice." />
-  <meta property="og:url" content="https://readingtheodyssey.com" />
+  <!-- Canonical Tag — updated dynamically by JS -->
+  <link id="canonical" rel="canonical" href="https://readingtheodyssey.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" id="og-title" content="The Complete Guide to Reading the Odyssey" />
+  <meta property="og:description" id="og-description" content="Everything you need before you open the book — translations, characters, the journey map, mythology, and practical reading advice." />
+  <meta property="og:url" id="og-url" content="https://readingtheodyssey.com" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://readingtheodyssey.com/images/landing_image.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Complete Guide to Reading the Odyssey" />
-  <meta name="twitter:description" content="Everything you need before you open the book — translations, characters, the journey map, mythology, and practical reading advice." />
+  <meta name="twitter:title" id="twitter-title" content="The Complete Guide to Reading the Odyssey" />
+  <meta name="twitter:description" id="twitter-description" content="Everything you need before you open the book — translations, characters, the journey map, mythology, and practical reading advice." />
   <meta name="twitter:image" content="https://readingtheodyssey.com/images/landing_image.jpg" />
 
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Upright:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -844,39 +848,36 @@
   </div>
 </main>
 
+<script src="data.js"></script>
 <script>
+  'use strict';
+
   const navItems = document.querySelectorAll('.nav-item');
   const sections = document.querySelectorAll('.section');
   const contentScroll = document.getElementById('content-scroll');
 
-  // Section ID to clean URL slug mapping
-  const sectionSlugs = {
-    '0':              '',
-    '6':              'translations',
-    '1':              'world',
-    '3':              'mythology',
-    '2a':             'ancient-historians',
-    '2b':             'modern-scholars',
-    '5a':             'after-the-odyssey',
-    '5b':             'retellings',
-    '8':              'podcasts',
-    '9':              'how-to-read',
-    'ref-char':       'characters',
-    'ref-journey':    'journey',
-    'ref-synopsis':   'synopsis',
-    'ref-gods':       'gods',
-    'ref-glossary':   'glossary',
-    'ref-themes':     'themes',
-    'ref-protagonists': 'protagonists',
-    'ref-episodes':   'episodes',
-    'gift-guide':      'gift-guide',
-  };
-
-  // Reverse map: slug -> section ID
+  // Build slug maps from sectionConfig (defined in data.js)
+  const sectionSlugs = {};
   const slugToSection = {};
-  Object.entries(sectionSlugs).forEach(([id, slug]) => {
-    slugToSection[slug] = id;
+  Object.entries(sectionConfig).forEach(([id, config]) => {
+    sectionSlugs[id] = config.slug;
+    if (config.slug) slugToSection[config.slug] = id;
+    else slugToSection[''] = id;
   });
+
+  function updateSEO(sectionId) {
+    const config = sectionConfig[sectionId] || sectionConfig['0'];
+    const canonicalUrl = 'https://readingtheodyssey.com' + (config.slug ? '/' + config.slug : '/');
+
+    document.getElementById('page-title').textContent = config.title;
+    document.getElementById('meta-description').setAttribute('content', config.description);
+    document.getElementById('canonical').setAttribute('href', canonicalUrl);
+    document.getElementById('og-title').setAttribute('content', config.title);
+    document.getElementById('og-description').setAttribute('content', config.description);
+    document.getElementById('og-url').setAttribute('content', canonicalUrl);
+    document.getElementById('twitter-title').setAttribute('content', config.title);
+    document.getElementById('twitter-description').setAttribute('content', config.description);
+  }
 
   function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
@@ -898,22 +899,20 @@
     contentScroll.scrollTop = 0;
     window.scrollTo(0, 0);
 
-    // Update URL without page reload
+    updateSEO(i);
+
     if (pushState) {
       const slug = sectionSlugs[i] || '';
       const url = slug ? '/' + slug : '/';
       history.pushState({ section: i }, '', url);
     }
 
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebar-overlay');
     if (window.innerWidth <= 768) {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('active');
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebar-overlay').classList.remove('active');
     }
   }
 
-  // Handle browser back/forward buttons
   window.addEventListener('popstate', (e) => {
     const id = e.state?.section || '0';
     showSection(id, false);
@@ -927,18 +926,14 @@
     }
   });
 
-  // On load, check for redirect from 404.html or direct URL path
   function getInitialSection() {
-    // Check for ?redirect= parameter set by 404.html
     const params = new URLSearchParams(window.location.search);
     const redirectPath = params.get('redirect');
     if (redirectPath) {
-      // Clean up the URL — remove the ?redirect= query string
       const cleanSlug = redirectPath.replace(/^\//, '').replace(/\.html$/, '');
       history.replaceState({ section: slugToSection[cleanSlug] || '0' }, '', redirectPath);
       return slugToSection[cleanSlug] || '0';
     }
-    // Direct URL path (History API navigation)
     const slug = window.location.pathname.replace(/^\//, '').replace(/\.html$/, '');
     return slugToSection[slug] || '0';
   }
