@@ -13,6 +13,11 @@ const sectionConfig = {
     title: `Best Odyssey Translations — Emily Wilson, Fagles, Lattimore & More Compared`,
     description: `Which Odyssey translation should you read? Detailed comparison of Emily Wilson, Robert Fagles, Richmond Lattimore, and other major translations — with recommendations for every type of reader.`
   },
+  'odyssey-themes': {
+    slug: `themes`,
+    title: `Themes of the Odyssey — Homecoming, Identity, Cunning & Hospitality`,
+    description: `The major themes of Homer's Odyssey explained — nostos and homecoming, identity and disguise, xenia and hospitality, cunning over strength, and the gods and fate.`,
+  },
   '1': {
     slug: `world`,
     title: `The World of Odysseus — Bronze Age Greece & the Mediterranean`,
