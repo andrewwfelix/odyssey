@@ -1,52 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const title = `Best Podcasts for Reading the Odyssey — Rest is History, Natalie Haynes & More`;
-const description = `The best podcasts to accompany your reading of the Odyssey. The Rest is History, Natalie Haynes Stands Up for the Classics, and more essential audio companions.`;
+const title = `Best Podcasts for Reading the Odyssey`;
+const description = `The best podcasts to accompany your reading of the Odyssey.`;
 const canonical = `https://readingtheodyssey.com/podcasts`;
 ---
 
-<Layout title={title} description={description} canonical={canonical}>
-  <nav id="sidebar">
-    <div id="sidebar-header">
-      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
-      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
-      <p>Everything before you open the book</p>
-    </div>
-    <div id="nav">
-      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
-      <a class="nav-item" href="/">Introduction</a>
-      <a class="nav-item" href="/themes">Themes</a>
-      <a class="nav-item" href="/translations">Choosing a Translation</a>
-      <a class="nav-item" href="/how-to-read">How to Read</a>
-      <a class="nav-item" href="/world">The World of Odysseus</a>
-      <a class="nav-item" href="/mythology">Mythology</a>
-      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
-      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
-      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
-      <a class="nav-item" href="/retellings">Modern Retellings</a>
-      <a class="nav-item active" href="/podcasts">Podcasts</a>
-      <a class="nav-item" href="/characters">Character Reference</a>
-      <a class="nav-item" href="/journey">The Journey Map</a>
-      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
-      <a class="nav-item" href="/gods">The Gods</a>
-      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
-      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
-      <a class="nav-item" href="/protagonists">Two Protagonists</a>
-      <a class="nav-item" href="/episodes">Key Episodes</a>
-      <a class="nav-item" href="/gift-guide">Gift Guide</a>
-      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
-    </div>
-  </nav>
-  <div id="mobile-topbar">
-    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
-    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
-  </div>
-  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
-
-  <main id="main">
-    <div id="content-scroll">
-      <article class="section active">
-        <div class="section-header">
+<Layout title={title} description={description} canonical={canonical} activePage="podcasts">
+  <article class="section active">
+    <div class="section-header">
       <div class="section-label">Section 9</div>
       <h2 class="section-title">Podcasts to Accompany Your Reading</h2>
       <p class="section-subtitle">Audio companions for the commute, the gym, or the long read</p>
@@ -84,17 +45,5 @@ const canonical = `https://readingtheodyssey.com/podcasts`;
         <div class="book-note">Not directly about Homer, but essential context for the Roman works in the After the Odyssey section — particularly Virgil's use of Odysseus as a foil for Aeneas. Duncan's 179-episode series covering the full arc of Roman history from founding to fall remains one of the finest history podcasts ever made. Begin at episode 1.</div>
       </div>
     </div>
-      </article>
-    </div>
-  </main>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const overlay = document.getElementById('sidebar-overlay');
-      sidebar.classList.toggle('open');
-      overlay.classList.toggle('active');
-    }
-  </script>
-
+  </article>
 </Layout>

@@ -1,52 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Modern Retellings of the Odyssey — Miller, Atwood, Barker & More`;
-const description = `Contemporary novels that reimagine Homer's Odyssey. Madeline Miller's Circe, Margaret Atwood's Penelopiad, and the modern literary tradition around Odysseus.`;
+const description = `Contemporary novels that reimagine Homer's Odyssey.`;
 const canonical = `https://readingtheodyssey.com/retellings`;
 ---
 
-<Layout title={title} description={description} canonical={canonical}>
-  <nav id="sidebar">
-    <div id="sidebar-header">
-      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
-      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
-      <p>Everything before you open the book</p>
-    </div>
-    <div id="nav">
-      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
-      <a class="nav-item" href="/">Introduction</a>
-      <a class="nav-item" href="/themes">Themes</a>
-      <a class="nav-item" href="/translations">Choosing a Translation</a>
-      <a class="nav-item" href="/how-to-read">How to Read</a>
-      <a class="nav-item" href="/world">The World of Odysseus</a>
-      <a class="nav-item" href="/mythology">Mythology</a>
-      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
-      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
-      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
-      <a class="nav-item active" href="/retellings">Modern Retellings</a>
-      <a class="nav-item" href="/podcasts">Podcasts</a>
-      <a class="nav-item" href="/characters">Character Reference</a>
-      <a class="nav-item" href="/journey">The Journey Map</a>
-      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
-      <a class="nav-item" href="/gods">The Gods</a>
-      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
-      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
-      <a class="nav-item" href="/protagonists">Two Protagonists</a>
-      <a class="nav-item" href="/episodes">Key Episodes</a>
-      <a class="nav-item" href="/gift-guide">Gift Guide</a>
-      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
-    </div>
-  </nav>
-  <div id="mobile-topbar">
-    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
-    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
-  </div>
-  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
-
-  <main id="main">
-    <div id="content-scroll">
-      <article class="section active">
-        <div class="section-header">
+<Layout title={title} description={description} canonical={canonical} activePage="retellings">
+  <article class="section active">
+    <div class="section-header">
       <div class="section-label">Section 8</div>
       <h2 class="section-title">Modern Retellings</h2>
       <p class="section-subtitle">Contemporary novels that give voice to Homer's silenced characters</p>
@@ -55,7 +16,7 @@ const canonical = `https://readingtheodyssey.com/retellings`;
       <p>The Odyssey has generated a richer tradition of modern retellings than almost any other ancient text — perhaps because so many of its most interesting characters are given so little space by Homer. Penelope, Circe, Calypso, the women of Ithaca: the modern novels below restore their voices. Read them as preparation for noticing Homer's silences, and as a reminder that the poem you are about to read is only one version of a story that has always been told in many ways.</p>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-miller-circe.jpg" alt="Circe — Madeline Miller" />
+        <img class="book-cover" src="images/cover-miller-circe.jpg" alt="Circe — Madeline Miller" />
         <div class="book-title">Circe</div>
         <div class="book-author">Madeline Miller</div>
         <div class="book-note">The best entry point for emotional investment in the world of the Odyssey. Miller's novel follows the witch who transforms Odysseus's men into pigs — and who keeps Odysseus on her island for a year — from her own perspective, across centuries of mythological time. Circe appears in the Odyssey for only a handful of books; Miller gives her an entire life. Readers who come to the Odyssey after this novel find the Aeaea episode transformed by knowing what Circe was thinking.</div>
@@ -63,7 +24,7 @@ const canonical = `https://readingtheodyssey.com/retellings`;
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-atwood-the-penelopiad.jpg" alt="The Penelopiad — Margaret Atwood" />
+        <img class="book-cover" src="images/cover-atwood-the-penelopiad.jpg" alt="The Penelopiad — Margaret Atwood" />
         <div class="book-title">The Penelopiad</div>
         <div class="book-author">Margaret Atwood</div>
         <div class="book-note">Penelope narrates the Odyssey from the underworld — and her version is very different from her husband's. Atwood's slim, devastating novella asks the question Homer doesn't: what did Penelope actually know, and when did she know it? And why does Homer's poem end with the hanging of twelve maids who were, by any fair measure, victims? One of the sharpest feminist readings of any classical text, and an essential companion to Books 22 and 24 of the Odyssey.</div>
@@ -71,7 +32,7 @@ const canonical = `https://readingtheodyssey.com/retellings`;
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-haynes-a-thousand-ships.jpg" alt="A Thousand Ships — Natalie Haynes" />
+        <img class="book-cover" src="images/cover-haynes-a-thousand-ships.jpg" alt="A Thousand Ships — Natalie Haynes" />
         <div class="book-title">A Thousand Ships</div>
         <div class="book-author">Natalie Haynes</div>
         <div class="book-note">The Trojan War told from the perspectives of the women — Greek and Trojan — whose lives the war destroyed. Haynes covers the period from the Judgment of Paris through the Returns, which overlaps directly with the Odyssey's backstory. A vivid corrective to the male-centered heroic tradition, and essential reading alongside the Penelopiad for anyone who wants to understand what the poem leaves out.</div>
@@ -79,24 +40,12 @@ const canonical = `https://readingtheodyssey.com/retellings`;
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-chaudhuri-odysseus-abroad.jpg" alt="Odysseus Abroad — Amit Chaudhuri" />
+        <img class="book-cover" src="images/cover-chaudhuri-odysseus-abroad.jpg" alt="Odysseus Abroad — Amit Chaudhuri" />
         <div class="book-title">Odysseus Abroad</div>
         <div class="book-author">Amit Chaudhuri</div>
         <div class="book-note">A quieter, literary novel — set in 1980s London rather than ancient Greece — about a young Indian student and his eccentric uncle navigating a single day in the city. The Odyssey operates as a structural and thematic template throughout. For readers interested in the poem's afterlife in world literature, Chaudhuri's novel is a beautiful example of how the Odyssey's shape — the wanderer, the home, the years away — maps onto experiences far from Homer's world.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/1555977014?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
     </div>
-      </article>
-    </div>
-  </main>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const overlay = document.getElementById('sidebar-overlay');
-      sidebar.classList.toggle('open');
-      overlay.classList.toggle('active');
-    }
-  </script>
-
+  </article>
 </Layout>

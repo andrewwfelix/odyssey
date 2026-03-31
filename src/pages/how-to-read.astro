@@ -1,52 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `How to Read the Odyssey — Practical Advice for First-Time Readers`;
-const description = `Practical advice for reading Homer's Odyssey. The unreliable narrator, the homecoming tradition, Penelope's role, and what to expect from the poem's structure.`;
+const description = `Practical advice for reading Homer's Odyssey.`;
 const canonical = `https://readingtheodyssey.com/how-to-read`;
 ---
 
-<Layout title={title} description={description} canonical={canonical}>
-  <nav id="sidebar">
-    <div id="sidebar-header">
-      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
-      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
-      <p>Everything before you open the book</p>
-    </div>
-    <div id="nav">
-      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
-      <a class="nav-item" href="/">Introduction</a>
-      <a class="nav-item" href="/themes">Themes</a>
-      <a class="nav-item" href="/translations">Choosing a Translation</a>
-      <a class="nav-item active" href="/how-to-read">How to Read</a>
-      <a class="nav-item" href="/world">The World of Odysseus</a>
-      <a class="nav-item" href="/mythology">Mythology</a>
-      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
-      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
-      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
-      <a class="nav-item" href="/retellings">Modern Retellings</a>
-      <a class="nav-item" href="/podcasts">Podcasts</a>
-      <a class="nav-item" href="/characters">Character Reference</a>
-      <a class="nav-item" href="/journey">The Journey Map</a>
-      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
-      <a class="nav-item" href="/gods">The Gods</a>
-      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
-      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
-      <a class="nav-item" href="/protagonists">Two Protagonists</a>
-      <a class="nav-item" href="/episodes">Key Episodes</a>
-      <a class="nav-item" href="/gift-guide">Gift Guide</a>
-      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
-    </div>
-  </nav>
-  <div id="mobile-topbar">
-    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
-    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
-  </div>
-  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
-
-  <main id="main">
-    <div id="content-scroll">
-      <article class="section active">
-        <div class="section-header">
+<Layout title={title} description={description} canonical={canonical} activePage="how-to-read">
+  <article class="section active">
+    <div class="section-header">
       <div class="section-label">How to Read</div>
       <h2 class="section-title">How to Read the Odyssey</h2>
       <p class="section-subtitle">Practical advice for once the book is open</p>
@@ -73,17 +34,5 @@ const canonical = `https://readingtheodyssey.com/how-to-read`;
       <p>The Odyssey ends with a slaughter — the suitors killed, the disloyal maids hanged, a near-resumption of civil war only prevented by Athena's intervention. It does not end with peace. This is deliberate. The violence Odysseus brings home is not resolved, only suspended. If you finish the poem feeling uneasy rather than satisfied, Homer has done his job. The question of whether justice was served in Ithaca is one the poem leaves genuinely open.</p>
 
     </div>
-      </article>
-    </div>
-  </main>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const overlay = document.getElementById('sidebar-overlay');
-      sidebar.classList.toggle('open');
-      overlay.classList.toggle('active');
-    }
-  </script>
-
+  </article>
 </Layout>
