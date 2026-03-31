@@ -1,5 +1,5 @@
 ---
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical = 'https://readingtheodyssey.com/' } = Astro.props;
 const nav = [
   { href: '/before-the-nolan-film', label: 'Before the Nolan Film', nolan: true },
   { href: '/', label: 'Introduction' },
@@ -61,8 +61,8 @@ const nav = [
     <div id="nav">
       {nav.map(item => (
         <a
-          class={`nav-item${item.nolan ? ' nolan-nav' : ''}`}
           href={item.href}
+          class={`nav-item${item.nolan ? ' nolan-nav' : ''}${Astro.url.pathname === item.href ? ' active' : ''}`}
         >{item.label}</a>
       ))}
       <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
@@ -83,15 +83,6 @@ const nav = [
   </main>
 
   <script>
-    // Auto-highlight active nav item based on current URL
-    const currentPath = window.location.pathname;
-    document.querySelectorAll('#nav a').forEach(link => {
-      const linkPath = new URL(link.href).pathname;
-      if (linkPath === currentPath || (currentPath === '/' && linkPath === '/')) {
-        link.classList.add('active');
-      }
-    });
-
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
       const overlay = document.getElementById('sidebar-overlay');
