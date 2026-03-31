@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Odyssey Book-by-Book Synopsis — All 24 Books Summarized`;
+const description = `Book-by-book summary and analysis of Homer's Odyssey. What happens in each of the 24 books and why it matters.`;
+const canonical = `https://readingtheodyssey.com/synopsis`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item active" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Reference III</div>
+      <h2 class="section-title">Book-by-Book Synopsis</h2>
+      <p class="section-subtitle">A brief guide to each of the 24 books</p>
+    </div>
+    <div class="section-body">
+      <p>Use this as a navigation tool while reading — a quick reminder of where you are in the poem's structure and what is coming next. It is not a substitute for reading the books themselves.</p>
+      <table class="ref-table">
+        <thead><tr><th>Book</th><th>What Happens</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-book-num">1</td><td>The gods convene. Athena visits Ithaca disguised as Mentes and urges Telemachus to seek news of his father and stand up to the suitors. The suitors feast in the hall; Penelope weeps upstairs. The poem's situation is established.</td></tr>
+          <tr><td class="ref-book-num">2</td><td>Telemachus calls an assembly — the first in twenty years — and demands the suitors leave. They mock him. He secretly prepares a ship and sails at night, guided by Athena disguised as Mentor.</td></tr>
+          <tr><td class="ref-book-num">3</td><td>Telemachus arrives at Pylos and meets Nestor, the aged king, who tells him what he knows of the returns from Troy. He knows nothing about Odysseus's fate.</td></tr>
+          <tr><td class="ref-book-num">4</td><td>Telemachus visits Sparta and Menelaus, who reports that Odysseus was stranded on Calypso's island. Back in Ithaca, the suitors plot to ambush and kill Telemachus on his return.</td></tr>
+          <tr><td class="ref-book-num">5</td><td>The gods agree to free Odysseus. Hermes carries the message to Calypso. She releases him reluctantly. He builds a raft and sails toward home — but Poseidon wrecks him. He swims to Phaeacia's shore.</td></tr>
+          <tr><td class="ref-book-num">6</td><td>Nausicaa, the Phaeacian princess, finds Odysseus on the beach. He appeals to her eloquently. She leads him toward the city, advising him how to approach her parents.</td></tr>
+          <tr><td class="ref-book-num">7</td><td>Odysseus enters the palace of King Alcinous and Queen Arete and appeals for their help. They promise to send him home. He does not yet reveal his name.</td></tr>
+          <tr><td class="ref-book-num">8</td><td>The Phaeacians entertain Odysseus with games and a feast. The bard Demodocus sings of Troy — and Odysseus weeps, hiding his face. The Phaeacians notice. Alcinous asks who he is.</td></tr>
+          <tr><td class="ref-book-num">9</td><td>Odysseus reveals himself and begins his tale: the Cicones, the Lotus-Eaters, the Cyclops. The blinding of Polyphemus and the escape — and his fatal mistake of shouting his name.</td></tr>
+          <tr><td class="ref-book-num">10</td><td>Aeolus and the bag of winds. The Laestrygonians destroy eleven ships. Circe transforms his men into pigs; Odysseus resists and becomes her lover. They stay a year.</td></tr>
+          <tr><td class="ref-book-num">11</td><td>The Underworld. Tiresias's prophecy. The shade of his mother. The great heroes of Troy: Agamemnon's warning, Achilles' devastating speech about death and glory, the silent Ajax.</td></tr>
+          <tr><td class="ref-book-num">12</td><td>The Sirens. Scylla and Charybdis — six men eaten. The Cattle of Helios — his men eat them while he sleeps. Zeus destroys the ship. Odysseus alone survives, drifts back past Charybdis, reaches Calypso.</td></tr>
+          <tr><td class="ref-book-num">13</td><td>The Phaeacians send Odysseus home in a magical ship while he sleeps. He wakes on Ithaca's shore without recognizing it. Athena appears and reveals his situation. She disguises him as an old beggar.</td></tr>
+          <tr><td class="ref-book-num">14</td><td>Odysseus, still in disguise, shelters with his loyal swineherd Eumaeus, who praises his absent master without knowing he speaks to him. Odysseus tells a false autobiography.</td></tr>
+          <tr><td class="ref-book-num">15</td><td>Telemachus returns from Sparta, evading the suitors' ambush. Eumaeus tells his own backstory — he was a king's son, sold into slavery. Telemachus arrives at the farm.</td></tr>
+          <tr><td class="ref-book-num">16</td><td>Odysseus reveals himself to Telemachus — the first recognition scene. Father and son plan the slaughter of the suitors together. Back in the palace, the suitors plot again against Telemachus.</td></tr>
+          <tr><td class="ref-book-num">17</td><td>Odysseus, still disguised, enters the palace as a beggar. His old dog Argos recognizes him and dies. The suitors abuse the beggar — especially Antinous, who throws a stool at him.</td></tr>
+          <tr><td class="ref-book-num">18</td><td>A real beggar, Irus, challenges Odysseus to a fight and is knocked out easily. Penelope appears briefly among the suitors, drawing gifts from them — her beauty still devastating after twenty years.</td></tr>
+          <tr><td class="ref-book-num">19</td><td>Odysseus and Penelope speak at length in the firelight, he still in disguise. His old nurse Eurycleia washes his feet and recognizes the scar on his thigh. He swears her to silence. A crucial and deeply ambiguous conversation.</td></tr>
+          <tr><td class="ref-book-num">20</td><td>The night before the slaughter. Omens accumulate. A seer warns the suitors they face death; they laugh at him. The disguised Odysseus observes everything, waiting.</td></tr>
+          <tr><td class="ref-book-num">21</td><td>Penelope announces the contest of the bow: whoever can string Odysseus's great bow and shoot through twelve axe-heads wins her hand. The suitors fail one by one. The disguised beggar asks to try.</td></tr>
+          <tr><td class="ref-book-num">22</td><td>Odysseus strings the bow, shoots Antinous through the throat, and reveals himself. The slaughter of the suitors follows — Telemachus, Eumaeus, and the cowherd Philoetius fighting alongside him. The disloyal maids are hanged.</td></tr>
+          <tr><td class="ref-book-num">23</td><td>Penelope, told what has happened, still does not fully believe it. She tests Odysseus with the secret of their bed — built from a living olive tree rooted in the earth. He passes. The reunion is real at last.</td></tr>
+          <tr><td class="ref-book-num">24</td><td>The suitors' shades arrive in the Underworld. Agamemnon praises Penelope's faithfulness, contrasting her with Clytemnestra. The suitors' families seek revenge; a brief battle breaks out; Athena intervenes and enforces peace. The poem ends — not with resolution but with suspension.</td></tr>
+        </tbody>
+      </table>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

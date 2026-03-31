@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Best Podcasts for Reading the Odyssey — Rest is History, Natalie Haynes & More`;
+const description = `The best podcasts to accompany your reading of the Odyssey. The Rest is History, Natalie Haynes Stands Up for the Classics, and more essential audio companions.`;
+const canonical = `https://readingtheodyssey.com/podcasts`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item active" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Section 9</div>
+      <h2 class="section-title">Podcasts to Accompany Your Reading</h2>
+      <p class="section-subtitle">Audio companions for the commute, the gym, or the long read</p>
+    </div>
+    <div class="section-body">
+      <p>Some of the best Homeric scholarship and storytelling right now is happening in podcast form. These are sequenced from most immediately relevant to deeper cuts — start at the top and work down as your interest grows.</p>
+
+      <div class="book-entry">
+        <div class="book-title">Natalie Haynes Stands Up for the Classics — The Odyssey</div>
+        <div class="book-author">Natalie Haynes — BBC Radio 4</div>
+        <div class="book-note">Start here. Haynes brings the Odyssey to life in a single episode that covers the poem's structure, its characters, and its persistent modern relevance with wit and genuine classical learning. Search "Natalie Haynes Odyssey" on BBC Sounds. Free to stream. Her episode on Penelope is also essential — it reframes the entire poem around the character Homer most underserves.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The Rest is History — Homer episodes</div>
+        <div class="book-author">Tom Holland &amp; Dominic Sandbrook</div>
+        <div class="book-note">Holland and Sandbrook have covered Homer, the Trojan War, and the Bronze Age extensively across their back catalogue. Search "Homer" and "Troy" in their episode library. Tom Holland is a classicist as well as a historian, and his genuine enthusiasm for the ancient world makes even familiar material feel fresh. Available on all major podcast platforms.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The Ancient World</div>
+        <div class="book-author">Scott C. Chesworth</div>
+        <div class="book-note">A systematic chronological survey of the ancient world from the earliest civilizations through the fall of Rome. The early episodes on Bronze Age Greece and the Mycenaean world provide essential geographical and archaeological context for the Odyssey's setting. More scholarly in tone than the History with Haynes or Rest is History, and more systematic — ideal for listeners who want to understand the world the poem describes rather than just the poem itself.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Instant Classics</div>
+        <div class="book-author">Mary Beard</div>
+        <div class="book-note">Mary Beard brings ancient texts to contemporary audiences with characteristic candor and rigor. Her episodes on Greek literature, women in antiquity, and the reception of classical culture are all relevant to the Odyssey. Particularly useful once you have finished the poem and want to think about how it has been read across the centuries.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The History of Rome</div>
+        <div class="book-author">Mike Duncan</div>
+        <div class="book-note">Not directly about Homer, but essential context for the Roman works in the After the Odyssey section — particularly Virgil's use of Odysseus as a foil for Aeneas. Duncan's 179-episode series covering the full arc of Roman history from founding to fall remains one of the finest history podcasts ever made. Begin at episode 1.</div>
+      </div>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

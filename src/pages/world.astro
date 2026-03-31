@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `The World of Odysseus — Bronze Age Greece & the Mediterranean`;
+const description = `The historical and geographic world behind Homer's Odyssey. Bronze Age Greece, the Mediterranean world, and what archaeology tells us about the age of heroes.`;
+const canonical = `https://readingtheodyssey.com/world`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item active" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Section 2</div>
+      <h2 class="section-title">The World of Odysseus</h2>
+      <p class="section-subtitle">The Mediterranean world — real geography, mythological space, and the laws of hospitality</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey moves through two kinds of space simultaneously. One is real — the Aegean and Mediterranean world of islands, sailing routes, and Bronze Age kingdoms. The other is mythological — the island of Circe, the land of the dead, the cave of Calypso, which exist outside ordinary geography. Understanding the difference, and recognizing which kind of space Odysseus occupies at any given moment, is one of the keys to reading the poem.</p>
+
+      <p>What holds both worlds together is <em>xenia</em> — the Greek code of guest-friendship. Every island Odysseus lands on tests whether xenia will be honored or violated. The Cyclops violates it catastrophically and pays the price. The Phaeacians honor it perfectly and send Odysseus home with gifts. Understanding xenia before you begin transforms the Odyssey from an adventure story into a moral argument about civilization itself.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-finley-the-world-of-odysseus.jpg" alt="The World of Odysseus — M.I. Finley" />
+        <div class="book-title">The World of Odysseus</div>
+        <div class="book-author">M.I. Finley</div>
+        <div class="book-note">The foundational modern account of the Homeric social world — the economics, the honor codes, the guest-friendship system, and the political structures that govern every encounter in the poem. Finley reads Homer as a historical source rather than a literary text, and the result is indispensable. Understanding xenia, the gift economy, and heroic obligation before you read the Odyssey transforms it from a travel narrative into a social drama. Short, rigorous, and essential.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0143105957?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-kazantzakis-the-odyssey-a-modern-sequel.jpg" alt="The Odyssey: A Modern Sequel — Kazantzakis" />
+        <div class="book-title">The Odyssey: A Modern Sequel</div>
+        <div class="book-author">Nikos Kazantzakis</div>
+        <div class="book-note">Not scholarship but an imaginative extension — Kazantzakis's 33,333-line epic poem picks up where Homer leaves off, following Odysseus beyond Ithaca. Useful as a companion text for understanding what the Odyssey's ending leaves unresolved. Homer's Odysseus is a man who reaches home; Kazantzakis's cannot stay there. The contrast illuminates what Homer is actually arguing about homecoming.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0671204998?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-cline-1177-bc-the-year-civilization-collapsed.jpg" alt="1177 BC — Eric Cline" />
+        <div class="book-title">1177 BC: The Year Civilization Collapsed</div>
+        <div class="book-author">Eric H. Cline</div>
+        <div class="book-note">The essential modern account of the Bronze Age world and its sudden end. The Odyssey is set in the aftermath of this collapse — the great palace economies gone, the trade routes disrupted, the old certainties dissolved. Cline's account of what that world looked like before it fell gives you the historical foundation for everything Odysseus is returning to. Reading this first makes the poem's pervasive atmosphere of loss and uncertainty feel entirely real.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0691208018?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

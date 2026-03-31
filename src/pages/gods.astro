@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `The Gods of the Odyssey — Olympians, Sides & Key Interventions`;
+const description = `The Olympian gods in Homer's Odyssey — Poseidon's grudge, Athena's protection, Zeus's role, and how divine politics shape Odysseus's journey.`;
+const canonical = `https://readingtheodyssey.com/gods`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item active" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Reference IV</div>
+      <h2 class="section-title">The Gods</h2>
+      <p class="section-subtitle">The divine figures of the Odyssey and their roles in the poem</p>
+    </div>
+    <div class="section-body">
+      <p>The gods of the Odyssey are less militarily active than in the Iliad — they do not fight on the battlefield — but they are no less consequential. The poem's divine politics are a negotiation between Athena's patronage of Odysseus, Poseidon's wrath against him, and Zeus's ultimate authority over both. Understanding who wants what among the gods clarifies almost every event in the poem.</p>
+
+      <table class="ref-table">
+        <thead><tr><th>God</th><th>Domain</th><th>Role in the Odyssey</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-god">Zeus</td><td>King of the gods, sky and thunder</td><td>Presides over the divine council that opens the poem and agrees to Odysseus's release. Generally sympathetic but bound by the claims of other gods. His authority is the ultimate check on Poseidon's wrath.</td></tr>
+          <tr><td class="ref-god">Athena</td><td>Wisdom, strategy, crafts</td><td>Odysseus's divine patron and the poem's most active god. She appears in disguise throughout — as Mentor, as Mentes, as a young girl leading Odysseus to the Phaeacian palace. She argues his case before Zeus, guides Telemachus, and orchestrates the final confrontation in Ithaca.</td></tr>
+          <tr><td class="ref-god">Poseidon</td><td>Sea, earthquakes</td><td>The poem's divine antagonist. His wrath against Odysseus for blinding Polyphemus drives the catastrophes of the voyage. He is away among the Ethiopians when the gods make their decision — and returns to wreck Odysseus one final time before the raft reaches Phaeacia.</td></tr>
+          <tr><td class="ref-god">Hermes</td><td>Messenger, guide of souls</td><td>Carries Zeus's orders to Calypso; gives Odysseus the herb moly that protects him from Circe's magic; guides the suitors' shades to the Underworld in Book 24.</td></tr>
+          <tr><td class="ref-god">Apollo</td><td>Sun, music, prophecy, plague</td><td>Less central than in the Iliad. The suitors' feast takes place on his festival day — a detail that gives the slaughter a ritual quality.</td></tr>
+          <tr><td class="ref-god">Calypso</td><td>Nymph, daughter of Atlas</td><td>Holds Odysseus on Ogygia for seven years. Releases him on Zeus's order. Her offer of immortality — refused by Odysseus — is the poem's central statement about what he values.</td></tr>
+          <tr><td class="ref-god">Circe</td><td>Witch, daughter of Helios</td><td>Transforms men into animals; becomes Odysseus's guide and lover; sends him to the Underworld and advises him on every subsequent danger. A divine figure but more human in psychology than the Olympians.</td></tr>
+          <tr><td class="ref-god">Tiresias</td><td>Prophet (shade)</td><td>The blind seer of Thebes whom Odysseus consults in the Underworld. His prophecy outlines the dangers still ahead and hints at what comes after the poem ends. The only shade in the Underworld who retains full consciousness.</td></tr>
+        </tbody>
+      </table>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

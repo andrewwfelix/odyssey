@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Themes & Motifs in the Odyssey — Homecoming, Identity & Cunning`;
+const description = `The major themes of Homer's Odyssey. Nostos and homecoming, identity and disguise, xenia and hospitality, cunning versus strength, and the role of memory.`;
+const canonical = `https://readingtheodyssey.com/ref-themes`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item active" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Reference VI</div>
+      <h2 class="section-title">Themes &amp; Motifs</h2>
+      <p class="section-subtitle">The ideas that structure the Odyssey beneath its adventure surface</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey is an adventure story on its surface and a philosophical argument underneath. These are the themes that recur across the poem's 24 books — the patterns worth tracking as you read.</p>
+
+      <div class="sub-heading">Identity &amp; Disguise</div>
+      <p>Odysseus spends half the poem not being himself — or rather, performing versions of himself. He is the disguised beggar, the false Cretan, the man of many stories. But the poem asks whether identity is something underneath the disguise or something constructed through performance. The recognition scenes — Argos, Eurycleia, Telemachus, Penelope — each test a different kind of knowing. Penelope's test of the bed is the most definitive because it requires knowledge only the real Odysseus could have.</p>
+
+      <div class="sub-heading">Homecoming &amp; the Cost of Return</div>
+      <p>Nostos — homecoming — is the poem's governing subject, but Homer is unsentimental about what return actually means. Odysseus comes home to a hall full of enemies, a son who barely knows him, a wife surrounded by danger, and an aged father in grief. The home he returns to is not the home he left. The question the poem leaves open is whether the twenty-year absence can ever be truly undone — or whether homecoming, like so much else in the poem, is something that must be performed rather than simply felt.</p>
+
+      <div class="sub-heading">Temptation &amp; the Desire to Forget</div>
+      <p>Every major stop on Odysseus's voyage offers a version of forgetting: the Lotus-Eaters' drug, Circe's transformation, Calypso's immortality, the Sirens' promise of knowledge. In each case, accepting the offer would mean ceasing to be Odysseus — ceasing to be the man trying to get home. His resistance to temptation is not always admirable (he is often dishonest, sometimes ruthless), but it is consistent: he chooses to remain himself, at whatever cost, over the comfort of dissolution.</p>
+
+      <div class="sub-heading">Cunning vs. Force</div>
+      <p>The Iliad is about force — physical, military, overwhelming. The Odyssey is about cunning — intelligence, strategy, deception. This is the poem's central revaluation of heroism. Odysseus cannot defeat the Cyclops by force; he defeats him by intelligence. He cannot walk into his own palace and announce himself; he plans for months. The poem asks whether this kind of heroism is as admirable as Achilles' battlefield glory — and gives you enough evidence to argue both ways.</p>
+
+      <div class="sub-heading">Justice &amp; its Discontents</div>
+      <p>The slaughter of the suitors is presented as just — they have violated xenia, consumed Odysseus's property, dishonored his household, and plotted against his son. But Homer does not let the justice feel clean. Twelve maids are hanged — women who were not free to refuse the suitors, who had little choice in what happened to them. Amphinomus, the one decent suitor, dies with the rest. The poem ends not with peace but with Athena forcibly preventing a resumption of civil war. Justice, in the Odyssey, is violent, partial, and its consequences are not resolved.</p>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

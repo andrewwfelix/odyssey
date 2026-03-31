@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `How to Read the Odyssey — Practical Advice for First-Time Readers`;
+const description = `Practical advice for reading Homer's Odyssey. The unreliable narrator, the homecoming tradition, Penelope's role, and what to expect from the poem's structure.`;
+const canonical = `https://readingtheodyssey.com/how-to-read`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item active" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">How to Read</div>
+      <h2 class="section-title">How to Read the Odyssey</h2>
+      <p class="section-subtitle">Practical advice for once the book is open</p>
+    </div>
+    <div class="section-body">
+      <p>Preparation gets you to the door. These are the habits that determine what happens once you step inside.</p>
+
+      <div class="sub-heading">Understand the Structure Before You Begin</div>
+      <p>The Odyssey is not a straightforward chronological narrative. It begins ten years after Troy, in the middle of Odysseus's wanderings — and does not actually show you most of those wanderings until Books 9 through 12, when Odysseus narrates his own adventures to the Phaeacian court. You are reading a story within a story. Additionally, the first four books are not about Odysseus at all: they follow his son Telemachus. Understanding this architecture before you start prevents the disorientation that causes many first-time readers to lose confidence.</p>
+
+      <div class="sub-heading">Track the Disguises</div>
+      <p>Odysseus spends the second half of the poem in disguise — and Athena disguises other characters too. Keep a running mental note of who knows who Odysseus really is, and when. The dramatic irony — you knowing something a character does not — is one of the poem's chief pleasures, but only if you are tracking it. The recognition scenes, when they come, are among the most affecting moments in all literature. They only work if you have felt the full weight of the disguise beforehand.</p>
+
+      <div class="sub-heading">Pay Attention to the Lies</div>
+      <p>Odysseus lies constantly, fluently, and with evident pleasure. He tells false autobiographies to almost every character he meets in the second half of the poem. Notice how the lies are constructed — they are elaborate, specific, and strangely revealing about who he actually is. The ancient epithet for Odysseus is <em>polytropos</em>: many-turning, or many-minded. His lying is not a moral failing Homer glosses over. It is the poem's central subject.</p>
+
+      <div class="sub-heading">Read Books 9–12 as a Performance</div>
+      <p>The Cyclops, the Sirens, Circe, the Underworld — these famous episodes are not narrated by Homer but by Odysseus himself, to the Phaeacian court. He is performing his own legend. That framing matters: he is an unreliable narrator of his own story, and Homer wants you to know it. Ask, as you read, what Odysseus might be shaping or leaving out. The gap between his version and what we might actually believe is one of the poem's most sophisticated games.</p>
+
+      <div class="sub-heading">Do Not Underestimate Penelope</div>
+      <p>Penelope is the poem's other protagonist — as cunning as Odysseus, as patient, and operating under far greater constraints. Her intelligence is everywhere in the poem once you look for it: the web she weaves and unravels, the test of the bow, the careful ambiguity of her speech to the disguised Odysseus in Book 19. Many scholars believe she knows who the beggar is long before the recognition scene. Read with that possibility in mind.</p>
+
+      <div class="sub-heading">The Ending Is Meant to Disturb You</div>
+      <p>The Odyssey ends with a slaughter — the suitors killed, the disloyal maids hanged, a near-resumption of civil war only prevented by Athena's intervention. It does not end with peace. This is deliberate. The violence Odysseus brings home is not resolved, only suspended. If you finish the poem feeling uneasy rather than satisfied, Homer has done his job. The question of whether justice was served in Ithaca is one the poem leaves genuinely open.</p>
+
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

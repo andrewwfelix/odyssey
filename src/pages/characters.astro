@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Odyssey Character Reference — Odysseus, Penelope, Telemachus & Their Fates`;
+const description = `Complete character guide for Homer's Odyssey — including the characters played by Matt Damon, Tom Holland, and Zendaya in Christopher Nolan's 2026 film.`;
+const canonical = `https://readingtheodyssey.com/characters`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item active" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Reference I</div>
+      <h2 class="section-title">Character Reference</h2>
+      <p class="section-subtitle">The major figures of the Odyssey — who they are and what happens to them</p>
+    </div>
+    <div class="section-body">
+      <p>Use this table while reading. Name spellings vary between translations — Odysseus may appear as Ulysses (Latin), Telemachos as Telemachus, Kirke as Circe. They are the same people.</p>
+
+      <div class="sub-heading">The House of Odysseus</div>
+      <table class="ref-table">
+        <thead><tr><th>Name</th><th>Who They Are</th><th>Role in the Poem</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Odysseus</td><td>King of Ithaca. Hero of Troy. The cleverest man alive, according to Homer — and the most complicated. His epithet <em>polytropos</em> means "many-turning" or "man of many ways." He is also a compulsive liar, a man who has been unfaithful, and a father who returns home to a son who barely knows him.</td><td>Absent for the first four books; narrates his own wanderings in Books 9–12; spends Books 13–24 in disguise working toward the slaughter of the suitors.</td></tr>
+          <tr><td class="ref-term">Penelope</td><td>Queen of Ithaca, Odysseus's wife. Faithful, intelligent, and operating under enormous pressure for twenty years. Her patience and cunning are equal to Odysseus's own. Many scholars believe she is far more aware of events around her than she lets on.</td><td>Holds off the suitors through delay, intelligence, and ambiguity. Her test of the bow in Book 21 is the poem's decisive turning point.</td></tr>
+          <tr><td class="ref-term">Telemachus</td><td>Son of Odysseus and Penelope. When the poem begins he is approximately twenty years old and has never known his father. His journey in Books 1–4 (the Telemachy) is a coming-of-age story: he goes out into the world, meets the heroes of Troy, and returns ready to act.</td><td>Grows into a man across the poem; eventually fights alongside his father in the slaughter of the suitors.</td></tr>
+          <tr><td class="ref-term">Laertes</td><td>Odysseus's aged father. Lives in grief and neglect on a farm outside Ithaca while his son is away. His reunion with Odysseus in Book 24 is one of the poem's most quietly devastating scenes.</td><td>Appears at the beginning and end of the poem; fights in the final confrontation with the suitors' families.</td></tr>
+          <tr><td class="ref-term">Eumaeus</td><td>Odysseus's swineherd — a slave, but loyal beyond obligation. He shelters the disguised Odysseus and feeds him without knowing who he is. One of the poem's most sympathetically drawn characters.</td><td>Serves as Odysseus's ally and confidant throughout Books 13–22.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-heading">The Suitors</div>
+      <table class="ref-table">
+        <thead><tr><th>Name</th><th>Who They Are</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Antinous</td><td>The most aggressive and dangerous of the suitors. The ringleader. He is the first to be killed by Odysseus's arrow in Book 22 — shot through the throat while drinking.</td></tr>
+          <tr><td class="ref-term">Eurymachus</td><td>The most plausible and smooth-talking of the suitors. He flatters Penelope while plotting against Telemachus. Killed in Book 22.</td></tr>
+          <tr><td class="ref-term">Amphinomus</td><td>The one suitor who shows genuine decency — he warns against killing Telemachus and is troubled by omens. Odysseus even warns him, obliquely, to leave. He stays, and dies with the rest.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-heading">Gods &amp; Divine Figures</div>
+      <table class="ref-table">
+        <thead><tr><th>Name</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Athena</td><td>Odysseus's divine patron. She appears throughout the poem disguised as various mortals — she is, in a sense, the patron goddess of disguise and intelligence, qualities she shares with her favorite hero. Without Athena, Odysseus does not reach home.</td></tr>
+          <tr><td class="ref-term">Poseidon</td><td>The force that delays Odysseus. His grudge dates from the Cyclops episode: Odysseus blinded Poseidon's son Polyphemus, and Poseidon has harassed him ever since. He cannot kill Odysseus — Zeus forbids it — but he can make the journey catastrophic.</td></tr>
+          <tr><td class="ref-term">Zeus</td><td>Rules the assembly of the gods that opens the poem. Generally sympathetic to Odysseus's return but bound by obligations to other gods, including Poseidon. The poem's divine architecture is a negotiation between what Zeus wants and what other gods insist on.</td></tr>
+          <tr><td class="ref-term">Hermes</td><td>Messenger of the gods. Sent to Calypso to demand Odysseus's release in Book 5; appears again to guide Odysseus through Circe's island. The divine logistics of the Odyssey often run through Hermes.</td></tr>
+          <tr><td class="ref-term">Calypso</td><td>The nymph who holds Odysseus on her island Ogygia for seven years. She loves him genuinely and offers him immortality. He refuses — choosing mortality and Penelope over divine life. This choice is the poem's first and most fundamental statement about what Odysseus values.</td></tr>
+          <tr><td class="ref-term">Circe</td><td>The witch of Aeaea who transforms Odysseus's men into pigs. Odysseus resists her magic (with Hermes' help), becomes her lover, and stays on her island for a year. She sends him to the Underworld and back. More ally than antagonist once he has passed her test.</td></tr>
+        </tbody>
+      </table>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

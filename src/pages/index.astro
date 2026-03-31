@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `The Complete Guide to Reading the Odyssey — Translations, Characters & Context`;
+const description = `A free reading guide for Homer's Odyssey — essential preparation for Christopher Nolan's The Odyssey (July 17, 2026). Translations, characters, themes, and everything you need before you open the book.`;
+const canonical = `https://readingtheodyssey.com/`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item active" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Introduction</div>
+      <h2 class="section-title">The Complete Guide to Reading the Odyssey</h2>
+      <p class="section-subtitle">A structured primer for approaching Homer's second epic on its own terms</p>
+    </div>
+    <div class="section-body">
+
+      <div class="intro-banner">
+        <img src="/images/landing_image.jpg" alt="Odysseus and the wine-dark sea — ancient Greek pottery style" loading="eager" fetchpriority="high" />
+      </div>
+
+      <div class="intro-pull-quote">
+        "Cyclops, if any mortal man ever asks you who it was that inflicted upon your eye this shameful blinding, tell him that you were blinded by Odysseus, sacker of cities. Laertes is his father, and he makes his home in Ithaca."
+        <div class="intro-pull-attribution">— Homer, <em>The Odyssey</em>, Book 9 (trans. Richmond Lattimore)</div>
+      </div>
+
+      <div class="intro-section-grid">
+
+        <button class="intro-section-card" onclick="showSection('6')">
+          <div class="intro-card-label">Choosing a Translation</div>
+          <div class="intro-card-desc">Emily Wilson, Fagles, Green, or Lattimore — which translation is right for you, and why the Odyssey rewards a different choice than the Iliad.</div>
+        </button>
+
+        <button class="intro-section-card" onclick="showSection('1')">
+          <div class="intro-card-label">The World of Odysseus</div>
+          <div class="intro-card-desc">The Mediterranean world Odysseus navigates — real geography, mythological space, and the social codes that govern every island he lands on.</div>
+        </button>
+
+        <button class="intro-section-card" onclick="showSection('3')">
+          <div class="intro-card-label">Mythology</div>
+          <div class="intro-card-desc">The gods, monsters, and heroes Homer assumes you already know. Poseidon's grudge, Athena's favor, and the full backstory before the poem begins.</div>
+        </button>
+
+        <button class="intro-section-card" onclick="showSection('2a')">
+          <div class="intro-card-label">The Historians</div>
+          <div class="intro-card-desc">Ancient and modern scholars — from Thucydides and Strabo to M.I. Finley, Emily Wilson, and Daniel Mendelsohn.</div>
+        </button>
+
+        <button class="intro-section-card" onclick="showSection('ref-journey')">
+          <div class="intro-card-label">The Journey Map</div>
+          <div class="intro-card-desc">Every stop on Odysseus's ten-year voyage home — from Troy to the Cyclops, Circe, the Underworld, and Ithaca.</div>
+        </button>
+
+        <button class="intro-section-card" onclick="showSection('9')">
+          <div class="intro-card-label">How to Read</div>
+          <div class="intro-card-desc">Practical advice for once the book is open — tracking disguises, following the lies, understanding the poem's nonlinear structure, and what the ending really means.</div>
+        </button>
+
+      </div>
+
+      <p>This guide is a reading primer — a structured preparation for engaging with the Odyssey on its own terms. It does not summarize or replace the poem. Its purpose is to assemble, in advance of your reading, the contextual knowledge that Homer's original audience possessed as a matter of course: the mythological background, the social codes of the ancient Mediterranean, the cast of characters, the scholarly conversation surrounding the text, and the practical choices a modern reader must make before opening the book.</p>
+
+      <p>The Odyssey presents a different problem than the Iliad. The Iliad's difficulty is unfamiliarity — you arrive knowing nothing about these people or their world. The Odyssey's difficulty is false familiarity. You think you know this story. Everybody knows Odysseus — the clever hero, the Cyclops, the Sirens, the Trojan Horse. But the poem Homer actually wrote is stranger, darker, and more morally ambiguous than any of those familiar episodes suggest. Odysseus is not a straightforward hero. The ending is uncomfortable. Penelope is far more strategic than most readers expect. This guide is designed to clear away the received versions and prepare you for the poem itself.</p>
+
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

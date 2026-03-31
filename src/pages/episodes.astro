@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Key Episodes of the Odyssey — Cyclops, Sirens, Circe & More`;
+const description = `The essential episodes of Homer's Odyssey explained. The Cyclops, Circe, the Sirens, Scylla and Charybdis, the Underworld, and the return to Ithaca.`;
+const canonical = `https://readingtheodyssey.com/episodes`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item active" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Reference VIII</div>
+      <h2 class="section-title">Key Episodes</h2>
+      <p class="section-subtitle">The moments that define the Odyssey — and what to watch for in each</p>
+    </div>
+    <div class="section-body">
+      <p>These are the episodes every reader of the Odyssey should approach with particular attention — the scenes where Homer's themes, technique, and moral arguments are most fully at work.</p>
+
+      <div class="sub-heading">The Cyclops (Book 9)</div>
+      <p>The most famous episode in the poem is also its most morally complex. Odysseus's intelligence saves his men — until his pride destroys the advantage. He cannot leave without shouting his name into the darkness at Polyphemus, earning Poseidon's wrath. Cleverness and hubris operate in the same moment. Watch for how Homer frames Odysseus's storytelling here: he is performing this for the Phaeacians, and his account of his own cleverness is perhaps self-serving in ways Homer hints at without stating.</p>
+
+      <div class="sub-heading">The Underworld (Book 11)</div>
+      <p>The emotional and moral center of the poem. Achilles' speech — that he would rather be a slave among the living than king of all the dead — directly addresses the heroic code of the Iliad and Odysseus's choice to survive rather than die gloriously. Agamemnon's warning about treacherous wives is the shadow that falls across Penelope throughout the poem. And the silent Ajax, who refuses to speak to Odysseus over the armor contest, is the reminder that survival has costs that cannot be repaid.</p>
+
+      <div class="sub-heading">Odysseus and Penelope in the Firelight (Book 19)</div>
+      <p>The longest and most debated conversation in the poem. Penelope speaks at length to the disguised beggar — who is, of course, her husband. She tells him her plan with the web. She describes a dream about geese. She announces the contest of the bow. She weeps for Odysseus. And Odysseus, still in disguise, consoles her and gives her false hope about her husband's return. Does she know? The text does not say. The ambiguity is not a flaw — it is Homer's most sophisticated move in the poem.</p>
+
+      <div class="sub-heading">The Test of the Bow (Books 21–22)</div>
+      <p>Penelope announces the contest: whoever can string the great bow and shoot through twelve axe-heads wins her hand. No suitor can string it. The disguised beggar asks to try. The moment he handles the bow — stringing it easily, plucking it like a lyre string — every suitor in the room understands what is about to happen. The slaughter that follows is described with brutal efficiency. It is justice, but Homer does not let it feel triumphant.</p>
+
+      <div class="sub-heading">The Recognition (Book 23)</div>
+      <p>Penelope, told the suitors are dead and Odysseus has returned, tests him with the secret of their bed — built from a living olive tree that cannot be moved. Only the real Odysseus would know this. He answers in anger at the suggestion the bed could be moved, and she knows him. The reunion is real, but Homer frames it with extraordinary restraint: they weep together, and then he tells her everything that is still to come. The homecoming is not an ending. It is a resumption.</p>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>

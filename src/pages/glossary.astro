@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Odyssey Key Terms Glossary — Nostos, Xenia, Kleos & Greek Concepts`;
+const description = `Essential Greek terms for understanding the Odyssey. Nostos, xenia, kleos, metis, arete — defined and explained in the context of Homer's poem.`;
+const canonical = `https://readingtheodyssey.com/glossary`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <nav id="sidebar">
+    <div id="sidebar-header">
+      <button id="hamburger" onclick="toggleSidebar()" aria-label="Close menu">✕</button>
+      <h1>THE COMPLETE GUIDE TO READING THE ODYSSEY</h1>
+      <p>Everything before you open the book</p>
+    </div>
+    <div id="nav">
+      <a class="nav-item nolan-nav" href="/before-the-nolan-film">Before the Nolan Film</a>
+      <a class="nav-item" href="/">Introduction</a>
+      <a class="nav-item" href="/themes">Themes</a>
+      <a class="nav-item" href="/translations">Choosing a Translation</a>
+      <a class="nav-item" href="/how-to-read">How to Read</a>
+      <a class="nav-item" href="/world">The World of Odysseus</a>
+      <a class="nav-item" href="/mythology">Mythology</a>
+      <a class="nav-item" href="/ancient-historians">Ancient Historians</a>
+      <a class="nav-item" href="/modern-scholars">Modern Scholars</a>
+      <a class="nav-item" href="/after-the-odyssey">After the Odyssey</a>
+      <a class="nav-item" href="/retellings">Modern Retellings</a>
+      <a class="nav-item" href="/podcasts">Podcasts</a>
+      <a class="nav-item" href="/characters">Character Reference</a>
+      <a class="nav-item" href="/journey">The Journey Map</a>
+      <a class="nav-item" href="/synopsis">Book-by-Book Synopsis</a>
+      <a class="nav-item" href="/gods">The Gods</a>
+      <a class="nav-item active" href="/glossary">Key Terms Glossary</a>
+      <a class="nav-item" href="/ref-themes">Themes &amp; Motifs</a>
+      <a class="nav-item" href="/protagonists">Two Protagonists</a>
+      <a class="nav-item" href="/episodes">Key Episodes</a>
+      <a class="nav-item" href="/gift-guide">Gift Guide</a>
+      <a class="nav-item" href="https://readingtheiliad.com" target="_blank" rel="noopener">Reading the Iliad</a>
+    </div>
+  </nav>
+  <div id="mobile-topbar">
+    <button id="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Open menu">☰</button>
+    <span id="mobile-title">The Complete Guide to Reading the Odyssey</span>
+  </div>
+  <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+  <main id="main">
+    <div id="content-scroll">
+      <article class="section active">
+        <div class="section-header">
+      <div class="section-label">Reference V</div>
+      <h2 class="section-title">Key Terms Glossary</h2>
+      <p class="section-subtitle">The Greek concepts that govern the world of the Odyssey</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey operates on a set of social and moral concepts that have no single English equivalent. Understanding them before you begin is the difference between reading the poem as an adventure story and reading it as the moral argument Homer intended.</p>
+
+      <table class="ref-table">
+        <thead><tr><th>Term</th><th>Meaning &amp; Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Nostos <span class="ref-greek-word">(νόστος)</span></td><td>Homecoming. The central subject of the Odyssey and the concept that gives the epic cycle its name — the Returns (Nostoi) were a group of epics about the Greek heroes' journeys home from Troy. Nostos is not merely geographical return but the full restoration of a person to their place, identity, and relationships. Odysseus's nostos is complicated by the question of whether he — and Ithaca — can ever be what they were.</td></tr>
+          <tr><td class="ref-term">Xenia <span class="ref-greek-word">(ξενία)</span></td><td>Guest-friendship. The sacred obligation to welcome strangers, feed them, and send them on their way with gifts — without asking their name or business until they have eaten. Zeus himself is the protector of xenia. Every island Odysseus lands on is judged by whether it honors or violates this code. The Cyclops's violation is the most catastrophic; the Phaeacians' observance is the most perfect.</td></tr>
+          <tr><td class="ref-term">Kleos <span class="ref-greek-word">(κλέος)</span></td><td>Glory, fame, renown — specifically the kind that outlasts death. In the Iliad, kleos is the supreme value: Achilles chooses a short glorious life over a long obscure one. The Odyssey is about a hero who chose survival instead, and the poem asks what kind of kleos belongs to a man who came home alive. Odysseus's kleos is peculiar — it is the fame of endurance, cunning, and return rather than battlefield heroism.</td></tr>
+          <tr><td class="ref-term">Polytropos <span class="ref-greek-word">(πολύτροπος)</span></td><td>The first word used to describe Odysseus in the poem — often translated "man of many ways" or "much-traveled" or "crafty." It contains a deliberate ambiguity: it can mean a man who has traveled many roads, or a man who turns many ways, or a man of many tricks. Emily Wilson translates it simply as "complicated." Every translation of this single word is an interpretation of Odysseus's character.</td></tr>
+          <tr><td class="ref-term">Arete <span class="ref-greek-word">(ἀρετή)</span></td><td>Excellence, virtue — the quality of being the best at what you are. In the Iliad, arete is primarily martial excellence. In the Odyssey it is broader: Odysseus's arete is his intelligence, his endurance, his ability to survive. Penelope's arete is her faithfulness and her cunning. The poem asks whether these qualities are heroic in the same sense Achilles' battlefield glory was heroic.</td></tr>
+          <tr><td class="ref-term">Hubris <span class="ref-greek-word">(ὕβρις)</span></td><td>Outrage, excessive pride, the transgression of proper limits. The suitors' behavior is a sustained act of hubris — consuming Odysseus's property, dishonoring his household, treating his wife as a prize. Odysseus's own hubris appears in the Cyclops episode when he shouts his name after escaping. Both acts of hubris have consequences.</td></tr>
+          <tr><td class="ref-term">Moly <span class="ref-greek-word">(μῶλυ)</span></td><td>The magical herb given to Odysseus by Hermes that protects him from Circe's transformative magic. Its actual identity has been debated since antiquity. The name appears only once in Greek literature — in the Odyssey — and Homer's description of it (black root, white flower, difficult for mortals to dig) has never been matched to a real plant with certainty.</td></tr>
+        </tbody>
+      </table>
+    </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('sidebar-overlay');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    }
+  </script>
+
+</Layout>
