@@ -1,27 +1,27 @@
 ---
-const { title, description, canonical, activePage } = Astro.props;
+const { title, description, canonical } = Astro.props;
 const nav = [
-  { href: '/before-the-nolan-film', label: 'Before the Nolan Film', key: 'before-the-nolan-film', nolan: true },
-  { href: '/', label: 'Introduction', key: 'index' },
-  { href: '/themes', label: 'Themes', key: 'themes' },
-  { href: '/translations', label: 'Choosing a Translation', key: 'translations' },
-  { href: '/how-to-read', label: 'How to Read', key: 'how-to-read' },
-  { href: '/world', label: 'The World of Odysseus', key: 'world' },
-  { href: '/mythology', label: 'Mythology', key: 'mythology' },
-  { href: '/ancient-historians', label: 'Ancient Historians', key: 'ancient-historians' },
-  { href: '/modern-scholars', label: 'Modern Scholars', key: 'modern-scholars' },
-  { href: '/after-the-odyssey', label: 'After the Odyssey', key: 'after-the-odyssey' },
-  { href: '/retellings', label: 'Modern Retellings', key: 'retellings' },
-  { href: '/podcasts', label: 'Podcasts', key: 'podcasts' },
-  { href: '/characters', label: 'Character Reference', key: 'characters' },
-  { href: '/journey', label: 'The Journey Map', key: 'journey' },
-  { href: '/synopsis', label: 'Book-by-Book Synopsis', key: 'synopsis' },
-  { href: '/gods', label: 'The Gods', key: 'gods' },
-  { href: '/glossary', label: 'Key Terms Glossary', key: 'glossary' },
-  { href: '/ref-themes', label: 'Themes & Motifs', key: 'ref-themes' },
-  { href: '/protagonists', label: 'Two Protagonists', key: 'protagonists' },
-  { href: '/episodes', label: 'Key Episodes', key: 'episodes' },
-  { href: '/gift-guide', label: 'Gift Guide', key: 'gift-guide' },
+  { href: '/before-the-nolan-film', label: 'Before the Nolan Film', nolan: true },
+  { href: '/', label: 'Introduction' },
+  { href: '/themes', label: 'Themes' },
+  { href: '/translations', label: 'Choosing a Translation' },
+  { href: '/how-to-read', label: 'How to Read' },
+  { href: '/world', label: 'The World of Odysseus' },
+  { href: '/mythology', label: 'Mythology' },
+  { href: '/ancient-historians', label: 'Ancient Historians' },
+  { href: '/modern-scholars', label: 'Modern Scholars' },
+  { href: '/after-the-odyssey', label: 'After the Odyssey' },
+  { href: '/retellings', label: 'Modern Retellings' },
+  { href: '/podcasts', label: 'Podcasts' },
+  { href: '/characters', label: 'Character Reference' },
+  { href: '/journey', label: 'The Journey Map' },
+  { href: '/synopsis', label: 'Book-by-Book Synopsis' },
+  { href: '/gods', label: 'The Gods' },
+  { href: '/glossary', label: 'Key Terms Glossary' },
+  { href: '/ref-themes', label: 'Themes & Motifs' },
+  { href: '/protagonists', label: 'Two Protagonists' },
+  { href: '/episodes', label: 'Key Episodes' },
+  { href: '/gift-guide', label: 'Gift Guide' },
 ];
 ---
 <!DOCTYPE html>
@@ -61,7 +61,7 @@ const nav = [
     <div id="nav">
       {nav.map(item => (
         <a
-          class={`nav-item${item.nolan ? ' nolan-nav' : ''}${activePage === item.key ? ' active' : ''}`}
+          class={`nav-item${item.nolan ? ' nolan-nav' : ''}`}
           href={item.href}
         >{item.label}</a>
       ))}
@@ -83,6 +83,15 @@ const nav = [
   </main>
 
   <script>
+    // Auto-highlight active nav item based on current URL
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('#nav a').forEach(link => {
+      const linkPath = new URL(link.href).pathname;
+      if (linkPath === currentPath || (currentPath === '/' && linkPath === '/')) {
+        link.classList.add('active');
+      }
+    });
+
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
       const overlay = document.getElementById('sidebar-overlay');
