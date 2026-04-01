@@ -1102,3 +1102,38 @@ a.intro-section-card {
   color: inherit;
   display: block;
 }
+
+/* ── FURTHER READING / INTERNAL LINK BLOCKS ─── */
+.further-reading {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  background: rgba(175, 144, 80, 0.06);
+}
+
+.further-reading h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.further-reading p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+}
+
+.further-reading a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.further-reading a:hover {
+  color: var(--gold);
+}

@@ -1,4 +1,6 @@
+ 
 ---
+import SEO from '../components/SEO.astro';
 const { title, description, canonical = 'https://readingtheodyssey.com/' } = Astro.props;
 const nav = [
   { href: '/before-the-nolan-film', label: 'Before the Nolan Film', nolan: true },
@@ -29,18 +31,7 @@ const nav = [
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title}</title>
-  <meta name="description" content={description} />
-  <link rel="canonical" href={canonical} />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:url" content={canonical} />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://readingtheodyssey.com/images/landing_image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content="https://readingtheodyssey.com/images/landing_image.jpg" />
+  <SEO title={title} description={description} canonical={canonical} />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Upright:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWPG59C7VV"></script>
@@ -99,4 +90,4 @@ const nav = [
     });
   </script>
 </body>
-</html>
+</html> 
