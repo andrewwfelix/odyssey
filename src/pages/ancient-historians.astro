@@ -1,4 +1,3 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Ancient Historians on the Odyssey: Hesiod, Strabo & Thucydides`;
@@ -7,36 +6,69 @@ const canonical = `https://readingtheodyssey.com/ancient-historians`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Ancient Historians</div>
-      <h2 class="section-title">Ancient Historians</h2>
+      <h1 class="section-title">Ancient Historians</h1>
       <p class="section-subtitle">How the classical world read and remembered the Odyssey</p>
     </div>
     <div class="section-body">
-      <p>The ancient world never stopped arguing about Odysseus. Was he a hero or a villain? An admirable survivor or a compulsive liar? Plato distrusted him. The Stoics admired him. Virgil used him as a foil. The ancient readers below give you the full range of classical opinion about a character who was controversial from the beginning.</p>
+      <p>The ancient world never stopped arguing about Odysseus. Was he a hero or a villain? An admirable survivor or a compulsive liar?</p>
+      
+      <p>Understanding how ancient historians and philosophers viewed the Odyssey will deepen your own reading. Plato distrusted Odysseus's cunning. The Stoics admired his endurance. Virgil used him as a foil for pious Aeneas. The ancient readers below give you the full range of classical opinion about a character who was controversial from the very beginning.</p>
+
+      <h3>Why Ancient Perspectives Matter for Modern Readers</h3>
+      <p>Before you dive into Homer, it helps to know what the Greeks themselves thought. Ancient historians debated whether Odysseus's wanderings were real geography or pure myth. Philosophers questioned whether his lies made him a moral example or a dangerous role model. These debates shaped how the Odyssey was taught, performed, and remembered for centuries.</p>
+
+      <p>You'll notice that ancient writers treated the Odyssey as both history and literature — a blend that tells you something important about how Homer's audience understood the poem.</p>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-hesiod-theogony-and-works-and-days.jpg" alt="Theogony and Works and Days — Hesiod" />
+        <img class="book-cover" src="/images/cover-hesiod-theogony-and-works-and-days.jpg" alt="Theogony and Works and Days by Hesiod — Greek mythology primer for Odyssey readers" loading="lazy" />
         <div class="book-title">Theogony and Works and Days</div>
         <div class="book-author">Hesiod</div>
-        <div class="book-note">The divine origin story Homer assumes you already know. Hesiod's Theogony lays out the genealogy of the gods — how Zeus came to power, which gods are related to which, and why the Olympians behave the way they do. In the Odyssey, divine politics are everywhere: Poseidon's wrath, Athena's patronage, Calypso's claim on Odysseus. Hesiod is the foundation for understanding all of it. A short read that pays enormous dividends.</div>
+        <div class="book-note">The divine origin story Homer assumes you already know. Hesiod's <em>Theogony</em> lays out the genealogy of the gods — how Zeus came to power, which gods are related to which, and why the Olympians behave the way they do.</div>
+        <div class="book-note">In the Odyssey, divine politics drive the entire plot: Poseidon's wrath keeps Odysseus at sea, Athena's patronage protects him, and Calypso's claim on him creates a crisis among the gods. Without Hesiod's framework, these divine interventions can feel arbitrary. With it, you understand the family dynamics and power struggles behind every immortal decision.</div>
+        <div class="book-note">This is a short read that pays enormous dividends for understanding Greek mythology in the Odyssey.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0199538360?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-herodotus-the-histories.jpg" alt="The Histories — Herodotus" />
+        <img class="book-cover" src="/images/cover-herodotus-the-histories.jpg" alt="The Histories by Herodotus — ancient geography and the Odyssey's real locations" loading="lazy" />
         <div class="book-title">The Histories</div>
         <div class="book-author">Herodotus</div>
-        <div class="book-note">Herodotus placed the Trojan War — and its aftermath, including Odysseus's wanderings — in a broader eastern Mediterranean context. His geographical descriptions of the places Odysseus supposedly visited, and his skepticism about their locations, give you a sense of how ancient readers wrestled with the poem's blend of real and mythological geography. The Odyssey's Mediterranean is not purely fictional — Herodotus helps you understand what was real and what was not.</div>
+        <div class="book-note">Herodotus placed the Trojan War — and its aftermath, including Odysseus's wanderings — in a broader eastern Mediterranean context. Writing in the 5th century BCE, he tried to map Homer's geography onto real places.</div>
+        <div class="book-note">His geographical descriptions of the places Odysseus supposedly visited reveal how ancient readers wrestled with the poem's blend of real and mythological geography. Was the land of the Lotus-Eaters in North Africa? Did the Cyclops live in Sicily? Herodotus's skepticism about these locations shows you that even in antiquity, readers debated what was real and what was invented.</div>
+        <div class="book-note">The Odyssey's Mediterranean is not purely fictional — Herodotus helps you understand which parts ancient historians accepted as history and which they dismissed as poetic license.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0199535663?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-plato-the-republic.jpg" alt="The Republic — Plato" />
+        <img class="book-cover" src="/images/cover-plato-the-republic.jpg" alt="The Republic by Plato — philosophical critique of Odysseus and Homer" loading="lazy" />
         <div class="book-title">The Republic (Book X) &amp; Ion</div>
         <div class="book-author">Plato</div>
-        <div class="book-note">Plato famously wanted to ban Homer from his ideal city — and his critique centers partly on the Odyssey's glorification of cunning over wisdom. Book X of the Republic and the dialogue Ion both engage directly with Homer's authority and the moral status of Odysseus. Reading Plato's objections before you read the poem sharpens your eye for exactly the qualities he found so dangerous: the lying, the disguise, the pleasure in deception that Homer seems to endorse.</div>
+        <div class="book-note">Plato famously wanted to ban Homer from his ideal city — and his critique centers partly on the Odyssey's glorification of cunning over wisdom. In Book X of <em>The Republic</em> and the dialogue <em>Ion</em>, Plato questions Homer's moral authority and the ethical status of Odysseus.</div>
+        <div class="book-note">Ask yourself as you read: Is Odysseus a hero because he lies so well? Plato thought that was exactly the problem. He objected to the lying, the disguise, the pleasure Odysseus takes in deception — qualities Homer seems to endorse without reservation.</div>
+        <div class="book-note">Reading Plato's objections before you read the Odyssey sharpens your eye for the moral ambiguities Homer leaves unresolved. You'll notice moments where Odysseus's cunning crosses into cruelty, and you'll understand why ancient philosophers found him so troubling.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0872201368?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
       <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
@@ -46,4 +78,4 @@ const canonical = `https://readingtheodyssey.com/ancient-historians`;
       </div>
     </div>
   </article>
-</Layout> 
+</Layout>

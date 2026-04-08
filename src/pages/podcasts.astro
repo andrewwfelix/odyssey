@@ -1,8 +1,7 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Best Podcasts for Reading the Odyssey`;
-const description = `Top podcasts to accompany your reading of Homer's Odyssey: The Rest is History, Natalie Haynes Stands Up for the Classics, and more. Perfect for commutes or deeper context.`;
+const description = `Top Odyssey podcasts: Natalie Haynes, The Rest is History, and more. Perfect audio companions for understanding Homer's epic on your commute.`;
 const canonical = `https://readingtheodyssey.com/podcasts`;
 ---
 
@@ -10,40 +9,42 @@ const canonical = `https://readingtheodyssey.com/podcasts`;
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Section 9</div>
-      <h2 class="section-title">Podcasts to Accompany Your Reading</h2>
+      <h1 class="section-title">Podcasts to Accompany Your Reading</h1>
       <p class="section-subtitle">Audio companions for the commute, the gym, or the long read</p>
     </div>
     <div class="section-body">
-      <p>Some of the best Homeric scholarship and storytelling right now is happening in podcast form. These are sequenced from most immediately relevant to deeper cuts — start at the top and work down as your interest grows.</p>
+      <p>If you're looking for the best Odyssey podcasts to deepen your understanding of Homer's epic, you're in the right place. Some of the finest Homeric scholarship and storytelling today is happening in audio form—perfect for your commute, workout, or evening walk.</p>
+      
+      <p>These podcasts are sequenced from most immediately relevant to deeper explorations. Start at the top if you're reading the Odyssey for the first time, then work your way down as your interest grows.</p>
 
       <div class="book-entry">
         <div class="book-title">Natalie Haynes Stands Up for the Classics — The Odyssey</div>
         <div class="book-author">Natalie Haynes — BBC Radio 4</div>
-        <div class="book-note">Start here. Haynes brings the Odyssey to life in a single episode that covers the poem's structure, its characters, and its persistent modern relevance with wit and genuine classical learning. Search "Natalie Haynes Odyssey" on BBC Sounds. Free to stream. Her episode on Penelope is also essential — it reframes the entire poem around the character Homer most underserves.</div>
+        <div class="book-note">Start here. Haynes brings the Odyssey to life in a single episode that covers the poem's structure, its key characters (Odysseus, Penelope, Telemachus), and its persistent modern relevance—all with wit and genuine classical learning. Search "Natalie Haynes Odyssey" on BBC Sounds to stream it free. Her episode on Penelope is equally essential: it reframes the entire poem around the character Homer most underserves, showing you why Penelope's patience and cunning rival her husband's.</div>
       </div>
 
       <div class="book-entry">
         <div class="book-title">The Rest is History — Homer episodes</div>
         <div class="book-author">Tom Holland &amp; Dominic Sandbrook</div>
-        <div class="book-note">Holland and Sandbrook have covered Homer, the Trojan War, and the Bronze Age extensively across their back catalogue. Search "Homer" and "Troy" in their episode library. Tom Holland is a classicist as well as a historian, and his genuine enthusiasm for the ancient world makes even familiar material feel fresh. Available on all major podcast platforms.</div>
+        <div class="book-note">Holland and Sandbrook have covered Homer, the Trojan War, and the Bronze Age world extensively across their back catalogue. Search "Homer" and "Troy" in their episode library to find the most relevant discussions. Tom Holland is both a classicist and a historian, and his genuine enthusiasm for the ancient world makes even familiar material feel fresh. You'll get the backstory you need—why Odysseus left Ithaca, what happened at Troy, and why Poseidon holds a grudge—delivered with energy and insight. Available on all major podcast platforms.</div>
       </div>
 
       <div class="book-entry">
         <div class="book-title">The Ancient World</div>
         <div class="book-author">Scott C. Chesworth</div>
-        <div class="book-note">A systematic chronological survey of the ancient world from the earliest civilizations through the fall of Rome. The early episodes on Bronze Age Greece and the Mycenaean world provide essential geographical and archaeological context for the Odyssey's setting. More scholarly in tone than the History with Haynes or Rest is History, and more systematic — ideal for listeners who want to understand the world the poem describes rather than just the poem itself.</div>
+        <div class="book-note">A systematic chronological survey of the ancient world, from the earliest civilizations through the fall of Rome. The early episodes on Bronze Age Greece and the Mycenaean world provide essential geographical and archaeological context for the Odyssey's setting. What did Odysseus's palace actually look like? How did ancient Greeks navigate the Mediterranean? Chesworth answers these questions with scholarly rigor. More academic in tone than Haynes or The Rest is History, this podcast is ideal if you want to understand the world the poem describes, not just the poem itself.</div>
       </div>
 
       <div class="book-entry">
         <div class="book-title">Instant Classics</div>
         <div class="book-author">Mary Beard</div>
-        <div class="book-note">Mary Beard brings ancient texts to contemporary audiences with characteristic candor and rigor. Her episodes on Greek literature, women in antiquity, and the reception of classical culture are all relevant to the Odyssey. Particularly useful once you have finished the poem and want to think about how it has been read across the centuries.</div>
+        <div class="book-note">Mary Beard brings ancient texts to contemporary audiences with characteristic candor and rigor. Her episodes on Greek literature, women in antiquity, and the reception of classical culture are all relevant to understanding the Odyssey. This podcast is particularly useful once you've finished the poem and want to think about how it has been read, adapted, and argued over across the centuries. Ask yourself: why does the Odyssey still matter? Beard will help you answer that question.</div>
       </div>
 
       <div class="book-entry">
         <div class="book-title">The History of Rome</div>
         <div class="book-author">Mike Duncan</div>
-        <div class="book-note">Not directly about Homer, but essential context for the Roman works in the After the Odyssey section — particularly Virgil's use of Odysseus as a foil for Aeneas. Duncan's 179-episode series covering the full arc of Roman history from founding to fall remains one of the finest history podcasts ever made. Begin at episode 1.</div>
+        <div class="book-note">Not directly about Homer, but essential context for the Roman works in the After the Odyssey section—particularly Virgil's use of Odysseus (called Ulysses by the Romans) as a foil for Aeneas. Duncan's 179-episode series covering the full arc of Roman history, from founding myth to imperial fall, remains one of the finest history podcasts ever made. Begin at episode 1 if you want the complete story, or jump to the episodes on Virgil and Augustus for direct Odyssey connections.</div>
       </div>
 
       <div class="further-reading">
@@ -51,4 +52,17 @@ const canonical = `https://readingtheodyssey.com/podcasts`;
       </div>
     </div>
   </article>
-</Layout> 
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
+</Layout>

@@ -6,22 +6,33 @@ const canonical = `https://readingtheodyssey.com/`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Introduction</div>
-      <h2 class="section-title">The Complete Guide to Reading the Odyssey</h2>
+      <h1 class="section-title">The Complete Guide to Reading the Odyssey</h1>
       <p class="section-subtitle">A structured primer for approaching Homer's second epic on its own terms</p>
     </div>
     <div class="section-body">
 
       <div class="intro-banner">
-        <img src="/images/landing_image.jpg" alt="Odysseus and the wine-dark sea — ancient Greek pottery style" loading="eager" fetchpriority="high" />
+        <img src="/images/landing_image.jpg" alt="Odysseus sailing the wine-dark sea — how to read the Odyssey for first-time readers" loading="eager" fetchpriority="high" />
       </div>
 
       <div class="intro-pull-quote">
         "Cyclops, if any mortal man ever asks you who it was that inflicted upon your eye this shameful blinding, tell him that you were blinded by Odysseus, sacker of cities. Laertes is his father, and he makes his home in Ithaca."
         <div class="intro-pull-attribution">— Homer, <em>The Odyssey</em>, Book 9 (trans. Richmond Lattimore)</div>
       </div>
+
+      <p>Before you open Homer's <em>Odyssey</em>, you need to know what you're walking into. This isn't a novel with a linear plot. It's an ancient epic poem that assumes you already know the Trojan War backstory, the Greek gods' personalities, and the social rules that govern every conversation. That's where this guide comes in.</p>
+
+      <p>We've built this Odyssey reading guide to give you everything Homer's original audience had: the context, the cast of characters, the journey map, and the practical advice you need to follow Odysseus from Troy to Ithaca without getting lost. Whether you're reading for school, preparing for Christopher Nolan's 2026 film adaptation, or just curious about one of the most influential stories ever told, start here.</p>
 
       <div class="intro-section-grid">
 
@@ -57,10 +68,19 @@ const canonical = `https://readingtheodyssey.com/`;
 
       </div>
 
-      <p>This guide is a reading primer — a structured preparation for engaging with the Odyssey on its own terms. It does not summarize or replace the poem. Its purpose is to assemble, in advance of your reading, the contextual knowledge that Homer's original audience possessed as a matter of course: the mythological background, the social codes of the ancient Mediterranean, the cast of characters, the scholarly conversation surrounding the text, and the practical choices a modern reader must make before opening the book.</p>
+      <h3 class="sub-heading">What You Need to Know Before Reading the Odyssey</h3>
+      
+      <p>Homer doesn't stop to explain who Odysseus is or why he's been gone for twenty years. The poem opens <em>in medias res</em> — in the middle of things — with Odysseus trapped on Calypso's island while his son Telemachus searches for news of him back in Ithaca. You'll understand the stakes much faster if you know three things upfront:</p>
 
-      <div class="sub-heading">Quick Reference</div>
-      <p>Keep these open while you read — they answer the questions that come up most often mid-poem.</p>
+      <p>First, Odysseus fought in the Trojan War for ten years. When Troy finally fell, he angered Poseidon (by blinding the god's son, the Cyclops Polyphemus), and that grudge is why his journey home takes another ten years.</p>
+
+      <p>Second, back in Ithaca, his wife Penelope is besieged by suitors who assume Odysseus is dead. They're eating through his wealth and pressuring her to remarry. She's been stalling them for years with clever tricks — like weaving a shroud by day and unraveling it by night.</p>
+
+      <p>Third, the Greek gods intervene constantly. Athena protects Odysseus. Poseidon tries to destroy him. Zeus referees. If you're not used to reading Greek mythology, this can feel arbitrary at first — but the gods follow their own logic, and once you learn it, their actions make sense.</p>
+
+      <h3 class="sub-heading">Quick Reference — Keep These Open While You Read</h3>
+      
+      <p>These pages answer the questions that come up most often mid-poem. Bookmark them now, and you'll thank yourself later when you need to remember who Eumaeus is or which island Odysseus is on in Book 10.</p>
 
       <div class="intro-section-grid">
 
@@ -96,7 +116,11 @@ const canonical = `https://readingtheodyssey.com/`;
 
       </div>
 
-      <p>Not sure which edition to start with? See the detailed <a href="/translations">Odyssey translation comparison</a> — Emily Wilson, Fagles, Lattimore, and Green side by side with sample passages.</p>
+      <h3 class="sub-heading">Understanding Homer's Odyssey: Translation Matters</h3>
+
+      <p>Not sure which edition to start with? The best Odyssey translation for you depends on what you value: poetic beauty, historical accuracy, or plain readability. Emily Wilson's 2017 version is the first English translation by a woman, and it's fast-paced and modern. Robert Fagles is the most popular for general readers. Richmond Lattimore stays closest to the Greek. Peter Green splits the difference.</p>
+
+      <p>See the detailed <a href="/translations">Odyssey translation comparison</a> — Emily Wilson, Fagles, Lattimore, and Green side by side with sample passages so you can hear the difference for yourself.</p>
 
       <div class="further-reading">
         <p>Preparing for Christopher Nolan's <em>The Odyssey</em> releasing July 17, 2026? <a href="/before-the-nolan-film">Start here →</a></p>
@@ -105,4 +129,18 @@ const canonical = `https://readingtheodyssey.com/`;
 
     </div>
   </article>
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Reading the Odyssey",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
 </Layout>

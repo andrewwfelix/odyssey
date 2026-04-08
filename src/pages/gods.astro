@@ -1,4 +1,3 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Gods of the Odyssey: Athena, Poseidon & the Olympian Cast`;
@@ -7,32 +6,62 @@ const canonical = `https://readingtheodyssey.com/gods`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Reference IV</div>
-      <h2 class="section-title">The Gods</h2>
+      <h1 class="section-title">The Gods</h1>
       <p class="section-subtitle">The divine figures of the Odyssey and their roles in the poem</p>
     </div>
     <div class="section-body">
-      <p>The gods of the Odyssey are less militarily active than in the Iliad — they do not fight on the battlefield — but they are no less consequential. The poem's divine politics are a negotiation between Athena's patronage of Odysseus, Poseidon's wrath against him, and Zeus's ultimate authority over both. Understanding who wants what among the gods clarifies almost every event in the poem.</p>
+      <p>Before you dive into the Odyssey, you need to understand one thing: the gods are everywhere. They don't fight on battlefields like they do in the Iliad, but they pull every string that matters. The entire plot hinges on divine politics — specifically, a negotiation between Athena (who loves Odysseus), Poseidon (who wants him dead), and Zeus (who has to referee).</p>
+
+      <p>Understanding the gods in the Odyssey clarifies almost every event in the poem. Why does Odysseus take so long to return home? Because Poseidon is angry. Why does he survive at all? Because Athena won't let him die. The gods' interventions aren't random — they're the engine of the story.</p>
+
+      <h3>The Major Gods and Their Roles</h3>
 
       <table class="ref-table">
         <thead><tr><th>God</th><th>Domain</th><th>Role in the Odyssey</th></tr></thead>
         <tbody>
-          <tr><td class="ref-god">Zeus</td><td>King of the gods, sky and thunder</td><td>Presides over the divine council that opens the poem and agrees to Odysseus's release. Generally sympathetic but bound by the claims of other gods. His authority is the ultimate check on Poseidon's wrath.</td></tr>
-          <tr><td class="ref-god">Athena</td><td>Wisdom, strategy, crafts</td><td>Odysseus's divine patron and the poem's most active god. She appears in disguise throughout — as Mentor, as Mentes, as a young girl leading Odysseus to the Phaeacian palace. She argues his case before Zeus, guides Telemachus, and orchestrates the final confrontation in Ithaca.</td></tr>
-          <tr><td class="ref-god">Poseidon</td><td>Sea, earthquakes</td><td>The poem's divine antagonist. His wrath against Odysseus for blinding Polyphemus drives the catastrophes of the voyage. He is away among the Ethiopians when the gods make their decision — and returns to wreck Odysseus one final time before the raft reaches Phaeacia.</td></tr>
-          <tr><td class="ref-god">Hermes</td><td>Messenger, guide of souls</td><td>Carries Zeus's orders to Calypso; gives Odysseus the herb moly that protects him from Circe's magic; guides the suitors' shades to the Underworld in Book 24.</td></tr>
-          <tr><td class="ref-god">Apollo</td><td>Sun, music, prophecy, plague</td><td>Less central than in the Iliad. The suitors' feast takes place on his festival day — a detail that gives the slaughter a ritual quality.</td></tr>
-          <tr><td class="ref-god">Calypso</td><td>Nymph, daughter of Atlas</td><td>Holds Odysseus on Ogygia for seven years. Releases him on Zeus's order. Her offer of immortality — refused by Odysseus — is the poem's central statement about what he values.</td></tr>
-          <tr><td class="ref-god">Circe</td><td>Witch, daughter of Helios</td><td>Transforms men into animals; becomes Odysseus's guide and lover; sends him to the Underworld and advises him on every subsequent danger. A divine figure but more human in psychology than the Olympians.</td></tr>
-          <tr><td class="ref-god">Tiresias</td><td>Prophet (shade)</td><td>The blind seer of Thebes whom Odysseus consults in the Underworld. His prophecy outlines the dangers still ahead and hints at what comes after the poem ends. The only shade in the Underworld who retains full consciousness.</td></tr>
+          <tr><td class="ref-god">Zeus</td><td>King of the gods, sky and thunder</td><td>Zeus presides over the divine council that opens the poem and agrees to let Odysseus go home. He's generally sympathetic to Odysseus but bound by the claims of other gods — especially Poseidon. His authority is the ultimate check on Poseidon's wrath, and without his approval, Odysseus would never leave Calypso's island.</td></tr>
+          <tr><td class="ref-god">Athena</td><td>Wisdom, strategy, crafts</td><td>Athena is Odysseus's divine patron and the most active god in the Odyssey. She appears in disguise throughout the poem — as Mentor to guide Telemachus, as Mentes to inspire him, as a young girl leading Odysseus through Phaeacia. She argues Odysseus's case before Zeus, protects Telemachus from the suitors' ambush, and orchestrates the final showdown in Ithaca. If you want to understand Athena's role in the Odyssey, watch for every moment someone receives unexpected help.</td></tr>
+          <tr><td class="ref-god">Poseidon</td><td>Sea, earthquakes</td><td>Poseidon is the poem's divine antagonist. His grudge against Odysseus — for blinding his son, the Cyclops Polyphemus — drives every catastrophe of the voyage home. He's away among the Ethiopians when the gods decide to release Odysseus, and when he returns, he wrecks the raft one final time before Odysseus reaches Phaeacia. Poseidon's wrath is the reason the journey takes ten years.</td></tr>
+          <tr><td class="ref-god">Hermes</td><td>Messenger, guide of souls</td><td>Hermes carries Zeus's orders to Calypso, commanding her to release Odysseus. He gives Odysseus the magical herb moly, which protects him from Circe's spells. In Book 24, he guides the suitors' shades to the Underworld. Hermes is the gods' errand-runner — but his interventions are always pivotal.</td></tr>
+          <tr><td class="ref-god">Apollo</td><td>Sun, music, prophecy, plague</td><td>Apollo is less central in the Odyssey than in the Iliad. But notice this: the suitors' final feast takes place on Apollo's festival day. That detail gives the slaughter a ritual quality — it's not just revenge, it's a kind of sacrifice.</td></tr>
+          <tr><td class="ref-god">Calypso</td><td>Nymph, daughter of Atlas</td><td>Calypso holds Odysseus on her island, Ogygia, for seven years. She offers him immortality if he'll stay with her forever. He refuses. Zeus orders her to release him, and she obeys — but not happily. Her offer of immortality, and Odysseus's refusal, is the poem's central statement about what he values: mortal life, home, and Penelope.</td></tr>
+          <tr><td class="ref-god">Circe</td><td>Witch, daughter of Helios</td><td>Circe transforms Odysseus's men into pigs — until he forces her to reverse the spell. She becomes his lover and guide, sending him to the Underworld and advising him on every danger ahead: the Sirens, Scylla and Charybdis, the cattle of the Sun. Circe is a divine figure, but her psychology feels more human than the distant Olympians.</td></tr>
+          <tr><td class="ref-god">Tiresias</td><td>Prophet (shade)</td><td>Tiresias is the blind seer of Thebes whom Odysseus consults in the Underworld. His prophecy outlines the dangers still ahead and hints at what comes after the poem ends. He's the only shade in the Underworld who retains full consciousness — a gift from the gods that makes him the ultimate source of truth.</td></tr>
         </tbody>
       </table>
+
+      <h3>How the Gods Interfere in the Odyssey</h3>
+
+      <p>You'll notice that the gods rarely act directly. Instead, they disguise themselves, plant ideas, send dreams, or arrange coincidences. Athena appears as a trusted friend. Hermes arrives at the perfect moment. Poseidon stirs up a storm just when Odysseus thinks he's safe.</p>
+
+      <p>This is how Homer's gods work: they don't override human choice, but they shape the circumstances in which choices are made. When you read the Odyssey, ask yourself: Is this Odysseus's cleverness, or is Athena guiding his hand? The answer is almost always both.</p>
 
       <div class="further-reading">
         <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
       </div>
     </div>
   </article>
-</Layout> 
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
+</Layout>

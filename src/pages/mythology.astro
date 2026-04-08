@@ -1,42 +1,50 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Greek Mythology Background for Reading the Odyssey`;
-const description = `Essential Greek mythology Homer assumes you know before the Odyssey: the Trojan War backstory, Poseidon's grudge, the gods' factions, and the hero cycle. Best background books recommended.`;
+const description = `Essential Greek mythology you need before reading the Odyssey: Trojan War backstory, Poseidon's grudge, the gods' roles, and the hero cycle.`;
 const canonical = `https://readingtheodyssey.com/mythology`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Section 3</div>
-      <h2 class="section-title">Mythology</h2>
+      <h1 class="section-title">Mythology</h1>
       <p class="section-subtitle">The divine and heroic world Homer assumes you already know</p>
     </div>
     <div class="section-body">
-      <p>The Odyssey requires less mythological preparation than the Iliad — its cast is smaller and its divine machinery simpler. But two things are essential before you begin: the backstory of the Trojan War (which the Odyssey assumes as shared knowledge), and the nature of the gods who intervene throughout. Poseidon's grudge against Odysseus has a specific origin. Athena's patronage has a specific logic. These two books provide both.</p>
+      <p>Before you read the Odyssey, you need to understand two things: the backstory of the Trojan War (why Odysseus is trying to get home) and how the Greek gods work (why Poseidon is so angry, why Athena helps). The Odyssey requires less mythological preparation than the Iliad — its cast is smaller and its divine machinery simpler. But Homer assumes you already know these foundational stories.</p>
+
+      <p>Poseidon's grudge against Odysseus has a specific origin: Odysseus blinded Poseidon's son, the Cyclops Polyphemus. Athena's patronage has a specific logic: she admired Odysseus's cleverness during the Trojan War. Without this Greek mythology background, you'll miss why the gods interfere the way they do. These three books provide the essential context for understanding Homer's Odyssey.</p>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-hamilton-mythology.png" alt="Mythology — Edith Hamilton" />
+        <img class="book-cover" src="/images/cover-hamilton-mythology.png" alt="Mythology by Edith Hamilton - Greek mythology primer for Odyssey readers" loading="lazy" />
         <div class="book-title">Mythology</div>
         <div class="book-author">Edith Hamilton</div>
-        <div class="book-note">The standard orientation to the Greek mythological world. Read Part Four (The Trojan War) and Part Five (The Adventures of Odysseus) before you begin. Hamilton covers Poseidon's wrath, the full backstory of the Trojan War, and the mythological framework of Odysseus's wanderings in clear, engaging prose that requires no prior knowledge. Its limitations are real — it occasionally simplifies — but as a first map of the territory it remains unmatched.</div>
+        <div class="book-note">The standard primer for the Greek mythological world. Read Part Four (The Trojan War) and Part Five (The Adventures of Odysseus) before you begin the poem. Hamilton covers Poseidon's wrath, the full backstory of the Trojan War, and the mythological framework of Odysseus's wanderings in clear, engaging prose that requires no prior knowledge. You'll learn why the war started (Helen's abduction), who fought on which side (Athena backed the Greeks, Poseidon the Trojans), and what happened to the other heroes who tried to sail home. Its limitations are real — it occasionally simplifies — but as a first map of the territory it remains unmatched.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0316341517?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-graves-the-greek-myths.jpg" alt="The Greek Myths — Robert Graves" />
+        <img class="book-cover" src="/images/cover-graves-the-greek-myths.jpg" alt="The Greek Myths by Robert Graves - comprehensive Greek mythology reference" loading="lazy" />
         <div class="book-title">The Greek Myths</div>
         <div class="book-author">Robert Graves</div>
-        <div class="book-note">The most comprehensive single-volume treatment of Greek mythology in English. Graves retells every major myth with full source citations, variant traditions, and his own interpretive commentary. For the Odyssey, the relevant sections cover the Trojan War aftermath, Circe, the Sirens, Scylla and Charybdis, and the myths surrounding Odysseus's return. An invaluable reference to consult during your reading whenever the poem mentions something whose backstory you do not know.</div>
+        <div class="book-note">The most comprehensive single-volume treatment of Greek mythology in English. Graves retells every major myth with full source citations, variant traditions, and his own interpretive commentary. For the Odyssey, the relevant sections cover the Trojan War aftermath, Circe, the Sirens, Scylla and Charybdis, and the myths surrounding Odysseus's return. When the poem mentions a character or episode you don't recognize — say, Agamemnon's murder or the cattle of the Sun — you can look it up here and get the full backstory. An invaluable reference to consult during your reading.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0140171991?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-apollodorus-the-library.jpg" alt="The Library — Apollodorus" />
+        <img class="book-cover" src="/images/cover-apollodorus-the-library.jpg" alt="The Library by Apollodorus - ancient Greek mythology reference" loading="lazy" />
         <div class="book-title">The Library (Bibliotheca)</div>
         <div class="book-author">Apollodorus, trans. Robin Hard</div>
-        <div class="book-note">The mythological reference book of the ancient world — a comprehensive summary of Greek myth from the creation through the Trojan War and its aftermath. The section on the Returns (Nostoi) covers the fates of all the Greek heroes who survived Troy, including the full outline of Odysseus's wanderings and homecoming. Not a book to read cover to cover, but invaluable as a reference when the Odyssey mentions a character or episode whose backstory you do not know.</div>
+        <div class="book-note">The mythological reference book of the ancient world — a comprehensive summary of Greek myth from the creation through the Trojan War and its aftermath. The section on the Returns (Nostoi) covers the fates of all the Greek heroes who survived Troy, including the full outline of Odysseus's wanderings and homecoming. This is what educated Greeks and Romans consulted when they needed to check a mythological detail. Not a book to read cover to cover, but invaluable as a reference when the Odyssey mentions something whose backstory you do not know.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0199543151?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
       <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
@@ -46,4 +54,17 @@ const canonical = `https://readingtheodyssey.com/mythology`;
       </div>
     </div>
   </article>
-</Layout> 
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
+</Layout>

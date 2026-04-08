@@ -1,0 +1,1260 @@
+=== \Users\andre\projects\odyssey\src\pages\after-the-odyssey - Copy.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `After the Odyssey: Virgil, Ovid, Dante & the Ancient Responses`;
+const description = `The ancient and medieval works that continue or respond to Homer's Odyssey — Virgil's Aeneid, Ovid's Metamorphoses, Dante's Inferno, and Tennyson's Ulysses. What to read next.`;
+const canonical = `https://readingtheodyssey.com/after-the-odyssey`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 7</div>
+      <h2 class="section-title">After the Odyssey</h2>
+      <p class="section-subtitle">The ancient and modern works that extend, argue with, and rewrite Homer's second epic</p>
+    </div>
+    <div class="section-body">
+      <p>Odysseus never stopped traveling — not in the literary tradition. These are the most essential responses to Homer's poem: the ancient works that picked up where he left off, the Roman reimaginings, and the modern extensions that asked what happens after the ending.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-wilson-the-odyssey.jpg" alt="The Odyssey — Emily Wilson" />
+        <div class="book-title">The Iliad</div>
+        <div class="book-author">Homer</div>
+        <div class="book-note">Read the companion epic if you have not already. The Odyssey is in constant dialogue with the Iliad — not just as a sequel but as a deliberate argument against it. Achilles chose death and eternal glory; Odysseus chose survival and got twenty years of suffering. Every time the Odyssey mentions Troy or invokes the heroic code of the Iliad, it is measuring Odysseus against that world and finding both him and it complicated. The two poems together form a complete argument about what heroism costs.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0393356256?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-virgil-the-aeneid.jpg" alt="The Aeneid — Virgil" />
+        <div class="book-title">The Aeneid</div>
+        <div class="book-author">Virgil</div>
+        <div class="book-note">The Roman response to both Homer epics — and a deliberate recasting of Odysseus as villain. Virgil's Aeneas encounters references to Odysseus's cruelty at Troy and in the Cyclops episode throughout Books 2 and 3. Reading the Aeneid after the Odyssey gives you the Roman counter-reading of Odysseus: not the admirable survivor but the clever, ruthless destroyer. The Fagles translation is recommended for its power and accessibility.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0140449329?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-wilson-the-odyssey.jpg" alt="The Odyssey — Emily Wilson" />
+        <div class="book-title">Metamorphoses (Books 13–14)</div>
+        <div class="book-author">Ovid</div>
+        <div class="book-note">Ovid retells the aftermath of Troy and the wanderings of several heroes — including Odysseus — in Books 13 and 14 with characteristic wit and compression. His version of the Circe episode in Book 14 is the fullest ancient retelling outside Homer. Ovid is consciously rewriting and commenting on Homer, and he wants you to notice. The Charles Martin translation is excellent.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0393356256?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Telegony</div>
+        <div class="book-author">Eugammon of Cyrene (fragments)</div>
+        <div class="book-note">The lost ancient sequel to the Odyssey, known only through Proclus's summary. The Telegony picks up after Homer's ending: Odysseus eventually leaves Ithaca again, travels to Thesprotia, and is ultimately killed by Telegonus — his son by Circe, who does not know him. Only a few lines survive, but the outline changes how you read the Odyssey's ending. Homer's poem closes on homecoming; the tradition refused to let Odysseus stay.</div>
+      </div>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\after-the-odyssey.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `After the Odyssey: Virgil, Ovid, Dante & the Ancient Responses`;
+const description = `The ancient and medieval works that continue or respond to Homer's Odyssey — Virgil's Aeneid, Ovid's Metamorphoses, Dante's Inferno, and Tennyson's Ulysses. What to read next.`;
+const canonical = `https://readingtheodyssey.com/after-the-odyssey`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 7</div>
+      <h2 class="section-title">After the Odyssey</h2>
+      <p class="section-subtitle">The ancient and modern works that extend, argue with, and rewrite Homer's second epic</p>
+    </div>
+    <div class="section-body">
+      <p>Odysseus never stopped traveling — not in the literary tradition. These are the most essential responses to Homer's poem: the ancient works that picked up where he left off, the Roman reimaginings, and the modern extensions that asked what happens after the ending.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-wilson-the-odyssey.jpg" alt="The Odyssey — Emily Wilson" />
+        <div class="book-title">The Iliad</div>
+        <div class="book-author">Homer</div>
+        <div class="book-note">Read the companion epic if you have not already. The Odyssey is in constant dialogue with the Iliad — not just as a sequel but as a deliberate argument against it. Achilles chose death and eternal glory; Odysseus chose survival and got twenty years of suffering. Every time the Odyssey mentions Troy or invokes the heroic code of the Iliad, it is measuring Odysseus against that world and finding both him and it complicated. The two poems together form a complete argument about what heroism costs.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0393356256?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-virgil-the-aeneid.jpg" alt="The Aeneid — Virgil" />
+        <div class="book-title">The Aeneid</div>
+        <div class="book-author">Virgil</div>
+        <div class="book-note">The Roman response to both Homer epics — and a deliberate recasting of Odysseus as villain. Virgil's Aeneas encounters references to Odysseus's cruelty at Troy and in the Cyclops episode throughout Books 2 and 3. Reading the Aeneid after the Odyssey gives you the Roman counter-reading of Odysseus: not the admirable survivor but the clever, ruthless destroyer. The Fagles translation is recommended for its power and accessibility.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0140449329?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-wilson-the-odyssey.jpg" alt="The Odyssey — Emily Wilson" />
+        <div class="book-title">Metamorphoses (Books 13–14)</div>
+        <div class="book-author">Ovid</div>
+        <div class="book-note">Ovid retells the aftermath of Troy and the wanderings of several heroes — including Odysseus — in Books 13 and 14 with characteristic wit and compression. His version of the Circe episode in Book 14 is the fullest ancient retelling outside Homer. Ovid is consciously rewriting and commenting on Homer, and he wants you to notice. The Charles Martin translation is excellent.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0393356256?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Telegony</div>
+        <div class="book-author">Eugammon of Cyrene (fragments)</div>
+        <div class="book-note">The lost ancient sequel to the Odyssey, known only through Proclus's summary. The Telegony picks up after Homer's ending: Odysseus eventually leaves Ithaca again, travels to Thesprotia, and is ultimately killed by Telegonus — his son by Circe, who does not know him. Only a few lines survive, but the outline changes how you read the Odyssey's ending. Homer's poem closes on homecoming; the tradition refused to let Odysseus stay.</div>
+      </div>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\ancient-historians.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Ancient Historians on the Odyssey: Hesiod, Strabo & Thucydides`;
+const description = `How ancient writers treated Odysseus and the nostos tradition — Strabo's geographic rationalism, Thucydides' skepticism, and Hesiod's mythological framework.`;
+const canonical = `https://readingtheodyssey.com/ancient-historians`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Ancient Historians</div>
+      <h2 class="section-title">Ancient Historians</h2>
+      <p class="section-subtitle">How the classical world read and remembered the Odyssey</p>
+    </div>
+    <div class="section-body">
+      <p>The ancient world never stopped arguing about Odysseus. Was he a hero or a villain? An admirable survivor or a compulsive liar? Plato distrusted him. The Stoics admired him. Virgil used him as a foil. The ancient readers below give you the full range of classical opinion about a character who was controversial from the beginning.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-hesiod-theogony-and-works-and-days.jpg" alt="Theogony and Works and Days — Hesiod" />
+        <div class="book-title">Theogony and Works and Days</div>
+        <div class="book-author">Hesiod</div>
+        <div class="book-note">The divine origin story Homer assumes you already know. Hesiod's Theogony lays out the genealogy of the gods — how Zeus came to power, which gods are related to which, and why the Olympians behave the way they do. In the Odyssey, divine politics are everywhere: Poseidon's wrath, Athena's patronage, Calypso's claim on Odysseus. Hesiod is the foundation for understanding all of it. A short read that pays enormous dividends.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0199538360?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-herodotus-the-histories.jpg" alt="The Histories — Herodotus" />
+        <div class="book-title">The Histories</div>
+        <div class="book-author">Herodotus</div>
+        <div class="book-note">Herodotus placed the Trojan War — and its aftermath, including Odysseus's wanderings — in a broader eastern Mediterranean context. His geographical descriptions of the places Odysseus supposedly visited, and his skepticism about their locations, give you a sense of how ancient readers wrestled with the poem's blend of real and mythological geography. The Odyssey's Mediterranean is not purely fictional — Herodotus helps you understand what was real and what was not.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0199535663?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-plato-the-republic.jpg" alt="The Republic — Plato" />
+        <div class="book-title">The Republic (Book X) &amp; Ion</div>
+        <div class="book-author">Plato</div>
+        <div class="book-note">Plato famously wanted to ban Homer from his ideal city — and his critique centers partly on the Odyssey's glorification of cunning over wisdom. Book X of the Republic and the dialogue Ion both engage directly with Homer's authority and the moral status of Odysseus. Reading Plato's objections before you read the poem sharpens your eye for exactly the qualities he found so dangerous: the lying, the disguise, the pleasure in deception that Homer seems to endorse.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0872201368?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\before-the-nolan-film.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Read the Odyssey Before Nolan's The Odyssey (July 17, 2026) – Guide`;
+const description = `Prepare for Christopher Nolan's The Odyssey starring Matt Damon, Tom Holland, and Zendaya. Understand Odysseus, the journey home, and the Trojan War backstory before the film.`;
+const canonical = `https://readingtheodyssey.com/before-the-nolan-film`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">The Film</div>
+      <h2 class="section-title">Before the Nolan Film</h2>
+      <p class="section-subtitle">Everything you need to read the Odyssey before July 17, 2026</p>
+    </div>
+    <div class="section-body">
+
+      <a class="trailer-link" href="https://www.youtube.com/watch?v=Mzw2ttJD2qQ" target="_blank" rel="noopener">
+        <div class="trailer-thumbnail">
+          <img src="https://img.youtube.com/vi/Mzw2ttJD2qQ/maxresdefault.jpg" alt="Christopher Nolan's The Odyssey — Official Trailer" />
+          <div class="trailer-play">▶</div>
+        </div>
+      </a>
+
+      <p>Christopher Nolan's The Odyssey releases July 17, 2026 — starring Matt Damon as Odysseus, Tom Holland as Telemachus, and Zendaya. If you want to read Homer's epic before you see the film, this page tells you exactly how to do it.</p>
+
+      <div class="book-entry">
+        <div class="book-title">How Long Does It Actually Take?</div>
+        <div class="book-author">Less time than you think</div>
+        <div class="book-note">The Odyssey is 24 books and roughly 12,000 lines — but it reads faster than the Iliad. Most readers finish in 10-15 hours of reading time. At an hour a day you can read the entire poem in two weeks. At two hours on weekends you can finish it in a month. You have time.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Which Translation to Read</div>
+        <div class="book-author">For first-time readers preparing for the film</div>
+        <div class="book-note">Start with Emily Wilson (2017) — the most modern, most readable translation, and the one most likely to feel cinematic. Her version is direct, clear, and emotionally alive in a way that suits readers coming to Homer for the first time. Robert Fagles is the strong second choice if you want something slightly more epic in register. Either will prepare you well for what Nolan is working with.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The Cast Mapped to Homer</div>
+        <div class="book-author">Who Nolan's actors are playing</div>
+        <div class="book-note">Matt Damon plays Odysseus — the man of many turns, the cunning survivor, the king trying to get home. Tom Holland plays Telemachus — Odysseus's son, who spends the first four books searching for news of his missing father. Zendaya's role has not been confirmed, but the most prominent women in the poem are Penelope (the faithful wife), Circe (the enchantress), Calypso (the goddess who keeps Odysseus captive), and Nausicaa (the princess who helps him). Each of these characters has a full entry in the Character Reference section of this guide.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">What Nolan Will Almost Certainly Draw On</div>
+        <div class="book-author">The five elements at the heart of the poem</div>
+        <div class="book-note">The Cyclops — Odysseus's most famous encounter, and a showcase for his cunning over brute strength. Circe — the enchantress who turns men into pigs and becomes Odysseus's lover. The Sirens — creatures whose song promises knowledge but means death. Calypso — the goddess who offers immortality in exchange for Odysseus giving up his homecoming. The suitors — the men who have taken over Odysseus's palace in his absence, courting his wife and eating his food. The poem's climax is Odysseus returning in disguise and destroying them all.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The Nolan Connection — Non-Linear Storytelling</div>
+        <div class="book-author">Why Homer and Nolan were made for each other</div>
+        <div class="book-note">Nolan is famous for films that start in the middle and work backwards — Memento, Dunkirk, Tenet. The Odyssey is one of the earliest examples of this structure in all of literature. Homer begins ten years into the journey, with Odysseus trapped on Calypso's island. The famous wanderings — Cyclops, Sirens, Circe — are told in flashback by Odysseus himself at a dinner party. Homer invented the technique Nolan has made his signature. This is not a coincidence that Nolan chose this story.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">A Reading Schedule</div>
+        <div class="book-author">From now to July 17</div>
+        <div class="book-note">You have roughly 15 weeks. At a comfortable pace of 2 books per week you will finish all 24 books with time to spare. Books 1-4 follow Telemachus (Tom Holland's character) — a slower start but essential setup. Books 5-12 are the famous wanderings — Circe, the Underworld, the Sirens, Scylla and Charybdis. Books 13-24 are the return to Ithaca and the reckoning with the suitors. If you only have time for one section before the film, read Books 9-12. That is the heart of what most people think of when they think of the Odyssey.</div>
+      </div>
+
+
+      <div class="further-reading">
+        <p>The best preparation is reading the poem itself. Start with our <a href="/translations">detailed translation comparison</a> and <a href="/synopsis">book-by-book synopsis</a>. For the Trojan War backstory, visit the companion guide at <a href="https://readingtheiliad.com" target="_blank" rel="noopener">readingtheiliad.com</a>.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\characters.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Odyssey Character Guide: Odysseus, Penelope, Telemachus & More`;
+const description = `Complete reference to every major character in Homer's Odyssey — who they are, what they want, and what happens to them. Use while reading.`;
+const canonical = `https://readingtheodyssey.com/characters`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference I</div>
+      <h2 class="section-title">Character Reference</h2>
+      <p class="section-subtitle">The major figures of the Odyssey — who they are and what happens to them</p>
+    </div>
+    <div class="section-body">
+      <p>Use this table while reading. Name spellings vary between translations — Odysseus may appear as Ulysses (Latin), Telemachos as Telemachus, Kirke as Circe. They are the same people.</p>
+
+      <div class="sub-heading">The House of Odysseus</div>
+      <table class="ref-table">
+        <thead><tr><th>Name</th><th>Who They Are</th><th>Role in the Poem</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Odysseus</td><td>King of Ithaca. Hero of Troy. The cleverest man alive, according to Homer — and the most complicated. His epithet <em>polytropos</em> means "many-turning" or "man of many ways." He is also a compulsive liar, a man who has been unfaithful, and a father who returns home to a son who barely knows him.</td><td>Absent for the first four books; narrates his own wanderings in Books 9–12; spends Books 13–24 in disguise working toward the slaughter of the suitors.</td></tr>
+          <tr><td class="ref-term">Penelope</td><td>Queen of Ithaca, Odysseus's wife. Faithful, intelligent, and operating under enormous pressure for twenty years. Her patience and cunning are equal to Odysseus's own. Many scholars believe she is far more aware of events around her than she lets on.</td><td>Holds off the suitors through delay, intelligence, and ambiguity. Her test of the bow in Book 21 is the poem's decisive turning point.</td></tr>
+          <tr><td class="ref-term">Telemachus</td><td>Son of Odysseus and Penelope. When the poem begins he is approximately twenty years old and has never known his father. His journey in Books 1–4 (the Telemachy) is a coming-of-age story: he goes out into the world, meets the heroes of Troy, and returns ready to act.</td><td>Grows into a man across the poem; eventually fights alongside his father in the slaughter of the suitors.</td></tr>
+          <tr><td class="ref-term">Laertes</td><td>Odysseus's aged father. Lives in grief and neglect on a farm outside Ithaca while his son is away. His reunion with Odysseus in Book 24 is one of the poem's most quietly devastating scenes.</td><td>Appears at the beginning and end of the poem; fights in the final confrontation with the suitors' families.</td></tr>
+          <tr><td class="ref-term">Eumaeus</td><td>Odysseus's swineherd — a slave, but loyal beyond obligation. He shelters the disguised Odysseus and feeds him without knowing who he is. One of the poem's most sympathetically drawn characters.</td><td>Serves as Odysseus's ally and confidant throughout Books 13–22.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-heading">The Suitors</div>
+      <table class="ref-table">
+        <thead><tr><th>Name</th><th>Who They Are</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Antinous</td><td>The most aggressive and dangerous of the suitors. The ringleader. He is the first to be killed by Odysseus's arrow in Book 22 — shot through the throat while drinking.</td></tr>
+          <tr><td class="ref-term">Eurymachus</td><td>The most plausible and smooth-talking of the suitors. He flatters Penelope while plotting against Telemachus. Killed in Book 22.</td></tr>
+          <tr><td class="ref-term">Amphinomus</td><td>The one suitor who shows genuine decency — he warns against killing Telemachus and is troubled by omens. Odysseus even warns him, obliquely, to leave. He stays, and dies with the rest.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-heading">Gods &amp; Divine Figures</div>
+      <table class="ref-table">
+        <thead><tr><th>Name</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Athena</td><td>Odysseus's divine patron. She appears throughout the poem disguised as various mortals — she is, in a sense, the patron goddess of disguise and intelligence, qualities she shares with her favorite hero. Without Athena, Odysseus does not reach home.</td></tr>
+          <tr><td class="ref-term">Poseidon</td><td>The force that delays Odysseus. His grudge dates from the Cyclops episode: Odysseus blinded Poseidon's son Polyphemus, and Poseidon has harassed him ever since. He cannot kill Odysseus — Zeus forbids it — but he can make the journey catastrophic.</td></tr>
+          <tr><td class="ref-term">Zeus</td><td>Rules the assembly of the gods that opens the poem. Generally sympathetic to Odysseus's return but bound by obligations to other gods, including Poseidon. The poem's divine architecture is a negotiation between what Zeus wants and what other gods insist on.</td></tr>
+          <tr><td class="ref-term">Hermes</td><td>Messenger of the gods. Sent to Calypso to demand Odysseus's release in Book 5; appears again to guide Odysseus through Circe's island. The divine logistics of the Odyssey often run through Hermes.</td></tr>
+          <tr><td class="ref-term">Calypso</td><td>The nymph who holds Odysseus on her island Ogygia for seven years. She loves him genuinely and offers him immortality. He refuses — choosing mortality and Penelope over divine life. This choice is the poem's first and most fundamental statement about what Odysseus values.</td></tr>
+          <tr><td class="ref-term">Circe</td><td>The witch of Aeaea who transforms Odysseus's men into pigs. Odysseus resists her magic (with Hermes' help), becomes her lover, and stays on her island for a year. She sends him to the Underworld and back. More ally than antagonist once he has passed her test.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="further-reading">
+        <p>Now that you know the major players, choose the right edition with our <a href="/translations">Odyssey translation comparison</a> or browse <a href="/gift-guide">beautiful collector's editions and gifts</a>.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\episodes.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Key Episodes of the Odyssey: Cyclops, Sirens, Circe & More Explained`;
+const description = `The essential episodes of Homer's Odyssey explained — the Cyclops, the Sirens, Circe, the Underworld, Scylla and Charybdis, and the slaughter of the suitors. What each one means.`;
+const canonical = `https://readingtheodyssey.com/episodes`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference VIII</div>
+      <h2 class="section-title">Key Episodes</h2>
+      <p class="section-subtitle">The moments that define the Odyssey — and what to watch for in each</p>
+    </div>
+    <div class="section-body">
+      <p>These are the episodes every reader of the Odyssey should approach with particular attention — the scenes where Homer's themes, technique, and moral arguments are most fully at work.</p>
+
+      <div class="sub-heading">The Cyclops (Book 9)</div>
+      <p>The most famous episode in the poem is also its most morally complex. Odysseus's intelligence saves his men — until his pride destroys the advantage. He cannot leave without shouting his name into the darkness at Polyphemus, earning Poseidon's wrath. Cleverness and hubris operate in the same moment. Watch for how Homer frames Odysseus's storytelling here: he is performing this for the Phaeacians, and his account of his own cleverness is perhaps self-serving in ways Homer hints at without stating.</p>
+
+      <div class="sub-heading">The Underworld (Book 11)</div>
+      <p>The emotional and moral center of the poem. Achilles' speech — that he would rather be a slave among the living than king of all the dead — directly addresses the heroic code of the Iliad and Odysseus's choice to survive rather than die gloriously. Agamemnon's warning about treacherous wives is the shadow that falls across Penelope throughout the poem. And the silent Ajax, who refuses to speak to Odysseus over the armor contest, is the reminder that survival has costs that cannot be repaid.</p>
+
+      <div class="sub-heading">Odysseus and Penelope in the Firelight (Book 19)</div>
+      <p>The longest and most debated conversation in the poem. Penelope speaks at length to the disguised beggar — who is, of course, her husband. She tells him her plan with the web. She describes a dream about geese. She announces the contest of the bow. She weeps for Odysseus. And Odysseus, still in disguise, consoles her and gives her false hope about her husband's return. Does she know? The text does not say. The ambiguity is not a flaw — it is Homer's most sophisticated move in the poem.</p>
+
+      <div class="sub-heading">The Test of the Bow (Books 21–22)</div>
+      <p>Penelope announces the contest: whoever can string the great bow and shoot through twelve axe-heads wins her hand. No suitor can string it. The disguised beggar asks to try. The moment he handles the bow — stringing it easily, plucking it like a lyre string — every suitor in the room understands what is about to happen. The slaughter that follows is described with brutal efficiency. It is justice, but Homer does not let it feel triumphant.</p>
+
+      <div class="sub-heading">The Recognition (Book 23)</div>
+      <p>Penelope, told the suitors are dead and Odysseus has returned, tests him with the secret of their bed — built from a living olive tree that cannot be moved. Only the real Odysseus would know this. He answers in anger at the suggestion the bed could be moved, and she knows him. The reunion is real, but Homer frames it with extraordinary restraint: they weep together, and then he tells her everything that is still to come. The homecoming is not an ending. It is a resumption.</p>
+
+      <div class="further-reading">
+        <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\gift-guide.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Odyssey & Classics Gift Guide: Beautiful Editions, Kindle & Art`;
+const description = `Perfect gifts for Odyssey and Greek classics readers: premium editions (Penguin Clothbound, Folio Society), Kindle Paperwhite, ancient Greek art prints, and more.`;
+const canonical = `https://readingtheodyssey.com/gift-guide`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Gift Guide</div>
+      <h2 class="section-title">The Classics Reader's Gift Guide</h2>
+      <p class="section-subtitle">Art, devices, and premium editions — for the reader who takes Homer seriously</p>
+    </div>
+    <div class="section-body">
+      <p>These are gifts for readers who want more than a standard paperback — people who want to own a beautiful object, read with better tools, or live with Homer's world on their walls. Everything here has been selected because it genuinely enhances the experience of reading the Odyssey.</p>
+
+      <div class="sub-heading">Art &amp; Prints</div>
+      <p>Ancient Greek black-figure and red-figure vase paintings are among the most striking visual art ever made — and many of the most famous depict scenes directly from the Odyssey: Odysseus and the Sirens, the blinding of the Cyclops, Circe, the ship of Odysseus. Museum-quality prints of these images make genuinely beautiful gifts for anyone who loves the poem. The British Museum, the Metropolitan Museum of Art, and the Louvre all have pieces from this tradition in their collections, and high-quality reproductions are widely available.</p>
+      <div class="book-entry">
+        <div class="book-title">Ancient Greek Mythology Art Prints</div>
+        <div class="book-author">Museum-quality reproductions</div>
+        <div class="book-note">Search for Odyssey-specific scenes: the Sirens mosaic, Odysseus and Polyphemus, Circe transforming sailors. Red-figure and black-figure vase painting reproductions in 8x10 or 11x14 frame-ready sizes are widely available and make striking gifts for anyone living with the poem.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/s?k=ancient+greek+odyssey+art+print&tag=readingtheodyssey-20" target="_blank" rel="noopener">Browse on Amazon →</a>
+      </div>
+
+      <div class="sub-heading">Reading Devices</div>
+      <div class="book-entry">
+        <div class="book-title">Kindle Paperwhite</div>
+        <div class="book-author">The best dedicated reading device for long-form classical literature</div>
+        <div class="book-note">The Paperwhite's e-ink display eliminates eye strain on extended reading sessions — important for a poem this long. For the Odyssey specifically, the built-in dictionary means you can look up unfamiliar words without breaking the flow, and carrying multiple translations simultaneously — Wilson, Fagles, Lattimore — lets you switch between them mid-passage, which is one of the most instructive ways to read Homer. The best reading tool for anyone serious about the classics.</div>
+        <a class="book-affiliate" href="https://amzn.to/4lSIZ9u" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="sub-heading">Premium &amp; Collector's Editions</div>
+      <div class="book-entry">
+        <div class="book-title">The Odyssey — Penguin Clothbound Classics</div>
+        <div class="book-author">Designed by Coralie Bickford-Smith</div>
+        <div class="book-note">Coralie Bickford-Smith's clothbound series is the most beautiful mass-market classics line in print. The Odyssey edition is bound in high-quality cloth with foil-stamped design — a striking object at a price point that makes it an accessible gift. Uses the Rieu translation, revised by D.C.H. Rieu. Widely admired for its visual design and tactile quality. The Iliad is available in the same series for a matching pair.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0141192445?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <div class="book-entry">
+        <div class="book-title">The Iliad — Penguin Clothbound Classics</div>
+        <div class="book-author">Designed by Coralie Bickford-Smith</div>
+        <div class="book-note">The companion volume — same series design, same production quality. Together the clothbound Iliad and Odyssey make one of the finest gifts you can give a reader of classical literature. A matched pair of the two greatest poems in Western literature, beautifully made.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/014139465X?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <div class="book-entry">
+        <div class="book-title">The Odyssey — Folio Society Edition (Fagles translation)</div>
+        <div class="book-author">Quarter-bound in buckram with illustrated slipcase</div>
+        <div class="book-note">The standard against which all collector's editions of Homer are measured. The Folio Society's Odyssey pairs Robert Fagles's celebrated translation with illustrations by Grahame Baker-Smith and an introduction by Bernard Knox. Quarter-bound in buckram with printed map endpapers and a blocked slipcase. The kind of book that stays on a shelf for decades.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0374961360?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <div class="book-entry">
+        <div class="book-title">The Folio Society Limited Edition — Iliad &amp; Odyssey</div>
+        <div class="book-author">Emily Wilson translations, illustrated by Clive Hicks-Jenkins — 500 copies</div>
+        <div class="book-note">The most extraordinary Homer edition in print — a two-volume limited set pairing Emily Wilson's translations with powerful illustrations by Clive Hicks-Jenkins. Quarter-bound with coloured leather spines, signed by Wilson and Hicks-Jenkins, limited to 500 numbered copies. Available exclusively through the Folio Society. For the serious collector, this is the definitive Homer of our generation.</div>
+      </div>
+
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\glossary.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Odyssey Glossary: Nostos, Xenia, Kleos & Key Greek Terms Explained`;
+const description = `Essential glossary of Greek concepts in the Odyssey — nostos (homecoming), xenia (guest-friendship), kleos (glory), mētis (cunning), and more. Deepen your understanding of Homer's world.`;
+const canonical = `https://readingtheodyssey.com/glossary`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference V</div>
+      <h2 class="section-title">Key Terms Glossary</h2>
+      <p class="section-subtitle">The Greek concepts that govern the world of the Odyssey</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey operates on a set of social and moral concepts that have no single English equivalent. Understanding them before you begin is the difference between reading the poem as an adventure story and reading it as the moral argument Homer intended.</p>
+
+      <table class="ref-table">
+        <thead><tr><th>Term</th><th>Meaning &amp; Significance</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Nostos <span class="ref-greek-word">(νόστος)</span></td><td>Homecoming. The central subject of the Odyssey and the concept that gives the epic cycle its name — the Returns (Nostoi) were a group of epics about the Greek heroes' journeys home from Troy. Nostos is not merely geographical return but the full restoration of a person to their place, identity, and relationships. Odysseus's nostos is complicated by the question of whether he — and Ithaca — can ever be what they were.</td></tr>
+          <tr><td class="ref-term">Xenia <span class="ref-greek-word">(ξενία)</span></td><td>Guest-friendship. The sacred obligation to welcome strangers, feed them, and send them on their way with gifts — without asking their name or business until they have eaten. Zeus himself is the protector of xenia. Every island Odysseus lands on is judged by whether it honors or violates this code. The Cyclops's violation is the most catastrophic; the Phaeacians' observance is the most perfect.</td></tr>
+          <tr><td class="ref-term">Kleos <span class="ref-greek-word">(κλέος)</span></td><td>Glory, fame, renown — specifically the kind that outlasts death. In the Iliad, kleos is the supreme value: Achilles chooses a short glorious life over a long obscure one. The Odyssey is about a hero who chose survival instead, and the poem asks what kind of kleos belongs to a man who came home alive. Odysseus's kleos is peculiar — it is the fame of endurance, cunning, and return rather than battlefield heroism.</td></tr>
+          <tr><td class="ref-term">Polytropos <span class="ref-greek-word">(πολύτροπος)</span></td><td>The first word used to describe Odysseus in the poem — often translated "man of many ways" or "much-traveled" or "crafty." It contains a deliberate ambiguity: it can mean a man who has traveled many roads, or a man who turns many ways, or a man of many tricks. Emily Wilson translates it simply as "complicated." Every translation of this single word is an interpretation of Odysseus's character.</td></tr>
+          <tr><td class="ref-term">Arete <span class="ref-greek-word">(ἀρετή)</span></td><td>Excellence, virtue — the quality of being the best at what you are. In the Iliad, arete is primarily martial excellence. In the Odyssey it is broader: Odysseus's arete is his intelligence, his endurance, his ability to survive. Penelope's arete is her faithfulness and her cunning. The poem asks whether these qualities are heroic in the same sense Achilles' battlefield glory was heroic.</td></tr>
+          <tr><td class="ref-term">Hubris <span class="ref-greek-word">(ὕβρις)</span></td><td>Outrage, excessive pride, the transgression of proper limits. The suitors' behavior is a sustained act of hubris — consuming Odysseus's property, dishonoring his household, treating his wife as a prize. Odysseus's own hubris appears in the Cyclops episode when he shouts his name after escaping. Both acts of hubris have consequences.</td></tr>
+          <tr><td class="ref-term">Moly <span class="ref-greek-word">(μῶλυ)</span></td><td>The magical herb given to Odysseus by Hermes that protects him from Circe's transformative magic. Its actual identity has been debated since antiquity. The name appears only once in Greek literature — in the Odyssey — and Homer's description of it (black root, white flower, difficult for mortals to dig) has never been matched to a real plant with certainty.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="further-reading">
+        <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\gods.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Gods of the Odyssey: Athena, Poseidon & the Olympian Cast`;
+const description = `Complete guide to the gods in Homer's Odyssey — Athena's patronage, Poseidon's grudge, Zeus's role, and the divine interventions that shape Odysseus's journey home.`;
+const canonical = `https://readingtheodyssey.com/gods`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference IV</div>
+      <h2 class="section-title">The Gods</h2>
+      <p class="section-subtitle">The divine figures of the Odyssey and their roles in the poem</p>
+    </div>
+    <div class="section-body">
+      <p>The gods of the Odyssey are less militarily active than in the Iliad — they do not fight on the battlefield — but they are no less consequential. The poem's divine politics are a negotiation between Athena's patronage of Odysseus, Poseidon's wrath against him, and Zeus's ultimate authority over both. Understanding who wants what among the gods clarifies almost every event in the poem.</p>
+
+      <table class="ref-table">
+        <thead><tr><th>God</th><th>Domain</th><th>Role in the Odyssey</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-god">Zeus</td><td>King of the gods, sky and thunder</td><td>Presides over the divine council that opens the poem and agrees to Odysseus's release. Generally sympathetic but bound by the claims of other gods. His authority is the ultimate check on Poseidon's wrath.</td></tr>
+          <tr><td class="ref-god">Athena</td><td>Wisdom, strategy, crafts</td><td>Odysseus's divine patron and the poem's most active god. She appears in disguise throughout — as Mentor, as Mentes, as a young girl leading Odysseus to the Phaeacian palace. She argues his case before Zeus, guides Telemachus, and orchestrates the final confrontation in Ithaca.</td></tr>
+          <tr><td class="ref-god">Poseidon</td><td>Sea, earthquakes</td><td>The poem's divine antagonist. His wrath against Odysseus for blinding Polyphemus drives the catastrophes of the voyage. He is away among the Ethiopians when the gods make their decision — and returns to wreck Odysseus one final time before the raft reaches Phaeacia.</td></tr>
+          <tr><td class="ref-god">Hermes</td><td>Messenger, guide of souls</td><td>Carries Zeus's orders to Calypso; gives Odysseus the herb moly that protects him from Circe's magic; guides the suitors' shades to the Underworld in Book 24.</td></tr>
+          <tr><td class="ref-god">Apollo</td><td>Sun, music, prophecy, plague</td><td>Less central than in the Iliad. The suitors' feast takes place on his festival day — a detail that gives the slaughter a ritual quality.</td></tr>
+          <tr><td class="ref-god">Calypso</td><td>Nymph, daughter of Atlas</td><td>Holds Odysseus on Ogygia for seven years. Releases him on Zeus's order. Her offer of immortality — refused by Odysseus — is the poem's central statement about what he values.</td></tr>
+          <tr><td class="ref-god">Circe</td><td>Witch, daughter of Helios</td><td>Transforms men into animals; becomes Odysseus's guide and lover; sends him to the Underworld and advises him on every subsequent danger. A divine figure but more human in psychology than the Olympians.</td></tr>
+          <tr><td class="ref-god">Tiresias</td><td>Prophet (shade)</td><td>The blind seer of Thebes whom Odysseus consults in the Underworld. His prophecy outlines the dangers still ahead and hints at what comes after the poem ends. The only shade in the Underworld who retains full consciousness.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="further-reading">
+        <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\how-to-read.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `How to Read the Odyssey: Practical Tips for First-Time Readers`;
+const description = `Practical advice for reading Homer's Odyssey — tracking disguises and lies, understanding the non-linear structure, what to expect from the ending, and how to engage with Penelope as co-protagonist.`;
+const canonical = `https://readingtheodyssey.com/how-to-read`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">How to Read</div>
+      <h2 class="section-title">How to Read the Odyssey</h2>
+      <p class="section-subtitle">Practical advice for once the book is open</p>
+    </div>
+    <div class="section-body">
+      <p>Preparation gets you to the door. These are the habits that determine what happens once you step inside.</p>
+
+      <div class="sub-heading">Understand the Structure Before You Begin</div>
+      <p>The Odyssey is not a straightforward chronological narrative. It begins ten years after Troy, in the middle of Odysseus's wanderings — and does not actually show you most of those wanderings until Books 9 through 12, when Odysseus narrates his own adventures to the Phaeacian court. You are reading a story within a story. Additionally, the first four books are not about Odysseus at all: they follow his son Telemachus. Understanding this architecture before you start prevents the disorientation that causes many first-time readers to lose confidence.</p>
+
+      <div class="sub-heading">Track the Disguises</div>
+      <p>Odysseus spends the second half of the poem in disguise — and Athena disguises other characters too. Keep a running mental note of who knows who Odysseus really is, and when. The dramatic irony — you knowing something a character does not — is one of the poem's chief pleasures, but only if you are tracking it. The recognition scenes, when they come, are among the most affecting moments in all literature. They only work if you have felt the full weight of the disguise beforehand.</p>
+
+      <div class="sub-heading">Pay Attention to the Lies</div>
+      <p>Odysseus lies constantly, fluently, and with evident pleasure. He tells false autobiographies to almost every character he meets in the second half of the poem. Notice how the lies are constructed — they are elaborate, specific, and strangely revealing about who he actually is. The ancient epithet for Odysseus is <em>polytropos</em>: many-turning, or many-minded. His lying is not a moral failing Homer glosses over. It is the poem's central subject.</p>
+
+      <div class="sub-heading">Read Books 9–12 as a Performance</div>
+      <p>The Cyclops, the Sirens, Circe, the Underworld — these famous episodes are not narrated by Homer but by Odysseus himself, to the Phaeacian court. He is performing his own legend. That framing matters: he is an unreliable narrator of his own story, and Homer wants you to know it. Ask, as you read, what Odysseus might be shaping or leaving out. The gap between his version and what we might actually believe is one of the poem's most sophisticated games.</p>
+
+      <div class="sub-heading">Do Not Underestimate Penelope</div>
+      <p>Penelope is the poem's other protagonist — as cunning as Odysseus, as patient, and operating under far greater constraints. Her intelligence is everywhere in the poem once you look for it: the web she weaves and unravels, the test of the bow, the careful ambiguity of her speech to the disguised Odysseus in Book 19. Many scholars believe she knows who the beggar is long before the recognition scene. Read with that possibility in mind.</p>
+
+      <div class="sub-heading">The Ending Is Meant to Disturb You</div>
+      <p>The Odyssey ends with a slaughter — the suitors killed, the disloyal maids hanged, a near-resumption of civil war only prevented by Athena's intervention. It does not end with peace. This is deliberate. The violence Odysseus brings home is not resolved, only suspended. If you finish the poem feeling uneasy rather than satisfied, Homer has done his job. The question of whether justice was served in Ithaca is one the poem leaves genuinely open.</p>
+
+
+      <div class="further-reading">
+        <p>Once you've chosen your translation, keep our <a href="/characters">character reference</a> and <a href="/synopsis">book-by-book synopsis</a> open while reading. Looking for a premium copy? Check our <a href="/gift-guide">classics reader's gift guide</a>.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\index.astro === 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Complete Guide to Reading the Odyssey – Before Nolan's Film (July 2026)`;
+const description = `Free primer for Homer's Odyssey: best translations compared (Wilson, Fagles, Lattimore), character guides, journey map, book-by-book synopsis, and everything you need before the Nolan film.`;
+const canonical = `https://readingtheodyssey.com/`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Introduction</div>
+      <h2 class="section-title">The Complete Guide to Reading the Odyssey</h2>
+      <p class="section-subtitle">A structured primer for approaching Homer's second epic on its own terms</p>
+    </div>
+    <div class="section-body">
+
+      <div class="intro-banner">
+        <img src="/images/landing_image.jpg" alt="Odysseus and the wine-dark sea — ancient Greek pottery style" loading="eager" fetchpriority="high" />
+      </div>
+
+      <div class="intro-pull-quote">
+        "Cyclops, if any mortal man ever asks you who it was that inflicted upon your eye this shameful blinding, tell him that you were blinded by Odysseus, sacker of cities. Laertes is his father, and he makes his home in Ithaca."
+        <div class="intro-pull-attribution">— Homer, <em>The Odyssey</em>, Book 9 (trans. Richmond Lattimore)</div>
+      </div>
+
+      <div class="intro-section-grid">
+
+        <a href="/before-the-nolan-film" class="intro-section-card">
+          <div class="intro-card-label">Before the Nolan Film</div>
+          <div class="intro-card-desc">Christopher Nolan's <em>The Odyssey</em> releases July 17, 2026 — starring Matt Damon, Tom Holland, and Zendaya. Everything you need to know before the film.</div>
+        </a>
+
+        <a href="/translations" class="intro-section-card">
+          <div class="intro-card-label">Choosing a Translation</div>
+          <div class="intro-card-desc">Emily Wilson, Fagles, Green, or Lattimore — which translation is right for you, and why the Odyssey rewards a different choice than the Iliad.</div>
+        </a>
+
+        <a href="/gift-guide" class="intro-section-card">
+          <div class="intro-card-label">Gift Guide</div>
+          <div class="intro-card-desc">Beautiful editions, collector's sets, and reading tools — premium Penguin Clothbound, Folio Society, Kindle Paperwhite, and art prints for the serious reader.</div>
+        </a>
+
+        <a href="/retellings" class="intro-section-card">
+          <div class="intro-card-label">Modern Retellings</div>
+          <div class="intro-card-desc">Madeline Miller's <em>Circe</em>, Margaret Atwood's <em>The Penelopiad</em>, Pat Barker's <em>The Women of Troy</em> — contemporary novels that bring Homer's world to life.</div>
+        </a>
+
+        <a href="/world" class="intro-section-card">
+          <div class="intro-card-label">The World of Odysseus</div>
+          <div class="intro-card-desc">The Mediterranean world Odysseus navigates — real geography, mythological space, and the social codes that govern every island he lands on.</div>
+        </a>
+
+        <a href="/mythology" class="intro-section-card">
+          <div class="intro-card-label">Mythology</div>
+          <div class="intro-card-desc">The gods, monsters, and heroes Homer assumes you already know. Poseidon's grudge, Athena's favor, and the full backstory before the poem begins.</div>
+        </a>
+
+      </div>
+
+      <p>This guide is a reading primer — a structured preparation for engaging with the Odyssey on its own terms. It does not summarize or replace the poem. Its purpose is to assemble, in advance of your reading, the contextual knowledge that Homer's original audience possessed as a matter of course: the mythological background, the social codes of the ancient Mediterranean, the cast of characters, the scholarly conversation surrounding the text, and the practical choices a modern reader must make before opening the book.</p>
+
+      <div class="sub-heading">Quick Reference</div>
+      <p>Keep these open while you read — they answer the questions that come up most often mid-poem.</p>
+
+      <div class="intro-section-grid">
+
+        <a href="/characters" class="intro-section-card">
+          <div class="intro-card-label">Character Reference</div>
+          <div class="intro-card-desc">Odysseus, Penelope, Telemachus, and every major figure — who they are, what they want, and what happens to them.</div>
+        </a>
+
+        <a href="/synopsis" class="intro-section-card">
+          <div class="intro-card-label">Book-by-Book Synopsis</div>
+          <div class="intro-card-desc">A one-line summary of all 24 books — from the Telemachy to Ithaca. Use this to stay oriented while reading.</div>
+        </a>
+
+        <a href="/gods" class="intro-section-card">
+          <div class="intro-card-label">The Gods</div>
+          <div class="intro-card-desc">Athena's patronage, Poseidon's grudge, Zeus's role — the divine interventions that shape Odysseus's journey home.</div>
+        </a>
+
+        <a href="/glossary" class="intro-section-card">
+          <div class="intro-card-label">Key Terms Glossary</div>
+          <div class="intro-card-desc">Nostos, xenia, kleos, mētis — the Greek concepts Homer's world runs on, briefly defined.</div>
+        </a>
+
+        <a href="/journey" class="intro-section-card">
+          <div class="intro-card-label">The Journey Map</div>
+          <div class="intro-card-desc">Every stop on Odysseus's ten-year voyage home — from Troy to the Cyclops, Circe, the Underworld, and Ithaca.</div>
+        </a>
+
+        <a href="/how-to-read" class="intro-section-card">
+          <div class="intro-card-label">How to Read</div>
+          <div class="intro-card-desc">Practical advice for once the book is open — tracking disguises, following the lies, understanding the nonlinear structure, and what the ending really means.</div>
+        </a>
+
+      </div>
+
+      <p>Not sure which edition to start with? See the detailed <a href="/translations">Odyssey translation comparison</a> — Emily Wilson, Fagles, Lattimore, and Green side by side with sample passages.</p>
+
+      <div class="further-reading">
+        <p>Preparing for Christopher Nolan's <em>The Odyssey</em> releasing July 17, 2026? <a href="/before-the-nolan-film">Start here →</a></p>
+        <p>Or explore <a href="/gift-guide">gift ideas for classics readers</a> — beautiful editions, collector's sets, and reading tools.</p>
+      </div>
+
+    </div>
+  </article>
+</Layout>
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\journey.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `The Journey Map: Every Stop on Odysseus's Ten-Year Voyage`;
+const description = `Complete guide to every location in Odysseus's wanderings — the Cyclops, Circe's island, the Underworld, Scylla and Charybdis, the Sirens, and Calypso. Where each episode fits in the journey.`;
+const canonical = `https://readingtheodyssey.com/journey`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference II</div>
+      <h2 class="section-title">The Journey Map</h2>
+      <p class="section-subtitle">Every stop on Odysseus's ten-year voyage — narrated in Books 9 through 12</p>
+    </div>
+    <div class="section-body">
+      <p>Odysseus's wanderings are not narrated by Homer directly — they are performed by Odysseus himself for the Phaeacian court in Books 9 through 12. Keep in mind as you read that he is an unreliable narrator telling his own legend to an audience he wants to impress.</p>
+
+      <table class="ref-table">
+        <thead><tr><th>Stop</th><th>Books</th><th>What Happens</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-term">Troy</td><td>Backstory</td><td>The war ends. The Greeks sack the city and begin their separate returns home. Odysseus's journey begins here, already complicated — he has blinded Poseidon's son and earned the sea god's hatred.</td></tr>
+          <tr><td class="ref-term">Cicones (Ismarus)</td><td>9</td><td>The first stop after Troy. Odysseus sacks a city, his men linger and drink, the Cicones regroup and attack. Odysseus loses six men per ship. A warning about discipline that his crew ignores throughout the voyage.</td></tr>
+          <tr><td class="ref-term">Lotus-Eaters</td><td>9</td><td>A people whose food induces total forgetfulness and loss of will. Odysseus's men who eat the lotus no longer want to return home. He drags them back to the ships by force. The first encounter with forgetting as a temptation — a theme the poem returns to repeatedly.</td></tr>
+          <tr><td class="ref-term">Cyclops (Polyphemus)</td><td>9</td><td>The most famous episode in the poem. Polyphemus, the son of Poseidon, traps Odysseus and his men in his cave and begins eating them. Odysseus blinds him with a sharpened stake and escapes under sheep. But he cannot resist shouting his real name as he sails away — earning Poseidon's permanent wrath. His cleverness and his pride operate in the same moment.</td></tr>
+          <tr><td class="ref-term">Aeolus (Island of the Winds)</td><td>10</td><td>The wind-god gives Odysseus a bag containing all adverse winds, so he can sail straight home. His men, suspecting treasure inside, open the bag while he sleeps. The winds escape, blowing them back to Aeolus, who refuses to help again — he recognizes someone the gods have cursed.</td></tr>
+          <tr><td class="ref-term">Laestrygonians</td><td>10</td><td>A race of cannibal giants who destroy all but one of Odysseus's twelve ships and eat most of his men. The most purely catastrophic stop of the voyage. Odysseus escapes only because he moored his ship outside the harbor.</td></tr>
+          <tr><td class="ref-term">Circe (Aeaea)</td><td>10–12</td><td>The witch transforms Odysseus's scouting party into pigs. Odysseus, protected by the herb moly given by Hermes, resists her magic and becomes her lover. He stays for a year. She becomes his crucial guide, sending him to the Underworld and advising him on every subsequent danger.</td></tr>
+          <tr><td class="ref-term">The Underworld</td><td>11</td><td>Odysseus travels to the land of the dead to consult the prophet Tiresias. He encounters the shades of his dead mother, his companions from Troy, and the great heroes of the Iliad — including Achilles, who tells him that he would rather be the slave of the poorest living man than king of all the dead. The Underworld is the poem's moral and emotional center.</td></tr>
+          <tr><td class="ref-term">Sirens</td><td>12</td><td>Creatures whose song promises knowledge of all things — and leads sailors to their deaths. Odysseus is tied to the mast; his men row with their ears stopped with wax. He is the only mortal to hear the Sirens and survive. The episode asks what the desire for knowledge costs.</td></tr>
+          <tr><td class="ref-term">Scylla &amp; Charybdis</td><td>12</td><td>A six-headed monster and a whirlpool opposite each other in a narrow strait. Circe told him to choose Scylla — six men lost — over Charybdis, which would destroy the whole ship. He does not tell his crew. Six men are eaten while looking at him. Leadership and sacrifice in the same terrible moment.</td></tr>
+          <tr><td class="ref-term">Cattle of Helios (Thrinacia)</td><td>12</td><td>The sun god's sacred cattle. Odysseus has been warned under no circumstances to touch them. Stranded by storms, his men slaughter and eat the cattle while he sleeps. Helios demands retribution. Zeus destroys the ship; Odysseus alone survives.</td></tr>
+          <tr><td class="ref-term">Calypso (Ogygia)</td><td>5, 7</td><td>The nymph's island, where Odysseus is stranded for seven years. She loves him and offers him immortality. He refuses every day, sitting on the shore weeping toward Ithaca. Eventually Hermes arrives with Zeus's order for his release. Calypso sends him off on a raft.</td></tr>
+          <tr><td class="ref-term">Phaeacia (Scheria)</td><td>6–8, 13</td><td>The island of the Phaeacians — a perfect civilization, wealthy and hospitable. It is here that Odysseus narrates his wanderings (Books 9–12). The Phaeacians honor xenia completely and carry him home to Ithaca in a magical ship while he sleeps. Poseidon turns the ship to stone in punishment — and threatens Phaeacia itself.</td></tr>
+          <tr><td class="ref-term">Ithaca</td><td>13–24</td><td>Home. But not safe. The palace is overrun with suitors. Odysseus arrives in disguise, reunites with his son and loyal servants, tests his wife, and kills every suitor with his great bow. The homecoming is violent, provisional, and haunted.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="further-reading">
+        <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\modern-scholars.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Modern Scholars on the Odyssey: Finley, Wilson, Graziosi & More`;
+const description = `Essential modern scholarship on Homer's Odyssey. Recommended books by M.I. Finley, Emily Wilson, Barbara Graziosi, Michael Wood, and Daniel Mendelsohn.`;
+const canonical = `https://readingtheodyssey.com/modern-scholars`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Modern Scholars</div>
+      <h2 class="section-title">Modern Scholars</h2>
+      <p class="section-subtitle">The critics and scholars who rebuilt how we read the Odyssey</p>
+    </div>
+    <div class="section-body">
+      <p>The modern scholarly tradition on the Odyssey is rich and surprisingly contentious. These are the works that change how you read — not just what you know about the poem, but what you notice inside it.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-mendelsohn-an-odyssey.jpg" alt="An Odyssey — Daniel Mendelsohn" />
+        <div class="book-title">An Odyssey: A Father, a Son, and an Epic</div>
+        <div class="book-author">Daniel Mendelsohn</div>
+        <div class="book-note">The best modern book about reading the Odyssey. Mendelsohn, a classical scholar and memoirist, describes taking his elderly father into his college seminar on the poem — and the way the Odyssey's themes of homecoming, fathers and sons, and the passage of time played out in real time between them. Deeply learned and deeply personal, it is the rarest kind of criticism: it changes how you feel about the poem, not just how you understand it.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0345806212?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-nicolson-the-mighty-dead.jpg" alt="The Mighty Dead — Adam Nicolson" />
+        <div class="book-title">The Mighty Dead: Why Homer Matters</div>
+        <div class="book-author">Adam Nicolson</div>
+        <div class="book-note">A passionate, wide-ranging argument for why Homer's poems still speak to us — and why the Odyssey in particular is a poem about survival, endurance, and what it costs to hold a self together across long years of suffering. Nicolson ranges across oral tradition, Bronze Age archaeology, and the texture of the poems themselves. Beautifully written and genuinely persuasive about Homer's continuing relevance.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0007335539?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-auerbach-mimesis.jpg" alt="Mimesis — Erich Auerbach" />
+        <div class="book-title">Mimesis: The Representation of Reality in Western Literature</div>
+        <div class="book-author">Erich Auerbach</div>
+        <div class="book-note">Contains the famous opening chapter "Odysseus' Scar" — one of the most influential pieces of literary criticism ever written. Auerbach contrasts Homer's narrative style with biblical narrative, arguing that Homer externalizes everything: no hidden depths, no psychological shadows, everything fully illuminated in the foreground. Whether you agree or not, this essay changes how you read Homer's technique. Essential for anyone approaching the poem seriously.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0691160228?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-nagy-the-best-of-the-achaeans.jpg" alt="The Best of the Achaeans — Gregory Nagy" />
+        <div class="book-title">The Best of the Achaeans</div>
+        <div class="book-author">Gregory Nagy</div>
+        <div class="book-note">Nagy's foundational work on heroic ideology and oral tradition. His analysis of how the Homeric poems functioned as cultural memory — how kleos (fame, glory) operates differently in the Odyssey than in the Iliad — is essential for understanding why Odysseus's choices carry the weight they do. The Odyssey's hero chooses life over glory; Nagy explains what that choice cost in the ancient heroic value system.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0801860156?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\mythology.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Greek Mythology Background for Reading the Odyssey`;
+const description = `Essential Greek mythology Homer assumes you know before the Odyssey: the Trojan War backstory, Poseidon's grudge, the gods' factions, and the hero cycle. Best background books recommended.`;
+const canonical = `https://readingtheodyssey.com/mythology`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 3</div>
+      <h2 class="section-title">Mythology</h2>
+      <p class="section-subtitle">The divine and heroic world Homer assumes you already know</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey requires less mythological preparation than the Iliad — its cast is smaller and its divine machinery simpler. But two things are essential before you begin: the backstory of the Trojan War (which the Odyssey assumes as shared knowledge), and the nature of the gods who intervene throughout. Poseidon's grudge against Odysseus has a specific origin. Athena's patronage has a specific logic. These two books provide both.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-hamilton-mythology.png" alt="Mythology — Edith Hamilton" />
+        <div class="book-title">Mythology</div>
+        <div class="book-author">Edith Hamilton</div>
+        <div class="book-note">The standard orientation to the Greek mythological world. Read Part Four (The Trojan War) and Part Five (The Adventures of Odysseus) before you begin. Hamilton covers Poseidon's wrath, the full backstory of the Trojan War, and the mythological framework of Odysseus's wanderings in clear, engaging prose that requires no prior knowledge. Its limitations are real — it occasionally simplifies — but as a first map of the territory it remains unmatched.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0316341517?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-graves-the-greek-myths.jpg" alt="The Greek Myths — Robert Graves" />
+        <div class="book-title">The Greek Myths</div>
+        <div class="book-author">Robert Graves</div>
+        <div class="book-note">The most comprehensive single-volume treatment of Greek mythology in English. Graves retells every major myth with full source citations, variant traditions, and his own interpretive commentary. For the Odyssey, the relevant sections cover the Trojan War aftermath, Circe, the Sirens, Scylla and Charybdis, and the myths surrounding Odysseus's return. An invaluable reference to consult during your reading whenever the poem mentions something whose backstory you do not know.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0140171991?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-apollodorus-the-library.jpg" alt="The Library — Apollodorus" />
+        <div class="book-title">The Library (Bibliotheca)</div>
+        <div class="book-author">Apollodorus, trans. Robin Hard</div>
+        <div class="book-note">The mythological reference book of the ancient world — a comprehensive summary of Greek myth from the creation through the Trojan War and its aftermath. The section on the Returns (Nostoi) covers the fates of all the Greek heroes who survived Troy, including the full outline of Odysseus's wanderings and homecoming. Not a book to read cover to cover, but invaluable as a reference when the Odyssey mentions a character or episode whose backstory you do not know.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0199543151?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\podcasts.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Best Podcasts for Reading the Odyssey`;
+const description = `Top podcasts to accompany your reading of Homer's Odyssey: The Rest is History, Natalie Haynes Stands Up for the Classics, and more. Perfect for commutes or deeper context.`;
+const canonical = `https://readingtheodyssey.com/podcasts`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 9</div>
+      <h2 class="section-title">Podcasts to Accompany Your Reading</h2>
+      <p class="section-subtitle">Audio companions for the commute, the gym, or the long read</p>
+    </div>
+    <div class="section-body">
+      <p>Some of the best Homeric scholarship and storytelling right now is happening in podcast form. These are sequenced from most immediately relevant to deeper cuts — start at the top and work down as your interest grows.</p>
+
+      <div class="book-entry">
+        <div class="book-title">Natalie Haynes Stands Up for the Classics — The Odyssey</div>
+        <div class="book-author">Natalie Haynes — BBC Radio 4</div>
+        <div class="book-note">Start here. Haynes brings the Odyssey to life in a single episode that covers the poem's structure, its characters, and its persistent modern relevance with wit and genuine classical learning. Search "Natalie Haynes Odyssey" on BBC Sounds. Free to stream. Her episode on Penelope is also essential — it reframes the entire poem around the character Homer most underserves.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The Rest is History — Homer episodes</div>
+        <div class="book-author">Tom Holland &amp; Dominic Sandbrook</div>
+        <div class="book-note">Holland and Sandbrook have covered Homer, the Trojan War, and the Bronze Age extensively across their back catalogue. Search "Homer" and "Troy" in their episode library. Tom Holland is a classicist as well as a historian, and his genuine enthusiasm for the ancient world makes even familiar material feel fresh. Available on all major podcast platforms.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The Ancient World</div>
+        <div class="book-author">Scott C. Chesworth</div>
+        <div class="book-note">A systematic chronological survey of the ancient world from the earliest civilizations through the fall of Rome. The early episodes on Bronze Age Greece and the Mycenaean world provide essential geographical and archaeological context for the Odyssey's setting. More scholarly in tone than the History with Haynes or Rest is History, and more systematic — ideal for listeners who want to understand the world the poem describes rather than just the poem itself.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Instant Classics</div>
+        <div class="book-author">Mary Beard</div>
+        <div class="book-note">Mary Beard brings ancient texts to contemporary audiences with characteristic candor and rigor. Her episodes on Greek literature, women in antiquity, and the reception of classical culture are all relevant to the Odyssey. Particularly useful once you have finished the poem and want to think about how it has been read across the centuries.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The History of Rome</div>
+        <div class="book-author">Mike Duncan</div>
+        <div class="book-note">Not directly about Homer, but essential context for the Roman works in the After the Odyssey section — particularly Virgil's use of Odysseus as a foil for Aeneas. Duncan's 179-episode series covering the full arc of Roman history from founding to fall remains one of the finest history podcasts ever made. Begin at episode 1.</div>
+      </div>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\protagonists.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Two Protagonists: Odysseus & Penelope as Co-Heroes of the Odyssey`;
+const description = `Why the Odyssey has two protagonists — Odysseus and Penelope — and how Homer gives Penelope equal strategic intelligence, agency, and moral weight in the poem's resolution.`;
+const canonical = `https://readingtheodyssey.com/protagonists`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference VII</div>
+      <h2 class="section-title">Two Protagonists</h2>
+      <p class="section-subtitle">The Odyssey has two heroes — and most readers miss one of them</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey's most significant structural difference from the Iliad is that it has two protagonists. The first four books — called the Telemachy — are not about Odysseus at all. They follow his son Telemachus, who must grow into a man capable of acting in his father's absence before Odysseus can come home. Understanding both arcs before you begin prevents the disorientation many first-time readers feel in Books 1 through 4.</p>
+
+      <div class="sub-heading">Odysseus: The Survivor</div>
+      <p>Odysseus is twenty years away from home when the poem begins — ten years at Troy, ten years wandering. He has been tested by every kind of danger and temptation the Mediterranean world can produce, and he has survived all of them. But survival has cost him: his entire crew is dead, his ships are gone, and he arrives home alone, in disguise, with nothing. His arc in the poem is the restoration of identity and kingship — proving that the man who has been away twenty years is still the same man, and still deserving of what he comes home to.</p>
+
+      <div class="sub-heading">Telemachus: The Son</div>
+      <p>Telemachus begins the poem passive, uncertain, and surrounded by men who have no respect for him. He has grown up without a father in a house being consumed by strangers. His journey to Pylos and Sparta in Books 1 through 4 is a coming-of-age arc — he goes out into the world, meets the heroes of his father's generation, hears stories of the war, and returns with a new sense of who he is and what he must do. By the time Odysseus arrives, Telemachus is ready to stand beside him.</p>
+
+      <div class="sub-heading">Penelope: The Third Center</div>
+      <p>Many modern readers and scholars argue that Penelope is effectively the poem's third protagonist — and that the Odyssey cannot be fully understood without tracking her arc as carefully as Odysseus's or Telemachus's. She has held the household together for twenty years under conditions of extreme pressure, using intelligence and delay as her only tools. The question of whether she knows the truth of the disguised beggar's identity before the recognition scene in Book 23 is one of the most debated in all of classical scholarship — and how you answer it determines how you read the entire second half of the poem.</p>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\ref-themes.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Themes & Motifs in the Odyssey: A Reference Guide`;
+const description = `Quick reference to the recurring themes and motifs in Homer's Odyssey — disguise and recognition, guest-friendship, omens, weaving, and the contrast between Odysseus and the suitors.`;
+const canonical = `https://readingtheodyssey.com/ref-themes`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference VI</div>
+      <h2 class="section-title">Themes &amp; Motifs</h2>
+      <p class="section-subtitle">The ideas that structure the Odyssey beneath its adventure surface</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey is an adventure story on its surface and a philosophical argument underneath. These are the themes that recur across the poem's 24 books — the patterns worth tracking as you read.</p>
+
+      <div class="sub-heading">Identity &amp; Disguise</div>
+      <p>Odysseus spends half the poem not being himself — or rather, performing versions of himself. He is the disguised beggar, the false Cretan, the man of many stories. But the poem asks whether identity is something underneath the disguise or something constructed through performance. The recognition scenes — Argos, Eurycleia, Telemachus, Penelope — each test a different kind of knowing. Penelope's test of the bed is the most definitive because it requires knowledge only the real Odysseus could have.</p>
+
+      <div class="sub-heading">Homecoming &amp; the Cost of Return</div>
+      <p>Nostos — homecoming — is the poem's governing subject, but Homer is unsentimental about what return actually means. Odysseus comes home to a hall full of enemies, a son who barely knows him, a wife surrounded by danger, and an aged father in grief. The home he returns to is not the home he left. The question the poem leaves open is whether the twenty-year absence can ever be truly undone — or whether homecoming, like so much else in the poem, is something that must be performed rather than simply felt.</p>
+
+      <div class="sub-heading">Temptation &amp; the Desire to Forget</div>
+      <p>Every major stop on Odysseus's voyage offers a version of forgetting: the Lotus-Eaters' drug, Circe's transformation, Calypso's immortality, the Sirens' promise of knowledge. In each case, accepting the offer would mean ceasing to be Odysseus — ceasing to be the man trying to get home. His resistance to temptation is not always admirable (he is often dishonest, sometimes ruthless), but it is consistent: he chooses to remain himself, at whatever cost, over the comfort of dissolution.</p>
+
+      <div class="sub-heading">Cunning vs. Force</div>
+      <p>The Iliad is about force — physical, military, overwhelming. The Odyssey is about cunning — intelligence, strategy, deception. This is the poem's central revaluation of heroism. Odysseus cannot defeat the Cyclops by force; he defeats him by intelligence. He cannot walk into his own palace and announce himself; he plans for months. The poem asks whether this kind of heroism is as admirable as Achilles' battlefield glory — and gives you enough evidence to argue both ways.</p>
+
+      <div class="sub-heading">Justice &amp; its Discontents</div>
+      <p>The slaughter of the suitors is presented as just — they have violated xenia, consumed Odysseus's property, dishonored his household, and plotted against his son. But Homer does not let the justice feel clean. Twelve maids are hanged — women who were not free to refuse the suitors, who had little choice in what happened to them. Amphinomus, the one decent suitor, dies with the rest. The poem ends not with peace but with Athena forcibly preventing a resumption of civil war. Justice, in the Odyssey, is violent, partial, and its consequences are not resolved.</p>
+
+      <div class="further-reading">
+        <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\retellings.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Best Modern Retellings of the Odyssey: Miller, Atwood, Barker & More`;
+const description = `Contemporary novels that reimagine Homer's Odyssey — Circe by Madeline Miller, The Penelopiad by Margaret Atwood, The Women of Troy by Pat Barker. Emotional entry points before the original.`;
+const canonical = `https://readingtheodyssey.com/retellings`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 8</div>
+      <h2 class="section-title">Modern Retellings</h2>
+      <p class="section-subtitle">Contemporary novels that give voice to Homer's silenced characters</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey has generated a richer tradition of modern retellings than almost any other ancient text — perhaps because so many of its most interesting characters are given so little space by Homer. Penelope, Circe, Calypso, the women of Ithaca: the modern novels below restore their voices. Read them as preparation for noticing Homer's silences, and as a reminder that the poem you are about to read is only one version of a story that has always been told in many ways.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-miller-circe.jpg" alt="Circe — Madeline Miller" />
+        <div class="book-title">Circe</div>
+        <div class="book-author">Madeline Miller</div>
+        <div class="book-note">The best entry point for emotional investment in the world of the Odyssey. Miller's novel follows the witch who transforms Odysseus's men into pigs — and who keeps Odysseus on her island for a year — from her own perspective, across centuries of mythological time. Circe appears in the Odyssey for only a handful of books; Miller gives her an entire life. Readers who come to the Odyssey after this novel find the Aeaea episode transformed by knowing what Circe was thinking.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0316556327?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-atwood-the-penelopiad.jpg" alt="The Penelopiad — Margaret Atwood" />
+        <div class="book-title">The Penelopiad</div>
+        <div class="book-author">Margaret Atwood</div>
+        <div class="book-note">Penelope narrates the Odyssey from the underworld — and her version is very different from her husband's. Atwood's slim, devastating novella asks the question Homer doesn't: what did Penelope actually know, and when did she know it? And why does Homer's poem end with the hanging of twelve maids who were, by any fair measure, victims? One of the sharpest feminist readings of any classical text, and an essential companion to Books 22 and 24 of the Odyssey.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/1841957178?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-haynes-a-thousand-ships.jpg" alt="A Thousand Ships — Natalie Haynes" />
+        <div class="book-title">A Thousand Ships</div>
+        <div class="book-author">Natalie Haynes</div>
+        <div class="book-note">The Trojan War told from the perspectives of the women — Greek and Trojan — whose lives the war destroyed. Haynes covers the period from the Judgment of Paris through the Returns, which overlaps directly with the Odyssey's backstory. A vivid corrective to the male-centered heroic tradition, and essential reading alongside the Penelopiad for anyone who wants to understand what the poem leaves out.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0063065401?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-chaudhuri-odysseus-abroad.jpg" alt="Odysseus Abroad — Amit Chaudhuri" />
+        <div class="book-title">Odysseus Abroad</div>
+        <div class="book-author">Amit Chaudhuri</div>
+        <div class="book-note">A quieter, literary novel — set in 1980s London rather than ancient Greece — about a young Indian student and his eccentric uncle navigating a single day in the city. The Odyssey operates as a structural and thematic template throughout. For readers interested in the poem's afterlife in world literature, Chaudhuri's novel is a beautiful example of how the Odyssey's shape — the wanderer, the home, the years away — maps onto experiences far from Homer's world.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/1555977014?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\synopsis.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Odyssey Book-by-Book Synopsis: All 24 Books Summarized`;
+const description = `Quick, spoiler-light synopsis of every book in Homer's Odyssey. Use this reference to stay oriented while reading the full poem — from the Telemachy to Ithaca.`;
+const canonical = `https://readingtheodyssey.com/synopsis`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Reference III</div>
+      <h2 class="section-title">Book-by-Book Synopsis</h2>
+      <p class="section-subtitle">A brief guide to each of the 24 books</p>
+    </div>
+    <div class="section-body">
+      <p>Use this as a navigation tool while reading — a quick reminder of where you are in the poem's structure and what is coming next. It is not a substitute for reading the books themselves.</p>
+      <p>Use this synopsis alongside the <a href="/characters">complete Odyssey character reference</a> and <a href="/journey">journey map</a>. When you're ready to begin, see our recommendations for the <a href="/translations">best Odyssey translation</a>.</p>
+      <table class="ref-table">
+        <thead><tr><th>Book</th><th>What Happens</th></tr></thead>
+        <tbody>
+          <tr><td class="ref-book-num">1</td><td>The gods convene. Athena visits Ithaca disguised as Mentes and urges Telemachus to seek news of his father and stand up to the suitors. The suitors feast in the hall; Penelope weeps upstairs. The poem's situation is established.</td></tr>
+          <tr><td class="ref-book-num">2</td><td>Telemachus calls an assembly — the first in twenty years — and demands the suitors leave. They mock him. He secretly prepares a ship and sails at night, guided by Athena disguised as Mentor.</td></tr>
+          <tr><td class="ref-book-num">3</td><td>Telemachus arrives at Pylos and meets Nestor, the aged king, who tells him what he knows of the returns from Troy. He knows nothing about Odysseus's fate.</td></tr>
+          <tr><td class="ref-book-num">4</td><td>Telemachus visits Sparta and Menelaus, who reports that Odysseus was stranded on Calypso's island. Back in Ithaca, the suitors plot to ambush and kill Telemachus on his return.</td></tr>
+          <tr><td class="ref-book-num">5</td><td>The gods agree to free Odysseus. Hermes carries the message to Calypso. She releases him reluctantly. He builds a raft and sails toward home — but Poseidon wrecks him. He swims to Phaeacia's shore.</td></tr>
+          <tr><td class="ref-book-num">6</td><td>Nausicaa, the Phaeacian princess, finds Odysseus on the beach. He appeals to her eloquently. She leads him toward the city, advising him how to approach her parents.</td></tr>
+          <tr><td class="ref-book-num">7</td><td>Odysseus enters the palace of King Alcinous and Queen Arete and appeals for their help. They promise to send him home. He does not yet reveal his name.</td></tr>
+          <tr><td class="ref-book-num">8</td><td>The Phaeacians entertain Odysseus with games and a feast. The bard Demodocus sings of Troy — and Odysseus weeps, hiding his face. The Phaeacians notice. Alcinous asks who he is.</td></tr>
+          <tr><td class="ref-book-num">9</td><td>Odysseus reveals himself and begins his tale: the Cicones, the Lotus-Eaters, the Cyclops. The blinding of Polyphemus and the escape — and his fatal mistake of shouting his name.</td></tr>
+          <tr><td class="ref-book-num">10</td><td>Aeolus and the bag of winds. The Laestrygonians destroy eleven ships. Circe transforms his men into pigs; Odysseus resists and becomes her lover. They stay a year.</td></tr>
+          <tr><td class="ref-book-num">11</td><td>The Underworld. Tiresias's prophecy. The shade of his mother. The great heroes of Troy: Agamemnon's warning, Achilles' devastating speech about death and glory, the silent Ajax.</td></tr>
+          <tr><td class="ref-book-num">12</td><td>The Sirens. Scylla and Charybdis — six men eaten. The Cattle of Helios — his men eat them while he sleeps. Zeus destroys the ship. Odysseus alone survives, drifts back past Charybdis, reaches Calypso.</td></tr>
+          <tr><td class="ref-book-num">13</td><td>The Phaeacians send Odysseus home in a magical ship while he sleeps. He wakes on Ithaca's shore without recognizing it. Athena appears and reveals his situation. She disguises him as an old beggar.</td></tr>
+          <tr><td class="ref-book-num">14</td><td>Odysseus, still in disguise, shelters with his loyal swineherd Eumaeus, who praises his absent master without knowing he speaks to him. Odysseus tells a false autobiography.</td></tr>
+          <tr><td class="ref-book-num">15</td><td>Telemachus returns from Sparta, evading the suitors' ambush. Eumaeus tells his own backstory — he was a king's son, sold into slavery. Telemachus arrives at the farm.</td></tr>
+          <tr><td class="ref-book-num">16</td><td>Odysseus reveals himself to Telemachus — the first recognition scene. Father and son plan the slaughter of the suitors together. Back in the palace, the suitors plot again against Telemachus.</td></tr>
+          <tr><td class="ref-book-num">17</td><td>Odysseus, still disguised, enters the palace as a beggar. His old dog Argos recognizes him and dies. The suitors abuse the beggar — especially Antinous, who throws a stool at him.</td></tr>
+          <tr><td class="ref-book-num">18</td><td>A real beggar, Irus, challenges Odysseus to a fight and is knocked out easily. Penelope appears briefly among the suitors, drawing gifts from them — her beauty still devastating after twenty years.</td></tr>
+          <tr><td class="ref-book-num">19</td><td>Odysseus and Penelope speak at length in the firelight, he still in disguise. His old nurse Eurycleia washes his feet and recognizes the scar on his thigh. He swears her to silence. A crucial and deeply ambiguous conversation.</td></tr>
+          <tr><td class="ref-book-num">20</td><td>The night before the slaughter. Omens accumulate. A seer warns the suitors they face death; they laugh at him. The disguised Odysseus observes everything, waiting.</td></tr>
+          <tr><td class="ref-book-num">21</td><td>Penelope announces the contest of the bow: whoever can string Odysseus's great bow and shoot through twelve axe-heads wins her hand. The suitors fail one by one. The disguised beggar asks to try.</td></tr>
+          <tr><td class="ref-book-num">22</td><td>Odysseus strings the bow, shoots Antinous through the throat, and reveals himself. The slaughter of the suitors follows — Telemachus, Eumaeus, and the cowherd Philoetius fighting alongside him. The disloyal maids are hanged.</td></tr>
+          <tr><td class="ref-book-num">23</td><td>Penelope, told what has happened, still does not fully believe it. She tests Odysseus with the secret of their bed — built from a living olive tree rooted in the earth. He passes. The reunion is real at last.</td></tr>
+          <tr><td class="ref-book-num">24</td><td>The suitors' shades arrive in the Underworld. Agamemnon praises Penelope's faithfulness, contrasting her with Clytemnestra. The suitors' families seek revenge; a brief battle breaks out; Athena intervenes and enforces peace. The poem ends — not with resolution but with suspension.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="further-reading">
+        <p>Use this synopsis as a reference while reading. When you're ready to begin the poem, see our <a href="/translations">detailed translation comparison</a> or browse <a href="/gift-guide">recommended editions and gifts</a>.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\themes.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Themes of the Odyssey: Homecoming, Identity, Cunning & Hospitality`;
+const description = `The major themes of Homer's Odyssey — nostos and homecoming, identity and disguise, xenia (hospitality), cunning over strength, and the role of the gods. Why these ideas still matter.`;
+const canonical = `https://readingtheodyssey.com/themes`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 3</div>
+      <h2 class="section-title">Themes of the Odyssey</h2>
+      <p class="section-subtitle">What Homer is really arguing about — and why it still matters</p>
+    </div>
+    <div class="section-body">
+
+      <p>The Odyssey is about a man trying to get home. But Homer is arguing about something harder: what home means, who you are when no one knows your name, whether loyalty is its own reward, and how much of what happens to us is fate and how much is our own doing. These are the themes that have kept the poem alive for 2,800 years.</p>
+
+      <div class="book-entry">
+        <div class="book-title">Homecoming (Nostos)</div>
+        <div class="book-author">The word at the heart of the poem</div>
+        <div class="book-note">The entire Odyssey is driven by a single desire: to go home. The Greek word <em>nostos</em> — homecoming — gives us our word "nostalgia," and Homer understood that the pull of home is one of the most primal human emotions. Odysseus has won the war, but winning isn't enough. He has to get back. Every obstacle in the poem — the Cyclops, Circe, Calypso, the suitors — is essentially the universe conspiring to keep him from that goal. What makes it interesting is that Odysseus sometimes conspires against himself too.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Identity</div>
+        <div class="book-author">Who are you when no one knows your name?</div>
+        <div class="book-note">Odysseus is the master of disguise — not just physically but verbally. He lies constantly, conceals his name, invents false histories on the spot. When the Cyclops asks who he is, he says "Nobody." It's a survival tactic, but Homer makes it a theme: who are you when you're stripped of your name, your home, your kingdom? The whole second half of the poem is Odysseus in his own house, unrecognized, watching to see who is loyal and who isn't. He knows who he is. The question is whether anyone else does.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Hospitality (Xenia)</div>
+        <div class="book-author">The sacred law that structures everything</div>
+        <div class="book-note">In the ancient Greek world, hospitality wasn't just good manners — it was a sacred obligation enforced by Zeus himself. You fed strangers, gave them gifts, asked questions later. The Odyssey is essentially a tour of what happens when xenia is honored and what happens when it's violated. The Cyclops offers no hospitality and gets blinded. The suitors abuse Odysseus's household for years and get slaughtered. Pay attention to every scene where someone arrives at a door — Homer is always making a point.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Temptation and Loyalty</div>
+        <div class="book-author">The choice Odysseus keeps making</div>
+        <div class="book-note">Circe is a goddess who turns men into pigs. Calypso is an immortal who offers eternal life. The Sirens promise knowledge of everything. Every temptation in the Odyssey is genuinely tempting — Homer doesn't make it easy. What makes Odysseus heroic isn't that he's immune to these things, it's that he chooses Ithaca and Penelope anyway. Penelope gets her own version of this — surrounded by suitors for years, under enormous pressure, she holds. The poem is quietly as much about her loyalty as his.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">Cunning Over Strength</div>
+        <div class="book-author">Homer's argument for intelligence as the highest heroic quality</div>
+        <div class="book-note">Achilles is the hero of the Iliad — all rage and physical perfection. Odysseus is the hero of the Odyssey — all brains and adaptability. He can't overpower the Cyclops so he blinds him with a stake and escapes under a sheep. He can't fight the suitors openly so he waits, plans, and strikes at exactly the right moment. Homer is making an argument: in a world full of monsters and gods, intelligence is the most heroic quality of all. It's a surprisingly modern idea for a 2,800 year old poem.</div>
+      </div>
+
+      <div class="book-entry">
+        <div class="book-title">The Gods and Fate</div>
+        <div class="book-author">How much is choice, and how much is destiny?</div>
+        <div class="book-note">The gods in the Odyssey are not distant or abstract — they meddle constantly. Poseidon hates Odysseus and spends ten years trying to drown him. Athena loves him and keeps intervening to help. Zeus referees. What Homer is wrestling with is a question that still doesn't have a clean answer: how much of what happens to us is our own doing, and how much is forces beyond our control? Odysseus makes terrible decisions sometimes. He also gets unlucky. The poem doesn't fully separate the two, which is part of what makes it feel true.</div>
+      </div>
+
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\translations.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `Best Odyssey Translation: Emily Wilson vs Fagles vs Lattimore vs Green`;
+const description = `Which Odyssey translation should you read? Detailed comparison of Emily Wilson, Robert Fagles, Richmond Lattimore, and Peter Green — with pros, cons, sample passages, and first-reader recommendations.`;
+const canonical = `https://readingtheodyssey.com/translations`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 1</div>
+      <h2 class="section-title">Choosing a Translation</h2>
+      <p class="section-subtitle">The translation you choose shapes the poem you read</p>
+    </div>
+    <div class="section-body">
+      <p>No English translation of the Odyssey is the Odyssey. Homer composed in ancient Greek hexameter — a meter that does not exist in English — and every translator must make fundamental choices about what to preserve and what to sacrifice. The translation you choose will determine the poem you read. Choose carefully.</p>
+
+      <p>The Odyssey rewards a slightly different translation choice than the Iliad. Where the Iliad benefits from grandeur and sweep, the Odyssey benefits from clarity and forward momentum — it is a poem about a man trying to get home, and the best translations keep that urgency alive. Emily Wilson's 2017 translation is this guide's primary recommendation: it is the most direct, honest, and readable translation available, and it makes choices about Odysseus's character that illuminate the poem's moral complexity in ways older translations obscure.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-wilson-the-odyssey.jpg" alt="The Odyssey — Emily Wilson" />
+        <div class="book-title">The Odyssey — trans. Emily Wilson (2017)</div>
+        <div class="book-author">First translation, recommended for most readers</div>
+        <div class="book-note">The recommended starting point for almost every reader. Wilson's translation is the first into English by a woman, and the difference is not superficial — her choices about how to render Odysseus's deceptions, Penelope's intelligence, and the maids' deaths reflect a reading of the poem that is both more honest and more disturbing than most of her predecessors. Her version is direct, readable, and urgent without being casual. The Introduction alone is one of the finest essays on the Odyssey in English.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0393356256?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-fagles-the-odyssey.jpg" alt="The Odyssey — Robert Fagles" />
+        <div class="book-title">The Odyssey — trans. Robert Fagles (1996)</div>
+        <div class="book-author">Flowing and dramatic, excellent second choice</div>
+        <div class="book-note">The most widely read translation of the past thirty years and the standard choice in most university courses. Fagles's version is more expansive and dramatic than Wilson's — his Odysseus is more heroic, his verse more grandly rhythmic. If you read Fagles's Iliad and want to continue with the same translator's voice, his Odyssey is an excellent choice. Bernard Knox's introduction is outstanding.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0140268863?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-green-the-odyssey.jpg" alt="The Odyssey — Peter Green" />
+        <div class="book-title">The Odyssey — trans. Peter Green (2018)</div>
+        <div class="book-author">Scholarly depth, outstanding notes</div>
+        <div class="book-note">The most recent major scholarly translation — accurate, well-annotated, and genuinely illuminating about what Homer is doing at the technical level. Green's footnotes are extensive and valuable. The best choice for a second read or for anyone approaching the poem seriously as a student of the ancient world. Less immediately accessible than Wilson or Fagles but ultimately more rewarding for close reading.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0520303369?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-lattimore-the-odyssey.jpg" alt="The Odyssey — Richmond Lattimore" />
+        <div class="book-title">The Odyssey — trans. Richmond Lattimore (1965)</div>
+        <div class="book-author">Closest to the Greek, most demanding</div>
+        <div class="book-note">The most faithful to Homer's Greek and the most respected among scholars. Lattimore preserves the formulaic repetitions and rolling hexameter lines that give Homer his distinctive rhythm — but this makes it slower and more demanding for first-time readers. Return to Lattimore after a first read with Wilson or Fagles. The experience of reading the same passages in both translations is one of the most instructive exercises in understanding what translation actually does.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0061359289?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 
+=== \Users\andre\projects\odyssey\src\pages\world.astro === 
+ 
+ 
+---
+import Layout from '../layouts/Layout.astro';
+const title = `The World of Odysseus: Bronze Age Greece & the Mediterranean`;
+const description = `The historical and geographic world behind Homer's Odyssey — Bronze Age Greece, xenia and the guest-friendship code, Mycenaean society, and the real geography behind the mythological journey.`;
+const canonical = `https://readingtheodyssey.com/world`;
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+  <article class="section active">
+    <div class="section-header">
+      <div class="section-label">Section 2</div>
+      <h2 class="section-title">The World of Odysseus</h2>
+      <p class="section-subtitle">The Mediterranean world — real geography, mythological space, and the laws of hospitality</p>
+    </div>
+    <div class="section-body">
+      <p>The Odyssey moves through two kinds of space simultaneously. One is real — the Aegean and Mediterranean world of islands, sailing routes, and Bronze Age kingdoms. The other is mythological — the island of Circe, the land of the dead, the cave of Calypso, which exist outside ordinary geography. Understanding the difference, and recognizing which kind of space Odysseus occupies at any given moment, is one of the keys to reading the poem.</p>
+
+      <p>What holds both worlds together is <em>xenia</em> — the Greek code of guest-friendship. Every island Odysseus lands on tests whether xenia will be honored or violated. The Cyclops violates it catastrophically and pays the price. The Phaeacians honor it perfectly and send Odysseus home with gifts. Understanding xenia before you begin transforms the Odyssey from an adventure story into a moral argument about civilization itself.</p>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-finley-the-world-of-odysseus.jpg" alt="The World of Odysseus — M.I. Finley" />
+        <div class="book-title">The World of Odysseus</div>
+        <div class="book-author">M.I. Finley</div>
+        <div class="book-note">The foundational modern account of the Homeric social world — the economics, the honor codes, the guest-friendship system, and the political structures that govern every encounter in the poem. Finley reads Homer as a historical source rather than a literary text, and the result is indispensable. Understanding xenia, the gift economy, and heroic obligation before you read the Odyssey transforms it from a travel narrative into a social drama. Short, rigorous, and essential.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0143105957?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-kazantzakis-the-odyssey-a-modern-sequel.jpg" alt="The Odyssey: A Modern Sequel — Kazantzakis" />
+        <div class="book-title">The Odyssey: A Modern Sequel</div>
+        <div class="book-author">Nikos Kazantzakis</div>
+        <div class="book-note">Not scholarship but an imaginative extension — Kazantzakis's 33,333-line epic poem picks up where Homer leaves off, following Odysseus beyond Ithaca. Useful as a companion text for understanding what the Odyssey's ending leaves unresolved. Homer's Odysseus is a man who reaches home; Kazantzakis's cannot stay there. The contrast illuminates what Homer is actually arguing about homecoming.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0671204998?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+
+      <div class="book-entry">
+        <img class="book-cover" src="/images/cover-cline-1177-bc-the-year-civilization-collapsed.jpg" alt="1177 BC — Eric Cline" />
+        <div class="book-title">1177 BC: The Year Civilization Collapsed</div>
+        <div class="book-author">Eric H. Cline</div>
+        <div class="book-note">The essential modern account of the Bronze Age world and its sudden end. The Odyssey is set in the aftermath of this collapse — the great palace economies gone, the trade routes disrupted, the old certainties dissolved. Cline's account of what that world looked like before it fell gives you the historical foundation for everything Odysseus is returning to. Reading this first makes the poem's pervasive atmosphere of loss and uncertainty feel entirely real.</div>
+        <a class="book-affiliate" href="https://www.amazon.com/dp/0691208018?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
+      </div>
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
+
+      <div class="further-reading">
+        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+      </div>
+    </div>
+  </article>
+</Layout> 
+ 
+ 

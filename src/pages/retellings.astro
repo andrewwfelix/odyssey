@@ -1,4 +1,3 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Best Modern Retellings of the Odyssey: Miller, Atwood, Barker & More`;
@@ -7,50 +6,74 @@ const canonical = `https://readingtheodyssey.com/retellings`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Section 8</div>
-      <h2 class="section-title">Modern Retellings</h2>
+      <h1 class="section-title">Modern Retellings</h1>
       <p class="section-subtitle">Contemporary novels that give voice to Homer's silenced characters</p>
     </div>
     <div class="section-body">
-      <p>The Odyssey has generated a richer tradition of modern retellings than almost any other ancient text — perhaps because so many of its most interesting characters are given so little space by Homer. Penelope, Circe, Calypso, the women of Ithaca: the modern novels below restore their voices. Read them as preparation for noticing Homer's silences, and as a reminder that the poem you are about to read is only one version of a story that has always been told in many ways.</p>
+      <p>If you're wondering how to approach the Odyssey for the first time, modern retellings offer an emotional entry point that Homer's epic sometimes withholds. The Odyssey has inspired more contemporary novels than almost any other ancient text — perhaps because so many of its most compelling characters receive so little space in the original.</p>
+      
+      <p>Penelope, Circe, Calypso, the women of Ithaca: the modern Odyssey retellings below restore their voices and perspectives. You'll find that reading these novels before Homer helps you notice what the ancient poem leaves out — and reminds you that the story you're about to read is only one version of a tale that has always been told in many ways.</p>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-miller-circe.jpg" alt="Circe — Madeline Miller" />
+        <img class="book-cover" src="/images/cover-miller-circe.jpg" alt="Circe by Madeline Miller - modern retelling of the Odyssey witch" loading="lazy" />
         <div class="book-title">Circe</div>
         <div class="book-author">Madeline Miller</div>
-        <div class="book-note">The best entry point for emotional investment in the world of the Odyssey. Miller's novel follows the witch who transforms Odysseus's men into pigs — and who keeps Odysseus on her island for a year — from her own perspective, across centuries of mythological time. Circe appears in the Odyssey for only a handful of books; Miller gives her an entire life. Readers who come to the Odyssey after this novel find the Aeaea episode transformed by knowing what Circe was thinking.</div>
+        <div class="book-note">The best entry point for emotional investment in the world of the Odyssey. Miller's novel follows the witch who transforms Odysseus's men into pigs — and who keeps Odysseus on her island for a year — from her own perspective, across centuries of mythological time. In Homer's poem, Circe appears for only a handful of books; Miller gives her an entire life, complete with exile, loneliness, and hard-won power. When you reach Book 10 of the Odyssey after reading this novel, you'll understand what Circe was thinking — and why Odysseus's year on Aeaea meant something very different to her than it did to him.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0316556327?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-atwood-the-penelopiad.jpg" alt="The Penelopiad — Margaret Atwood" />
+        <img class="book-cover" src="/images/cover-atwood-the-penelopiad.jpg" alt="The Penelopiad by Margaret Atwood - Penelope's perspective on the Odyssey" loading="lazy" />
         <div class="book-title">The Penelopiad</div>
         <div class="book-author">Margaret Atwood</div>
-        <div class="book-note">Penelope narrates the Odyssey from the underworld — and her version is very different from her husband's. Atwood's slim, devastating novella asks the question Homer doesn't: what did Penelope actually know, and when did she know it? And why does Homer's poem end with the hanging of twelve maids who were, by any fair measure, victims? One of the sharpest feminist readings of any classical text, and an essential companion to Books 22 and 24 of the Odyssey.</div>
+        <div class="book-note">Penelope narrates the Odyssey from the underworld — and her version is very different from her husband's. Atwood's slim, devastating novella asks the question Homer doesn't: what did Penelope actually know about the suitors, and when did she know it? And why does Homer's poem end with the hanging of twelve maids who were, by any fair measure, victims? This is one of the sharpest feminist retellings of the Odyssey, and an essential companion when you reach Books 22 and 24. You'll never read Odysseus's homecoming the same way again.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/1841957178?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-haynes-a-thousand-ships.jpg" alt="A Thousand Ships — Natalie Haynes" />
+        <img class="book-cover" src="/images/cover-haynes-a-thousand-ships.jpg" alt="A Thousand Ships by Natalie Haynes - women's voices in the Trojan War" loading="lazy" />
         <div class="book-title">A Thousand Ships</div>
         <div class="book-author">Natalie Haynes</div>
-        <div class="book-note">The Trojan War told from the perspectives of the women — Greek and Trojan — whose lives the war destroyed. Haynes covers the period from the Judgment of Paris through the Returns, which overlaps directly with the Odyssey's backstory. A vivid corrective to the male-centered heroic tradition, and essential reading alongside the Penelopiad for anyone who wants to understand what the poem leaves out.</div>
+        <div class="book-note">The Trojan War told from the perspectives of the women — Greek and Trojan — whose lives the war destroyed. Haynes covers the period from the Judgment of Paris through the Returns, which overlaps directly with the Odyssey's backstory. Before you read Homer, this novel shows you what the male-centered heroic tradition leaves out: the enslaved women, the abandoned wives, the mothers who lost sons. A vivid corrective that pairs perfectly with the Penelopiad for anyone asking, "Whose story isn't being told?"</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0063065401?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-chaudhuri-odysseus-abroad.jpg" alt="Odysseus Abroad — Amit Chaudhuri" />
+        <img class="book-cover" src="/images/cover-chaudhuri-odysseus-abroad.jpg" alt="Odysseus Abroad by Amit Chaudhuri - literary Odyssey retelling" loading="lazy" />
         <div class="book-title">Odysseus Abroad</div>
         <div class="book-author">Amit Chaudhuri</div>
-        <div class="book-note">A quieter, literary novel — set in 1980s London rather than ancient Greece — about a young Indian student and his eccentric uncle navigating a single day in the city. The Odyssey operates as a structural and thematic template throughout. For readers interested in the poem's afterlife in world literature, Chaudhuri's novel is a beautiful example of how the Odyssey's shape — the wanderer, the home, the years away — maps onto experiences far from Homer's world.</div>
+        <div class="book-note">A quieter, more literary novel — set in 1980s London rather than ancient Greece — about a young Indian student and his eccentric uncle navigating a single day in the city. The Odyssey operates as a structural and thematic template throughout, but you won't find gods or monsters here. Instead, Chaudhuri shows how the poem's shape — the wanderer, the longing for home, the years away — maps onto experiences far from Homer's world. For readers interested in the Odyssey's afterlife in world literature, this novel is a beautiful example of why the story still matters.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/1555977014?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
+
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
 
       <div class="further-reading">
         <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
       </div>
     </div>
   </article>
-</Layout> 
+</Layout>

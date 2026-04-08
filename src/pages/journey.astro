@@ -1,44 +1,72 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `The Journey Map: Every Stop on Odysseus's Ten-Year Voyage`;
-const description = `Complete guide to every location in Odysseus's wanderings — the Cyclops, Circe's island, the Underworld, Scylla and Charybdis, the Sirens, and Calypso. Where each episode fits in the journey.`;
+const description = `Complete guide to every location in Odysseus's wanderings — the Cyclops, Circe's island, the Underworld, Scylla and Charybdis, the Sirens, and Calypso.`;
 const canonical = `https://readingtheodyssey.com/journey`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Reference II</div>
-      <h2 class="section-title">The Journey Map</h2>
+      <h1 class="section-title">The Journey Map</h1>
       <p class="section-subtitle">Every stop on Odysseus's ten-year voyage — narrated in Books 9 through 12</p>
     </div>
     <div class="section-body">
-      <p>Odysseus's wanderings are not narrated by Homer directly — they are performed by Odysseus himself for the Phaeacian court in Books 9 through 12. Keep in mind as you read that he is an unreliable narrator telling his own legend to an audience he wants to impress.</p>
+      <p>Before you dive into the Odyssey's most famous adventures, you need to understand something crucial: Odysseus himself is the one telling these stories. In Books 9 through 12, he performs his wanderings for the Phaeacian court — not Homer narrating directly.</p>
+      
+      <p>This matters because Odysseus is an unreliable narrator. He's telling his own legend to an audience he wants to impress. As you read the Odyssey journey map below, ask yourself: Is he exaggerating? Leaving things out? Shaping the story to make himself look better?</p>
+
+      <h3>Odysseus's Route: A Complete Map of His Wanderings</h3>
 
       <table class="ref-table">
         <thead><tr><th>Stop</th><th>Books</th><th>What Happens</th></tr></thead>
         <tbody>
-          <tr><td class="ref-term">Troy</td><td>Backstory</td><td>The war ends. The Greeks sack the city and begin their separate returns home. Odysseus's journey begins here, already complicated — he has blinded Poseidon's son and earned the sea god's hatred.</td></tr>
-          <tr><td class="ref-term">Cicones (Ismarus)</td><td>9</td><td>The first stop after Troy. Odysseus sacks a city, his men linger and drink, the Cicones regroup and attack. Odysseus loses six men per ship. A warning about discipline that his crew ignores throughout the voyage.</td></tr>
-          <tr><td class="ref-term">Lotus-Eaters</td><td>9</td><td>A people whose food induces total forgetfulness and loss of will. Odysseus's men who eat the lotus no longer want to return home. He drags them back to the ships by force. The first encounter with forgetting as a temptation — a theme the poem returns to repeatedly.</td></tr>
-          <tr><td class="ref-term">Cyclops (Polyphemus)</td><td>9</td><td>The most famous episode in the poem. Polyphemus, the son of Poseidon, traps Odysseus and his men in his cave and begins eating them. Odysseus blinds him with a sharpened stake and escapes under sheep. But he cannot resist shouting his real name as he sails away — earning Poseidon's permanent wrath. His cleverness and his pride operate in the same moment.</td></tr>
-          <tr><td class="ref-term">Aeolus (Island of the Winds)</td><td>10</td><td>The wind-god gives Odysseus a bag containing all adverse winds, so he can sail straight home. His men, suspecting treasure inside, open the bag while he sleeps. The winds escape, blowing them back to Aeolus, who refuses to help again — he recognizes someone the gods have cursed.</td></tr>
-          <tr><td class="ref-term">Laestrygonians</td><td>10</td><td>A race of cannibal giants who destroy all but one of Odysseus's twelve ships and eat most of his men. The most purely catastrophic stop of the voyage. Odysseus escapes only because he moored his ship outside the harbor.</td></tr>
-          <tr><td class="ref-term">Circe (Aeaea)</td><td>10–12</td><td>The witch transforms Odysseus's scouting party into pigs. Odysseus, protected by the herb moly given by Hermes, resists her magic and becomes her lover. He stays for a year. She becomes his crucial guide, sending him to the Underworld and advising him on every subsequent danger.</td></tr>
-          <tr><td class="ref-term">The Underworld</td><td>11</td><td>Odysseus travels to the land of the dead to consult the prophet Tiresias. He encounters the shades of his dead mother, his companions from Troy, and the great heroes of the Iliad — including Achilles, who tells him that he would rather be the slave of the poorest living man than king of all the dead. The Underworld is the poem's moral and emotional center.</td></tr>
-          <tr><td class="ref-term">Sirens</td><td>12</td><td>Creatures whose song promises knowledge of all things — and leads sailors to their deaths. Odysseus is tied to the mast; his men row with their ears stopped with wax. He is the only mortal to hear the Sirens and survive. The episode asks what the desire for knowledge costs.</td></tr>
-          <tr><td class="ref-term">Scylla &amp; Charybdis</td><td>12</td><td>A six-headed monster and a whirlpool opposite each other in a narrow strait. Circe told him to choose Scylla — six men lost — over Charybdis, which would destroy the whole ship. He does not tell his crew. Six men are eaten while looking at him. Leadership and sacrifice in the same terrible moment.</td></tr>
-          <tr><td class="ref-term">Cattle of Helios (Thrinacia)</td><td>12</td><td>The sun god's sacred cattle. Odysseus has been warned under no circumstances to touch them. Stranded by storms, his men slaughter and eat the cattle while he sleeps. Helios demands retribution. Zeus destroys the ship; Odysseus alone survives.</td></tr>
-          <tr><td class="ref-term">Calypso (Ogygia)</td><td>5, 7</td><td>The nymph's island, where Odysseus is stranded for seven years. She loves him and offers him immortality. He refuses every day, sitting on the shore weeping toward Ithaca. Eventually Hermes arrives with Zeus's order for his release. Calypso sends him off on a raft.</td></tr>
-          <tr><td class="ref-term">Phaeacia (Scheria)</td><td>6–8, 13</td><td>The island of the Phaeacians — a perfect civilization, wealthy and hospitable. It is here that Odysseus narrates his wanderings (Books 9–12). The Phaeacians honor xenia completely and carry him home to Ithaca in a magical ship while he sleeps. Poseidon turns the ship to stone in punishment — and threatens Phaeacia itself.</td></tr>
-          <tr><td class="ref-term">Ithaca</td><td>13–24</td><td>Home. But not safe. The palace is overrun with suitors. Odysseus arrives in disguise, reunites with his son and loyal servants, tests his wife, and kills every suitor with his great bow. The homecoming is violent, provisional, and haunted.</td></tr>
+          <tr><td class="ref-term">Troy</td><td>Backstory</td><td>The war ends. The Greeks sack the city and begin their separate journeys home. Odysseus's voyage begins here — but it's already complicated. He has angered Poseidon by blinding the god's son, the Cyclops Polyphemus. That grudge will haunt every mile of his return to Ithaca.</td></tr>
+          <tr><td class="ref-term">Cicones (Ismarus)</td><td>9</td><td>The first stop after Troy. Odysseus sacks the city, but his men linger to drink and celebrate. The Cicones regroup and counterattack. Odysseus loses six men per ship. It's an early warning about discipline — one his crew will ignore throughout the voyage.</td></tr>
+          <tr><td class="ref-term">Lotus-Eaters</td><td>9</td><td>A peaceful people whose food induces total forgetfulness. The men who eat the lotus no longer want to return home. Odysseus drags them back to the ships by force. This is the first encounter with forgetting as a temptation — a theme the Odyssey returns to again and again.</td></tr>
+          <tr><td class="ref-term">Cyclops (Polyphemus)</td><td>9</td><td>The most famous episode in the Odyssey. Polyphemus, son of Poseidon, traps Odysseus and his men in his cave and begins eating them two at a time. Odysseus gets the giant drunk, blinds him with a sharpened stake, and escapes by clinging to the undersides of sheep. But he can't resist shouting his real name as he sails away — earning Poseidon's permanent wrath. His cleverness and his pride operate in the same moment.</td></tr>
+          <tr><td class="ref-term">Aeolus (Island of the Winds)</td><td>10</td><td>The wind-god gives Odysseus a leather bag containing all adverse winds, so he can sail straight home to Ithaca. His men, suspecting treasure inside, open the bag while he sleeps. The winds escape, blowing them all the way back to Aeolus. The god refuses to help again — he recognizes someone the gods have cursed.</td></tr>
+          <tr><td class="ref-term">Laestrygonians</td><td>10</td><td>A race of cannibal giants who destroy eleven of Odysseus's twelve ships and devour most of his men. The most purely catastrophic stop of the voyage. Odysseus escapes only because he moored his ship outside the harbor — a rare moment of caution that saves his life.</td></tr>
+          <tr><td class="ref-term">Circe (Aeaea)</td><td>10–12</td><td>The witch-goddess transforms Odysseus's scouting party into pigs. Odysseus, protected by the herb moly (given by Hermes), resists her magic and becomes her lover. He stays for a year. Circe becomes his crucial guide, sending him to the Underworld and advising him on every subsequent danger — the Sirens, Scylla and Charybdis, and the Cattle of Helios.</td></tr>
+          <tr><td class="ref-term">The Underworld</td><td>11</td><td>Odysseus travels to the land of the dead to consult the prophet Tiresias about how to get home. He encounters the shades of his dead mother, his companions from Troy, and the great heroes of the Iliad — including Achilles, who tells him he would rather be the poorest living slave than king of all the dead. The Underworld is the Odyssey's moral and emotional center.</td></tr>
+          <tr><td class="ref-term">Sirens</td><td>12</td><td>Creatures whose song promises knowledge of all things — and leads sailors to their deaths on the rocks. Odysseus is tied to the mast; his men row with their ears stopped with wax. He becomes the only mortal to hear the Sirens and survive. The episode asks: What does the desire for knowledge cost?</td></tr>
+          <tr><td class="ref-term">Scylla &amp; Charybdis</td><td>12</td><td>A six-headed monster and a whirlpool opposite each other in a narrow strait. Circe told Odysseus to choose Scylla — losing six men — over Charybdis, which would destroy the whole ship. He obeys, but he doesn't tell his crew. Six men are eaten while looking directly at him. Leadership and sacrifice in the same terrible moment.</td></tr>
+          <tr><td class="ref-term">Cattle of Helios (Thrinacia)</td><td>12</td><td>The sun god's sacred cattle. Odysseus has been warned under no circumstances to touch them. Stranded by storms and starving, his men slaughter and eat the cattle while he sleeps. Helios demands retribution. Zeus destroys the ship with a thunderbolt. Odysseus alone survives, clinging to wreckage.</td></tr>
+          <tr><td class="ref-term">Calypso (Ogygia)</td><td>5, 7</td><td>The nymph's island, where Odysseus is stranded for seven years. She loves him and offers him immortality if he stays. He refuses every day, sitting on the shore weeping toward Ithaca. Eventually Hermes arrives with Zeus's order for his release. Calypso reluctantly sends him off on a raft she helps him build.</td></tr>
+          <tr><td class="ref-term">Phaeacia (Scheria)</td><td>6–8, 13</td><td>The island of the Phaeacians — a perfect civilization, wealthy and hospitable. It is here that Odysseus narrates his wanderings (Books 9–12) to King Alcinous and Queen Arete. The Phaeacians honor xenia completely and carry him home to Ithaca in a magical ship while he sleeps. Poseidon turns the ship to stone in punishment — and threatens Phaeacia itself for helping his enemy.</td></tr>
+          <tr><td class="ref-term">Ithaca</td><td>13–24</td><td>Home at last. But not safe. The palace is overrun with suitors devouring his wealth and pressuring Penelope to remarry. Odysseus arrives in disguise, reunites with his son Telemachus and loyal servants, tests his wife, and kills every suitor with his great bow. The homecoming is violent, provisional, and haunted by what he's lost.</td></tr>
         </tbody>
       </table>
+
+      <h3>How to Use This Odyssey Journey Guide</h3>
+      <p>You'll notice that the wanderings occupy only four books (9–12) of the twenty-four-book epic. The rest of the Odyssey takes place in Ithaca, where Odysseus must reclaim his home. But these four books contain the adventures everyone remembers — the Cyclops, the Sirens, Circe, the Underworld.</p>
+      
+      <p>As you read, pay attention to the pattern: Odysseus's men repeatedly disobey him (opening the bag of winds, eating the sacred cattle), and Odysseus repeatedly makes choices that cost lives (not warning his crew about Scylla, shouting his name to Polyphemus). The journey is as much about leadership and its limits as it is about monsters and magic.</p>
 
       <div class="further-reading">
         <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
       </div>
     </div>
   </article>
-</Layout> 
+</Layout>

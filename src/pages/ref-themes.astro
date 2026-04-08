@@ -1,39 +1,75 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Themes & Motifs in the Odyssey: A Reference Guide`;
-const description = `Quick reference to the recurring themes and motifs in Homer's Odyssey — disguise and recognition, guest-friendship, omens, weaving, and the contrast between Odysseus and the suitors.`;
+const description = `Quick reference to recurring themes in Homer's Odyssey — identity, homecoming, temptation, cunning vs. force, and justice.`;
 const canonical = `https://readingtheodyssey.com/ref-themes`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Reference VI</div>
-      <h2 class="section-title">Themes &amp; Motifs</h2>
+      <h1 class="section-title">Themes &amp; Motifs</h1>
       <p class="section-subtitle">The ideas that structure the Odyssey beneath its adventure surface</p>
     </div>
     <div class="section-body">
-      <p>The Odyssey is an adventure story on its surface and a philosophical argument underneath. These are the themes that recur across the poem's 24 books — the patterns worth tracking as you read.</p>
+      <p>The Odyssey is an adventure story on its surface and a philosophical argument underneath. As you read, you'll notice recurring patterns — themes in the Odyssey that appear across all 24 books. These are the ideas worth tracking, the threads that connect Odysseus's journey to the deeper questions Homer wants you to ask.</p>
 
-      <div class="sub-heading">Identity &amp; Disguise</div>
-      <p>Odysseus spends half the poem not being himself — or rather, performing versions of himself. He is the disguised beggar, the false Cretan, the man of many stories. But the poem asks whether identity is something underneath the disguise or something constructed through performance. The recognition scenes — Argos, Eurycleia, Telemachus, Penelope — each test a different kind of knowing. Penelope's test of the bed is the most definitive because it requires knowledge only the real Odysseus could have.</p>
+      <h3 class="sub-heading">Identity &amp; Disguise</h3>
+      <p>Odysseus spends half the poem not being himself — or rather, performing versions of himself. He disguises himself as a beggar, invents stories about being a Cretan wanderer, and hides his true name from nearly everyone he meets.</p>
+      
+      <p>But the poem asks a harder question: is identity something underneath the disguise, or something you construct through performance? The recognition scenes test this. His dog Argos recognizes him by scent. His nurse Eurycleia recognizes him by an old scar. Telemachus must be told. And Penelope — the most important test — requires proof that only the real Odysseus could give: knowledge of their unmovable marriage bed, rooted in a living olive tree.</p>
 
-      <div class="sub-heading">Homecoming &amp; the Cost of Return</div>
-      <p>Nostos — homecoming — is the poem's governing subject, but Homer is unsentimental about what return actually means. Odysseus comes home to a hall full of enemies, a son who barely knows him, a wife surrounded by danger, and an aged father in grief. The home he returns to is not the home he left. The question the poem leaves open is whether the twenty-year absence can ever be truly undone — or whether homecoming, like so much else in the poem, is something that must be performed rather than simply felt.</p>
+      <h3 class="sub-heading">Homecoming &amp; the Cost of Return</h3>
+      <p>Nostos — homecoming — is the poem's governing subject. But understanding Homer's Odyssey means recognizing that he is unsentimental about what return actually costs.</p>
+      
+      <p>Odysseus comes home to a hall full of enemies, a son who barely knows him, a wife surrounded by danger, and an aged father living in grief on a remote farm. The home he returns to is not the home he left. Twenty years have passed. People have changed. Some have died.</p>
+      
+      <p>The question the poem leaves open is whether that absence can ever be truly undone — or whether homecoming, like so much else in the Odyssey, is something that must be performed and rebuilt rather than simply felt.</p>
 
-      <div class="sub-heading">Temptation &amp; the Desire to Forget</div>
-      <p>Every major stop on Odysseus's voyage offers a version of forgetting: the Lotus-Eaters' drug, Circe's transformation, Calypso's immortality, the Sirens' promise of knowledge. In each case, accepting the offer would mean ceasing to be Odysseus — ceasing to be the man trying to get home. His resistance to temptation is not always admirable (he is often dishonest, sometimes ruthless), but it is consistent: he chooses to remain himself, at whatever cost, over the comfort of dissolution.</p>
+      <h3 class="sub-heading">Temptation &amp; the Desire to Forget</h3>
+      <p>Every major stop on Odysseus's voyage offers a version of forgetting. The Lotus-Eaters offer a drug that makes you forget home. Circe offers transformation into an animal. Calypso offers immortality and eternal youth. The Sirens promise complete knowledge of the past.</p>
+      
+      <p>In each case, accepting the offer would mean ceasing to be Odysseus — ceasing to be the man trying to get home. His resistance to temptation is not always admirable (he lies constantly, he's often ruthless), but it is consistent. He chooses to remain himself, at whatever cost, over the comfort of forgetting who he is.</p>
 
-      <div class="sub-heading">Cunning vs. Force</div>
-      <p>The Iliad is about force — physical, military, overwhelming. The Odyssey is about cunning — intelligence, strategy, deception. This is the poem's central revaluation of heroism. Odysseus cannot defeat the Cyclops by force; he defeats him by intelligence. He cannot walk into his own palace and announce himself; he plans for months. The poem asks whether this kind of heroism is as admirable as Achilles' battlefield glory — and gives you enough evidence to argue both ways.</p>
+      <h3 class="sub-heading">Cunning vs. Force</h3>
+      <p>The Iliad is about force — physical strength, battlefield glory, overwhelming power. The Odyssey is about cunning — intelligence, strategy, deception. This is one of the most important themes in the Odyssey, because it represents a complete revaluation of what makes a hero.</p>
+      
+      <p>Odysseus cannot defeat the Cyclops Polyphemus by force; he defeats him by getting him drunk and stabbing him in the eye while he sleeps. He cannot walk into his own palace and announce himself; he plans for months, tests loyalties, and waits for the perfect moment. He wins the Trojan War not by fighting but by building a wooden horse.</p>
+      
+      <p>The poem asks whether this kind of heroism — clever, patient, sometimes dishonest — is as admirable as Achilles' battlefield glory. Homer gives you enough evidence to argue both ways.</p>
 
-      <div class="sub-heading">Justice &amp; its Discontents</div>
-      <p>The slaughter of the suitors is presented as just — they have violated xenia, consumed Odysseus's property, dishonored his household, and plotted against his son. But Homer does not let the justice feel clean. Twelve maids are hanged — women who were not free to refuse the suitors, who had little choice in what happened to them. Amphinomus, the one decent suitor, dies with the rest. The poem ends not with peace but with Athena forcibly preventing a resumption of civil war. Justice, in the Odyssey, is violent, partial, and its consequences are not resolved.</p>
+      <h3 class="sub-heading">Justice &amp; its Discontents</h3>
+      <p>The slaughter of the suitors is presented as just. They have violated guest-friendship (xenia), consumed Odysseus's property, dishonored his household, and plotted to murder his son. By the logic of the poem, they deserve death.</p>
+      
+      <p>But Homer does not let the justice feel clean. Twelve maids are hanged — women who were not free to refuse the suitors, who had little choice in what happened to them. Amphinomus, the one decent suitor, dies with the rest. And the poem ends not with peace but with Athena forcibly preventing a resumption of civil war between Odysseus and the suitors' families.</p>
+      
+      <p>Justice, in the Odyssey, is violent, partial, and its consequences are never fully resolved. That ambiguity is part of what makes the poem worth reading again and again.</p>
 
       <div class="further-reading">
         <p>For the full reading experience, see <a href="/translations">which Odyssey translation is best for you</a> and explore our <a href="/gift-guide">gift guide</a> for beautiful editions.</p>
       </div>
+      <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
     </div>
   </article>
-</Layout> 
+</Layout>

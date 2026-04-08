@@ -1,59 +1,82 @@
- 
 ---
 import Layout from '../layouts/Layout.astro';
 const title = `Best Odyssey Translation: Emily Wilson vs Fagles vs Lattimore vs Green`;
-const description = `Which Odyssey translation should you read? Detailed comparison of Emily Wilson, Robert Fagles, Richmond Lattimore, and Peter Green — with pros, cons, sample passages, and first-reader recommendations.`;
+const description = `Which Odyssey translation should you read? Compare Emily Wilson, Fagles, Lattimore, and Green with sample passages and first-reader recommendations.`;
 const canonical = `https://readingtheodyssey.com/translations`;
 ---
 
 <Layout title={title} description={description} canonical={canonical}>
+  <meta name="last-updated" content="2025-04-07" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://readingtheodyssey.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "url": canonical,
+      "author": { "@type": "Person", "name": "André" },
+      "datePublished": "2025-01-15",
+      "dateModified": new Date().toISOString().split('T')[0],
+      "mainEntityOfPage": canonical
+    })}
+  </script>
   <article class="section active">
     <div class="section-header">
       <div class="section-label">Section 1</div>
-      <h2 class="section-title">Choosing a Translation</h2>
+      <h1 class="section-title">Choosing a Translation</h1>
       <p class="section-subtitle">The translation you choose shapes the poem you read</p>
     </div>
     <div class="section-body">
-      <p>No English translation of the Odyssey is the Odyssey. Homer composed in ancient Greek hexameter — a meter that does not exist in English — and every translator must make fundamental choices about what to preserve and what to sacrifice. The translation you choose will determine the poem you read. Choose carefully.</p>
+      <p>Before you pick up the Odyssey, understand this: no English translation is the Odyssey. Homer composed in ancient Greek hexameter — a rhythmic meter that simply does not exist in English. Every translator must make fundamental choices about what to preserve and what to sacrifice.</p>
 
-      <p>The Odyssey rewards a slightly different translation choice than the Iliad. Where the Iliad benefits from grandeur and sweep, the Odyssey benefits from clarity and forward momentum — it is a poem about a man trying to get home, and the best translations keep that urgency alive. Emily Wilson's 2017 translation is this guide's primary recommendation: it is the most direct, honest, and readable translation available, and it makes choices about Odysseus's character that illuminate the poem's moral complexity in ways older translations obscure.</p>
+      <p>The translation you choose will determine the poem you read. Choose carefully.</p>
+
+      <p>When choosing the best Odyssey translation, you'll want something different than what works for the Iliad. Where the Iliad benefits from grandeur and sweep, the Odyssey benefits from clarity and forward momentum. This is a poem about a man desperately trying to get home, and the best translations keep that urgency alive on every page.</p>
+
+      <p>Emily Wilson's 2017 translation is this guide's primary recommendation. It is the most direct, honest, and readable Odyssey translation available. Wilson makes choices about Odysseus's character that illuminate the poem's moral complexity in ways older translations obscure. If you're reading the Odyssey for the first time, start here.</p>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-wilson-the-odyssey.jpg" alt="The Odyssey — Emily Wilson" />
+        <img class="book-cover" src="/images/cover-wilson-the-odyssey.jpg" alt="Best Odyssey translation for first-time readers - Emily Wilson" loading="lazy" />
         <div class="book-title">The Odyssey — trans. Emily Wilson (2017)</div>
         <div class="book-author">First translation, recommended for most readers</div>
-        <div class="book-note">The recommended starting point for almost every reader. Wilson's translation is the first into English by a woman, and the difference is not superficial — her choices about how to render Odysseus's deceptions, Penelope's intelligence, and the maids' deaths reflect a reading of the poem that is both more honest and more disturbing than most of her predecessors. Her version is direct, readable, and urgent without being casual. The Introduction alone is one of the finest essays on the Odyssey in English.</div>
+        <div class="book-note">The recommended starting point for almost every reader. Wilson's translation is the first into English by a woman, and the difference is not superficial. Her choices about how to render Odysseus's deceptions, Penelope's intelligence, and the maids' deaths reflect a reading of the poem that is both more honest and more disturbing than most of her predecessors. You'll notice her version is direct, readable, and urgent without being casual. The Introduction alone is one of the finest essays on the Odyssey in English — read it before you start Book 1.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0393356256?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-fagles-the-odyssey.jpg" alt="The Odyssey — Robert Fagles" />
+        <img class="book-cover" src="/images/cover-fagles-the-odyssey.jpg" alt="Robert Fagles Odyssey translation - dramatic and flowing" loading="lazy" />
         <div class="book-title">The Odyssey — trans. Robert Fagles (1996)</div>
         <div class="book-author">Flowing and dramatic, excellent second choice</div>
-        <div class="book-note">The most widely read translation of the past thirty years and the standard choice in most university courses. Fagles's version is more expansive and dramatic than Wilson's — his Odysseus is more heroic, his verse more grandly rhythmic. If you read Fagles's Iliad and want to continue with the same translator's voice, his Odyssey is an excellent choice. Bernard Knox's introduction is outstanding.</div>
+        <div class="book-note">The most widely read Odyssey translation of the past thirty years and the standard choice in most university courses. Fagles's version is more expansive and dramatic than Wilson's — his Odysseus is more heroic, his verse more grandly rhythmic. If you read Fagles's Iliad and want to continue with the same translator's voice, his Odyssey is an excellent choice. Bernard Knox's introduction is outstanding and will deepen your understanding of Homer's narrative techniques.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0140268863?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-green-the-odyssey.jpg" alt="The Odyssey — Peter Green" />
+        <img class="book-cover" src="/images/cover-green-the-odyssey.jpg" alt="Peter Green Odyssey translation with scholarly notes" loading="lazy" />
         <div class="book-title">The Odyssey — trans. Peter Green (2018)</div>
         <div class="book-author">Scholarly depth, outstanding notes</div>
-        <div class="book-note">The most recent major scholarly translation — accurate, well-annotated, and genuinely illuminating about what Homer is doing at the technical level. Green's footnotes are extensive and valuable. The best choice for a second read or for anyone approaching the poem seriously as a student of the ancient world. Less immediately accessible than Wilson or Fagles but ultimately more rewarding for close reading.</div>
+        <div class="book-note">The most recent major scholarly translation — accurate, well-annotated, and genuinely illuminating about what Homer is doing at the technical level. Green's footnotes are extensive and valuable, explaining cultural context that first-time readers often miss. This is the best choice for a second read or for anyone approaching the poem seriously as a student of the ancient world. Less immediately accessible than Wilson or Fagles, but ultimately more rewarding for close reading and understanding Homer's craft.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0520303369?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
 
       <div class="book-entry">
-        <img class="book-cover" src="/images/cover-lattimore-the-odyssey.jpg" alt="The Odyssey — Richmond Lattimore" />
+        <img class="book-cover" src="/images/cover-lattimore-the-odyssey.jpg" alt="Richmond Lattimore Odyssey - most literal translation" loading="lazy" />
         <div class="book-title">The Odyssey — trans. Richmond Lattimore (1965)</div>
         <div class="book-author">Closest to the Greek, most demanding</div>
-        <div class="book-note">The most faithful to Homer's Greek and the most respected among scholars. Lattimore preserves the formulaic repetitions and rolling hexameter lines that give Homer his distinctive rhythm — but this makes it slower and more demanding for first-time readers. Return to Lattimore after a first read with Wilson or Fagles. The experience of reading the same passages in both translations is one of the most instructive exercises in understanding what translation actually does.</div>
+        <div class="book-note">The most faithful to Homer's Greek and the most respected among scholars. Lattimore preserves the formulaic repetitions and rolling hexameter lines that give Homer his distinctive rhythm — but this makes it slower and more demanding for first-time readers. You'll hear phrases like "wine-dark sea" and "rosy-fingered dawn" repeated exactly as Homer repeated them. Return to Lattimore after a first read with Wilson or Fagles. The experience of reading the same passages in both translations is one of the most instructive exercises in understanding what translation actually does.</div>
         <a class="book-affiliate" href="https://www.amazon.com/dp/0061359289?tag=readingtheodyssey-20" target="_blank" rel="noopener">Buy on Amazon →</a>
       </div>
       <p class="affiliate-notice">As an Amazon Associate, I earn from qualifying purchases.</p>
 
       <div class="further-reading">
-        <p><a href="/translations">Compare the best Odyssey translations</a> — Emily Wilson, Fagles, Lattimore side by side — or browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader.</p>
+        <p>Still deciding which Odyssey translation to read? Browse <a href="/gift-guide">recommended editions and gifts</a> for the serious reader, or return to the <a href="/">Odyssey reading guide</a> to plan your approach.</p>
       </div>
     </div>
   </article>
-</Layout> 
+</Layout>
